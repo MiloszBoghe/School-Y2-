@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1R3A0o96M3ihPy97TQaxPaQUcrG" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.40674156" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="be.pxl.ja.Week4.HerhalingsOef" />
+      <recent name="be.pxl.ja.Week3.Opgave1.Opgave_a" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\11800460\Desktop\Java Advanced\Projects\src\test\java\be\pxl\ja\Week3\Opgave3" />
+      <recent name="C:\Users\11800460\Desktop\Java Advanced\Projects\src\main\java\be\pxl\ja\Week3\Opgave1\Opgave_g" />
+      <recent name="C:\Users\11800460\Desktop\Java Advanced\Projects\src\main\java\be\pxl\ja\Week3\Opgave1\Opgave_f" />
+      <recent name="C:\Users\11800460\Desktop\Java Advanced\Projects\src\main\java\be\pxl\ja\Week3\Opgave1\Opgave_e" />
+      <recent name="C:\Users\11800460\Desktop\Java Advanced\Projects\src\main\java\be\pxl\ja\Week3\Opgave1\Opgave_d" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.pxl.ja.Week4.HerhalingsOef.Classes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\11800460\Desktop\School\Java Advanced\Projects\src\main\java\be\pxl\ja\Week4\HerhalingsOef" />
+      <recent name="C:\Users\11800460\Desktop\Java Advanced\Projects\src\main\java\be\pxl\ja\Week2\Oefening1" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.VisitLondon">
+    <configuration name="ArithmeticDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week2.Demo.ArithmeticDemo" />
+      <module name="Projects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.pxl.ja.Week2.Demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Robbery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week4.HerhalingsOef.Main.Robbery" />
+      <module name="UnitTestDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.pxl.ja.Week4.HerhalingsOef.Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestWorkingPlace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week3.Opgave1.Opgave_c.TestWorkingPlace" />
+      <module name="Projects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.pxl.ja.Week3.Opgave1.Opgave_c.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TheTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week1.oef1.TheTest" />
+      <module name="Projects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.pxl.ja.Week1.oef1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VisitLondon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week4.HerhalingsOef.Main.VisitLondon" />
+      <module name="UnitTestDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.pxl.ja.Week4.HerhalingsOef.Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VisitLondon" />
+        <item itemvalue="Application.Robbery" />
+        <item itemvalue="Application.TestWorkingPlace" />
+        <item itemvalue="Application.TheTest" />
+        <item itemvalue="Application.ArithmeticDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="" />
+      <created>1568885186448</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568885186448</updated>
+      <workItem from="1568885191077" duration="6813000" />
+      <workItem from="1568980180836" duration="2710000" />
+      <workItem from="1569486971751" duration="84000" />
+      <workItem from="1569487360060" duration="9419000" />
+      <workItem from="1569566463446" duration="593000" />
+      <workItem from="1570091699490" duration="7287000" />
+      <workItem from="1570696581902" duration="6649000" />
+      <workItem from="1570705469735" duration="56000" />
+      <workItem from="1570705567635" duration="5000" />
+      <workItem from="1570705588706" duration="2000" />
+      <workItem from="1570705606865" duration="1822000" />
+      <workItem from="1570707935466" duration="3009000" />
+      <workItem from="1570775878462" duration="2456000" />
+      <workItem from="1571218268574" duration="3000" />
+      <workItem from="1571302518192" duration="7268000" />
+      <workItem from="1571312424111" duration="1397000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
