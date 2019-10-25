@@ -1,5 +1,5 @@
 package be.pxl.ja.Week6.inner_classes.opdracht1;
-
+/*
 public class GearboxUsage {
 	public static void main(String[] args) {
 		Gearbox mcLaren = new Gearbox(6);
@@ -15,3 +15,6 @@ public class GearboxUsage {
 		System.out.println(mcLaren.wheelSpeed(6000));
 	}
 }
+
+
+ */

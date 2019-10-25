@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class NumbersAboveTest {
-	
+	/*
 	private static final int[] NUMBERS_INPUT = new int[] {25, 3, 8, 18, 19, 66, 21, 36};
 	private static final int NUMBER_LIMIT_1 = 20;
 	private static final int NUMBER_LIMIT_2 = 25;
@@ -28,4 +28,6 @@ public class NumbersAboveTest {
 		
 		assertEquals(EXPECTED_OUTPUT_2, selector.showNumbersAbove(NUMBER_LIMIT_2));
 	}
+
+	 */
 }

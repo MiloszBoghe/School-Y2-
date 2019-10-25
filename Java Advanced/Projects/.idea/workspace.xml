@@ -2,19 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week5/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week5/CardGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week5/Deck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week5/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week5/Suit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week5/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/inner_classes/opdracht1/GearboxUsage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/inner_classes/opdracht2/HorrorShow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/lambda_expressies/opdracht1/NumberMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week5/CardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/InnerClassesDemo/Instrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/InnerClassesDemo/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/InnerClassesDemo/Musician.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/lambdaExpressiesDemo/DisplayOnly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/lambdaExpressiesDemo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/lambdaExpressiesDemo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cisco/Packet Tracer Oef/Week5-startbestand.pkt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Software Analysis/W04-05/WK04 - 01 - SWA1920 - System and System Context - BUC - 02 Description Template v2 - blanc - eenvoudig.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Software Analysis/W04-05/WK04 - 01 - SWA1920 - System and System Context - BUC - 02 Description Template v2 - blanc - eenvoudig.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/inner_classes/opdracht1/GearboxUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/inner_classes/opdracht1/GearboxUsage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/lambda_expressies/opdracht1/NumberMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week6/lambda_expressies/opdracht1/NumberMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/inner_classes/opdracht1/GearboxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/inner_classes/opdracht1/GearboxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht1/EvenNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht1/EvenNumbersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht1/HexNotationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht1/HexNotationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht1/NumbersAboveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht1/NumbersAboveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht2/FreeGamesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht2/FreeGamesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht2/GamesGenreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht2/GamesGenreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht2/GamesSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/pxl/ja/Week6/lambda_expressies/opdracht2/GamesSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Software Analysis/W04-05/WK04 - 01 - SWA1920 - System and System Context - BUC - 01 Description Template v2 - explained.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Software Analysis/W04-05/WK04 - 01 - SWA1920 - System and System Context - BUC - 02 Description Template v2 - blanc - eenvoudig.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Software Analysis/W04-05/WK04 - 01 - SWA1920 - System and System Context - BUC - 02 Description Template v2 - blanc.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Software Analysis/W04-05/WK04 - 01 - SWA1920 - System and System Context - BUC - 03 Description Example.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Software Analysis/W04-05/WK04 - 01 - SWA1920 - System and System Context - BUC - 05 Visio Shapes V2.vsdx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +55,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -69,11 +79,11 @@
       <recent name="be.pxl.ja.Week4.HerhalingsOef.Classes" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\test\java\be\pxl\ja\Week6\inner_classes\opdracht1" />
+      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\test\java\be\pxl\ja\Week6\lambda_expressies\opdracht2" />
+      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\test\java\be\pxl\ja\Week6\lambda_expressies\opdracht1" />
+      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\test\java\be\pxl\ja\Week6" />
       <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja\Week6\lambda_expressies\opdracht2" />
-      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja\Week6\lambda_expressies\opdracht1" />
-      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja\Week6\lambda_expressies" />
-      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja\Week6\inner_classes\opdracht2" />
-      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja\Week6\inner_classes\opdracht1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,13 +98,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.VisitLondon">
-    <configuration name="ArithmeticDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week2.Demo.ArithmeticDemo" />
-      <module name="Projects" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week6.lambdaExpressiesDemo.Main" />
+      <module name="UnitTestDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.Week2.Demo.*" />
+          <option name="PATTERN" value="be.pxl.ja.Week6.lambdaExpressiesDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.VisitLondon" />
         <item itemvalue="Application.Robbery" />
         <item itemvalue="Application.TestWorkingPlace" />
         <item itemvalue="Application.TheTest" />
-        <item itemvalue="Application.ArithmeticDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +200,8 @@
       <workItem from="1571218268574" duration="3000" />
       <workItem from="1571302518192" duration="7268000" />
       <workItem from="1571312424111" duration="1397000" />
-      <workItem from="1571898967095" duration="3760000" />
+      <workItem from="1571898967095" duration="7618000" />
+      <workItem from="1571999961981" duration="240000" />
     </task>
     <servers />
   </component>
@@ -202,7 +213,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

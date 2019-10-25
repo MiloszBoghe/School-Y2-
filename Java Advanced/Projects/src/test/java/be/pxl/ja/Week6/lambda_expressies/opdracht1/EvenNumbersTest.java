@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class EvenNumbersTest {
-	
+	/*
 	private static final int[] NUMBERS_INPUT = new int[] {1, 17, 24, 132, 0};
 	private static final String EXPECTED_OUTPUT = "24-132-0";
 	
@@ -32,4 +32,6 @@ public class EvenNumbersTest {
 		
 		assertEquals(EXPECTED_OUTPUT, selector.showEvenNumbers());
 	}
+
+	 */
 }

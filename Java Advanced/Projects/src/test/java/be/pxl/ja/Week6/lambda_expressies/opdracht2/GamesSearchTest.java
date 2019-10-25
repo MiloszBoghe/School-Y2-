@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GamesSearchTest {
+	/*
 	@Test
 	public void gamesWithSearchTermInName() {
 		GameCollection collection = new GameCollection();
@@ -31,4 +32,6 @@ public class GamesSearchTest {
 		
 		assertEquals(3, browser.showGamesForSearch("Cd").size());
 	}
+
+	 */
 }

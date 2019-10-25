@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class HexNotationTest {
-	
+	/*
 	private static final int[] NUMBERS_INPUT = new int[] {1, 17, 132};
 	private static final String EXPECTED_OUTPUT = "1-11-84";
 	
@@ -17,4 +17,6 @@ public class HexNotationTest {
 		
 		assertEquals(EXPECTED_OUTPUT, selector.printHexNumbers());
 	}
+
+	 */
 }

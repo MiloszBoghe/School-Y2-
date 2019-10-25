@@ -1,5 +1,5 @@
 package be.pxl.ja.Week6.lambda_expressies.opdracht1;
-
+/*
 import java.util.ArrayList;
 import java.util.function.Function;
 
@@ -24,3 +24,5 @@ public class NumberMachine {
 		return result;
 	}
 }
+
+ */

@@ -3,7 +3,7 @@ package be.pxl.ja.Week6.inner_classes.opdracht1;
 import org.junit.jupiter.api.Test;
 
 public class GearboxTest{
-	
+	/*
 	@Test
 	public void testGearboxConstructorAndWheelSpeed() {
 		Gearbox mcLaren = new Gearbox(3);
@@ -56,7 +56,9 @@ public class GearboxTest{
 		
 		mcLaren.changeGear(4);
 		assertEquals(0.0, mcLaren.wheelSpeed(1000), 0.01);
+
 	}
-	
-	
+
+	 */
+
 }
