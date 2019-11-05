@@ -1,0 +1,24 @@
+﻿<Window x:Class="InvoicesDueSolution.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InvoicesDueSolution"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListView Name="InvoicesListView" ItemsSource="{Binding}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Invoice Number" Width="100" DisplayMemberBinding="{Binding InvoiceNumber}"/>
+                    <GridViewColumn Header="Date" Width="145" DisplayMemberBinding="{Binding InvoiceDate, StringFormat=d}"/>
+                    <GridViewColumn Header="Invoice Total" Width="100" DisplayMemberBinding="{Binding InvoiceTotal, StringFormat={}{0:C}}"/>
+                    <GridViewColumn Header="Payment Total" Width="100" DisplayMemberBinding="{Binding PaymentTotal, StringFormat={}{0:C}}"/>
+                    <GridViewColumn Header="Credit Total" Width="100" DisplayMemberBinding="{Binding CreditTotal, StringFormat={}{0:C}}"/>
+                    <GridViewColumn Header="Balance Due" Width="100" DisplayMemberBinding="{Binding BalanceDue, StringFormat={}{0:C}}"/>
+                    <GridViewColumn Header="DueDate" Width="145" DisplayMemberBinding="{Binding DueDate, StringFormat=d}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

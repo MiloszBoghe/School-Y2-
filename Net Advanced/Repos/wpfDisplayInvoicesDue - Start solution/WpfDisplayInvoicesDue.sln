@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDisplayInvoicesDue", "WpfDisplayInvoicesDue\WpfDisplayInvoicesDue.csproj", "{1D54B937-56D8-4434-A421-864BC3F8C711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payables.Data", "Payables.Data\Payables.Data.csproj", "{70907374-2BF0-411F-AC45-2AB080312FDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D54B937-56D8-4434-A421-864BC3F8C711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D54B937-56D8-4434-A421-864BC3F8C711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D54B937-56D8-4434-A421-864BC3F8C711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D54B937-56D8-4434-A421-864BC3F8C711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70907374-2BF0-411F-AC45-2AB080312FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70907374-2BF0-411F-AC45-2AB080312FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70907374-2BF0-411F-AC45-2AB080312FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70907374-2BF0-411F-AC45-2AB080312FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A848D413-53EB-40EB-9BBA-3DC106185071}
+	EndGlobalSection
+EndGlobal
