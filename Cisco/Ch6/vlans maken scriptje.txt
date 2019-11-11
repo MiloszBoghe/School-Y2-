@@ -1,0 +1,11 @@
+en
+conf t
+vlan 2
+name verkoop
+vlan 3
+name administratie
+vlan 4
+name directie
+vlan 5
+name netwerkbeheerder
+int vlan 5
