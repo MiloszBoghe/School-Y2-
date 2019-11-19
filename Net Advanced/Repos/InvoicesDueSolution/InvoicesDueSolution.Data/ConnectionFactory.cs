@@ -14,7 +14,7 @@ namespace InvoicesDueSolution.Data
         {
 
             //Methode1
-            //string connectionString = 
+            //string connectionString =
             //    "Data Source={localdb}" +
             //    "\\MSSqllocalDb;" +
             //    "Initial Catalog=Payables;" +
@@ -22,7 +22,7 @@ namespace InvoicesDueSolution.Data
 
             //SqlConnectionStringBuilder connBuilder = new SqlConnectionStringBuilder()
             //{
-            //    DataSource = (localdb)\\MSSqllocalDb",
+            //    DataSource = "(localdb)\\MSSqllocalDb",
             //    InitialCatalog = "Payables",
             //    IntegratedSecurity = true
             //};

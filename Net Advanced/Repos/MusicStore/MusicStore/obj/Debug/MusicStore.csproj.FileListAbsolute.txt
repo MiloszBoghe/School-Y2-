@@ -1,0 +1,14 @@
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\bin\Debug\MusicStore.exe.config
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\bin\Debug\MusicStore.exe
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\bin\Debug\MusicStore.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\MusicStore.csprojAssemblyReference.cache
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\MainWindow.g.cs
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\App.g.cs
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\MusicStore_MarkupCompile.cache
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\MusicStore_MarkupCompile.lref
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\MainWindow.baml
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\MusicStore.g.resources
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\MusicStore.Properties.Resources.resources
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\MusicStore.csproj.GenerateResource.cache
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\MusicStore.exe
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\MusicStore\MusicStore\obj\Debug\MusicStore.pdb

@@ -102,6 +102,7 @@ namespace PayablesData
                 "SELECT SCOPE_IDENTITY()"; //Get the id of the inserted vendor (another option would be to use an output parameter. E.g. SET @VendorId = SCOPE_IDENTITY() )
 
             SqlCommand insertCommand = new SqlCommand(insertStatement, connection);
+            
             insertCommand.Parameters.AddWithValue("@Name", vendor.Name);
             insertCommand.Parameters.AddWithValue("@Address1", vendor.Address1);
             if (vendor.Address2 == null)
