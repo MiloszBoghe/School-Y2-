@@ -24,13 +24,14 @@ namespace MusicStore.Data
                 reader = command.ExecuteReader();
                 int genreId = reader.GetOrdinal("GenreId");
                 int title = reader.GetOrdinal("Title");
-
+                int artistId = reader.GetOrdinal("ArtistId");
                 while (reader.Read())
                 {
                     Album album = new Album()
                     {
                         GenreId = reader.GetInt32(genreId),
-                        Title = reader.GetString(title)
+                        Title = reader.GetString(title),
+                        ArtistId = reader.GetInt32(artistId)
                     };
                     albumList.Add(album);
                 }

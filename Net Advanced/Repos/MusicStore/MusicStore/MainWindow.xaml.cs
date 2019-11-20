@@ -1,4 +1,5 @@
-﻿using MusicStore.Data;
+﻿using MusicStore.Business;
+using MusicStore.Data;
 using System;
 using System.Collections.ObjectModel;
 using System.Windows;
@@ -17,13 +18,17 @@ namespace MusicStore
             try
             {
                 genreList = GenreRepository.GetGenres();
-                comboBox.DataContext = genreList;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, ex.GetType().ToString());
             }
 
+        }
+
+        private void comboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            DataContext = ArtistRepository.GetArtist(((Genre)comboBox.SelectedItem).GenreId);
         }
     }
 }

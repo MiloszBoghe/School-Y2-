@@ -6,10 +6,10 @@ namespace MusicStore.Data
 {
     public static class ArtistRepository
     {
-        public static ObservableCollection<Artist> GetArtist(int id)
+        public static Artist GetArtist(int id)
         {
             SqlDataReader reader = null;
-            ObservableCollection<Artist> artistList = new ObservableCollection<Artist>();
+            Artist artist = null;
             SqlConnection connection = ConnectionFactory.CreateSqlConnection();
 
             string selectStatement =
@@ -26,12 +26,8 @@ namespace MusicStore.Data
                 int artistName = reader.GetOrdinal("Name");
                 while (reader.Read())
                 {
-                    Artist artist = new Artist()
-                    {
-                        ArtistId = reader.GetInt32(artistId),
-                        Name = reader.GetString(artistName)
-                    };
-                    artistList.Add(artist);
+                    artist.ArtistId = reader.GetInt32(artistId);
+                    artist.Name = reader.GetString(artistName);
                 }
             }
             finally
@@ -39,7 +35,7 @@ namespace MusicStore.Data
                 reader?.Close();
                 connection?.Close();
             }
-            return artistList;
+            return artist;
         }
     }
 }

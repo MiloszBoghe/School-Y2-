@@ -95,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MusicStore.Business\MusicStore.Business.csproj">
+      <Project>{038DF53A-B3FB-4946-AE1B-99A58BB53F27}</Project>
+      <Name>MusicStore.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MusicStore.Data\MusicStore.Data.csproj">
       <Project>{C5F9C6E0-02B3-4C4F-94A2-EE8834BB2D8F}</Project>
       <Name>MusicStore.Data</Name>
