@@ -12,6 +12,7 @@ namespace MusicStore
     public partial class MainWindow : Window
     {
         public ObservableCollection<Genre> genreList { get; set; }
+        public ObservableCollection<Album> summary { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -23,12 +24,13 @@ namespace MusicStore
             {
                 MessageBox.Show(ex.Message, ex.GetType().ToString());
             }
-
         }
 
         private void comboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            DataContext = ArtistRepository.GetArtist(((Genre)comboBox.SelectedItem).GenreId);
+            DataContext = summary;
+            summary = AlbumSummaryService.GetAlbumSummariesByGenre(((Genre)comboBox.SelectedItem).GenreId);
+            albumDataGrid.ItemsSource = summary;
         }
     }
 }

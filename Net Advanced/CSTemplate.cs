@@ -21,14 +21,12 @@
 			{
 				public static SqlConnection CreateSqlConnection()
 				{
-
 					string connectionString = ConfigurationManager.ConnectionStrings["PayablesConnectionString"].ConnectionString;
 					return new SqlConnection(connectionString);
 				}
 			}
 			
 		//zonder App.config:
-			
 			string connectionString =
 				"Data Source={localdb}" +
 				"\\MSSqllocalDb;" +
@@ -46,7 +44,38 @@
 			};
 			return new SqlConnection(connBuilder.ConnectionString);
 			
-	//repository:
-	using System.Collections.Generic;
-	using System.Data.SqlClient;
+	//repository (Dient om gegevens uit de database te halen met query en terug te geven):
+	  public static ObservableCollection<Album> GetAlbumsByGenre(int id)
+		{
+			SqlDataReader reader = null;
+			ObservableCollection<Album> albumList = new ObservableCollection<Album>();
+			SqlConnection connection = ConnectionFactory.CreateSqlConnection();
+
+			string selectStatement =
+				"select albumid, title, genreid, artistid,price " +
+				"From album " +
+				"where genreId =  " + id;
+
+			SqlCommand command = new SqlCommand(selectStatement, connection);
+			try
+			{
+				connection.Open();
+				reader = command.ExecuteReader();
+				int genreId = reader.GetOrdinal("GenreId");
+				while (reader.Read())
+				{
+					Album album = new Album()
+					{
+						GenreId = reader.GetInt32(genreId),
+					};
+					albumList.Add(album);
+				}
+			}
+			finally
+			{
+				reader?.Close();
+				connection?.Close();
+			}
+			return albumList;
+		}
 

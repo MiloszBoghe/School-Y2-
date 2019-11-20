@@ -13,9 +13,9 @@ namespace MusicStore.Data
             SqlConnection connection = ConnectionFactory.CreateSqlConnection();
 
             string selectStatement =
-                "select name " +
-                "From artist " +
-                "where artistid = " + id;
+                "select name,artistid " +
+                "From Artist " +
+                "where ArtistId = " + id;
 
             SqlCommand command = new SqlCommand(selectStatement, connection);
             try
@@ -26,8 +26,11 @@ namespace MusicStore.Data
                 int artistName = reader.GetOrdinal("Name");
                 while (reader.Read())
                 {
-                    artist.ArtistId = reader.GetInt32(artistId);
-                    artist.Name = reader.GetString(artistName);
+                    artist = new Artist()
+                    {
+                        Name = reader.GetString(artistName),
+                        ArtistId = reader.GetInt32(artistId)
+                    };
                 }
             }
             finally
