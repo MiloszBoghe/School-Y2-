@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.ObjectModel;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MusicStore.Data
 {
     public static class GenreRepository
     {
-        public static IList<Genre> GetGenres()
+        public static ObservableCollection<Genre> GetGenres()
         {
             SqlDataReader reader = null;
-            IList<Genre> genreList = new List<Genre>();
+            ObservableCollection<Genre> genreList = new ObservableCollection<Genre>();
             SqlConnection connection = ConnectionFactory.CreateSqlConnection();
 
             string selectStatement =
-                "select InvoiceNumber, InvoiceDate, InvoiceTotal, PaymentTotal,CreditTotal,DueDate " +
-                "From Invoices " +
-                "where InvoiceTotal - PaymentTotal - CreditTotal > 0 " +
-                "Order By DueDate";
+                "select genreid, name, description " +
+                "From Genre ";
 
             SqlCommand command = new SqlCommand(selectStatement, connection);
 
@@ -27,14 +21,17 @@ namespace MusicStore.Data
             {
                 connection.Open();
                 reader = command.ExecuteReader();
-                int invoiceNumberOrder = reader.GetOrdinal("InvoiceNumber");
-                
+                int genreId = reader.GetOrdinal("GenreId");
+                int genreName = reader.GetOrdinal("Name");
+                int genreDesc = reader.GetOrdinal("Description");
+
                 while (reader.Read())
                 {
-                    //string invoiceNumber = reader["InvoiceNumber"].ToString();
                     Genre genre = new Genre()
                     {
-
+                        GenreId = reader.GetInt32(genreId),
+                        Name = reader.GetString(genreName),
+                        Description = reader.GetString(genreDesc)
                     };
                     genreList.Add(genre);
                 }

@@ -1,40 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MusicStore.Data
 {
     public static class AlbumRepository
     {
-        public static IList<Album> GetAlbumsByGenre()
+        public static ObservableCollection<Album> GetAlbumsByGenre(int id)
         {
             SqlDataReader reader = null;
-            IList<Album> albumList = new List<Album>();
+            ObservableCollection<Album> albumList = new ObservableCollection<Album>();
             SqlConnection connection = ConnectionFactory.CreateSqlConnection();
 
             string selectStatement =
-                "select InvoiceNumber, InvoiceDate, InvoiceTotal, PaymentTotal,CreditTotal,DueDate " +
-                "From Invoices " +
-                "where InvoiceTotal - PaymentTotal - CreditTotal > 0 " +
-                "Order By DueDate";
+                "select albumid, title " +
+                "From album " +
+                "where genreId =  " + id;
 
             SqlCommand command = new SqlCommand(selectStatement, connection);
-
             try
             {
                 connection.Open();
                 reader = command.ExecuteReader();
-                int invoiceNumberOrder = reader.GetOrdinal("InvoiceNumber");
+                int genreId = reader.GetOrdinal("GenreId");
+                int title = reader.GetOrdinal("Title");
 
                 while (reader.Read())
                 {
-                    //string invoiceNumber = reader["InvoiceNumber"].ToString();
                     Album album = new Album()
                     {
-
+                        GenreId = reader.GetInt32(genreId),
+                        Title = reader.GetString(title)
                     };
                     albumList.Add(album);
                 }

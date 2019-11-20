@@ -12,7 +12,7 @@ namespace MusicStore.Data
     {
         public static SqlConnection CreateSqlConnection()
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["PayablesConnectionString"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["MusicStoreConnectionString"].ConnectionString;
             return new SqlConnection(connectionString);
         }
     }
