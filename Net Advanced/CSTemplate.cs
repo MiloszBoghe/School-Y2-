@@ -193,9 +193,9 @@ Databases{
 			SqlConnection connection = ConnectionFactory.CreateSqlConnection();
 
 			string selectStatement =
-				"select albumid, title, genreid, artistid,price " +
-				"From album " +
-				"where genreId =  " + id;
+                "select albumid, title, genreid, artistid,price " +
+                "From album " +
+                "where genreId =  @genreId"
 
 			SqlCommand command = new SqlCommand(selectStatement, connection);
 			try
