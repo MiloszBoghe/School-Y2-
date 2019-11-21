@@ -1,5 +1,7 @@
 package be.pxl.ja.Week8.Oefening1;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class PhoneApp {
@@ -8,6 +10,7 @@ public class PhoneApp {
         // TODO create a collection
 
         // TODO load collection from file
+        Path p = Paths.get(System.getProperty("user.home")).resolve("Desktop\\School-Y2-\\Java Advanced\\Data\\phonedirectory.txt");
 
         boolean running = true;
         while (running) {

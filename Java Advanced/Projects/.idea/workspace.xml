@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week8/demo/Readertje.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week8/demo/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week8/Oefening2/Spaarrekening.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week8/Oefening2/SpaarrekeningApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week6/lambdaExpressiesDemo/DisplayOnly.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week6/lambdaExpressiesDemo/DisplayOnly.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week6/lambdaExpressiesDemo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week6/lambdaExpressiesDemo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week 8 - File IO/Java Advanced - File IO(2).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week 8 - File IO/Java Advanced - File IO(2).pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week 8 - File IO/Oefeningen - FileIO.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week8/Oefening1/PhoneApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week8/Oefening1/PhoneApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week8/demo/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week8/demo/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week8/Oefening1/PhoneApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week8/Oefening1/PhoneApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week8/demo/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week8/demo/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Net Advanced/CSTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Net Advanced/CSTemplate.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/be/pxl/ja" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Java-PE/Java-PE" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -89,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Readertje">
+  <component name="RunManager" selected="Application.SpaarrekeningApp">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week6.lambdaExpressiesDemo.Main" />
       <module name="UnitTestDemo" />
@@ -116,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Robbery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week4.HerhalingsOef.Main.Robbery" />
+    <configuration name="SpaarrekeningApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week8.Oefening2.SpaarrekeningApp" />
       <module name="UnitTestDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.Week4.HerhalingsOef.Main.*" />
+          <option name="PATTERN" value="be.pxl.ja.Week8.Oefening2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpaarrekeningApp" />
         <item itemvalue="Application.Readertje" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.VisitLondon" />
-        <item itemvalue="Application.Robbery" />
       </list>
     </recent_temporary>
   </component>
@@ -195,6 +194,9 @@
       <workItem from="1571999961981" duration="1154000" />
       <workItem from="1572909278445" duration="1230000" />
       <workItem from="1573724098238" duration="6245000" />
+      <workItem from="1574329085668" duration="4273000" />
+      <workItem from="1574333548230" duration="278000" />
+      <workItem from="1574333857968" duration="21000" />
     </task>
     <servers />
   </component>

@@ -191,11 +191,15 @@ Databases{
 			SqlDataReader reader = null;
 			ObservableCollection<Album> albumList = new ObservableCollection<Album>();
 			SqlConnection connection = ConnectionFactory.CreateSqlConnection();
+            SqlParameter test = new SqlParameter();
+            test.parameterName = "@id";
+            test.value = id;
 
-			string selectStatement =
-                "select albumid, title, genreid, artistid,price " +
-                "From album " +
-                "where genreId =  @genreId"
+
+            string selectStatement =
+				"select albumid, title, genreid, artistid, price " +
+				"From album " +
+				"where genreId = @id";
 
 			SqlCommand command = new SqlCommand(selectStatement, connection);
 			try

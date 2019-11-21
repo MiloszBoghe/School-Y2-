@@ -15,49 +15,9 @@ public class test {
         Path p = Paths.get(System.getProperty("user.home")).resolve("Opdrachten/Opdracht2/bijlage1.txt");
         Path p2 = Paths.get("resources/data.txt");
 
-        //BufferedReader gebruik:
-       /* try (BufferedReader reader = Files.newBufferedReader(p)) {
-            String line = null;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-
-        } catch (IOException ex) {
-            System.out.println("Oops, something went wrong!");
-            System.out.println(ex.getMessage());
-        }finally{
-
-        }
-
-        */
-
-
-        //Stream gebruik:
-        try {
-            Stream<String> lines = Files.lines(p);
-            //List<String> result =
-              //      lines.sorted().distinct().collect(Collectors.toList());
-            lines.filter(l->l.toUpperCase()==l).forEach(System.out::print);
-
-        } catch (IOException ex) {
-            System.out.println("Oops, something went wrong!");
-            System.out.println(ex.getMessage());
-        }
 
 
 
-        //Stream gebruik maar in een list opslaan:
-        /*
-        try {
-            Stream<String> lines = Files.lines(p);
-            List<String> result =
-                    lines.sorted().distinct().collect(Collectors.toList());
-
-        } catch (IOException ex) {
-            System.out.println("Oops, something went wrong!");
-            System.out.println(ex.getMessage());
-        }
-         */
 
 
     }
