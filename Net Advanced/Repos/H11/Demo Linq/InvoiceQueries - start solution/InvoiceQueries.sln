@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceQueries", "InvoiceQueries\InvoiceQueries.csproj", "{8EDA129F-5BF6-415B-894F-B070A6E927A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceQueries.Data", "InvoiceQueries.Data\InvoiceQueries.Data.csproj", "{D916825C-2498-436B-8F33-A18554D5CAE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EDA129F-5BF6-415B-894F-B070A6E927A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDA129F-5BF6-415B-894F-B070A6E927A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDA129F-5BF6-415B-894F-B070A6E927A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDA129F-5BF6-415B-894F-B070A6E927A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D916825C-2498-436B-8F33-A18554D5CAE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D916825C-2498-436B-8F33-A18554D5CAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D916825C-2498-436B-8F33-A18554D5CAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D916825C-2498-436B-8F33-A18554D5CAE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F29C9FAB-A0E4-4CDE-85E7-F553E08D4DD2}
+	EndGlobalSection
+EndGlobal
