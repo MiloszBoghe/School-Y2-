@@ -82,9 +82,7 @@ Converter{
 	//Xaml:
 		//
 		<Window.Resources>
-			<c:RatingConverter x:Key="ratingConverter">
-				
-			</c:RatingConverter>
+			<c:RatingConverter x:Key="ratingConverter"/>
 		</Window.Resources>
 		//
 		
