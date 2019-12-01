@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JAVATemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVATemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week4/HerhalingsOef/Main/Robbery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week4/HerhalingsOef/Main/Robbery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/UnitTestDemo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week4/HerhalingsOef/Main/Robbery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week4/HerhalingsOef/Main/Robbery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Net Advanced/Repos/MusicStore/.vs/MusicStore/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Net Advanced/Repos/MusicStore/.vs/MusicStore/v16/.suo" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +38,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Java-PE/JavaAdvancedPE" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -198,7 +191,8 @@
       <workItem from="1574329085668" duration="4273000" />
       <workItem from="1574333548230" duration="278000" />
       <workItem from="1574333857968" duration="21000" />
-      <workItem from="1574539051343" duration="5685000" />
+      <workItem from="1574539051343" duration="6895000" />
+      <workItem from="1575068870998" duration="55000" />
     </task>
     <servers />
   </component>
