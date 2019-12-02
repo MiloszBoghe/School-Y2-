@@ -1,0 +1,63 @@
+//VLAN 10-30
+en
+conf t
+vlan 10
+name studenten
+vlan 20
+name docenten
+vlan 30
+name management
+int range fa0/1-10
+switchport mode access
+switchport access vlan 10
+switchport port-security
+switchport port-security mac-address sticky
+exit
+int range fa0/11-19
+switchport mode access
+switchport access vlan 20
+exit
+int range fa0/20-24
+switchport mode access
+sw ac vlan 30
+exit
+int g0/1
+switchport trunk native vlan 30
+switchport mode trunk
+exit
+int g0/2
+sw mode trunk
+sw trunk native vlan 30
+
+//VLAN40-60
+en
+conf t
+vlan 40
+name Administratie
+vlan 50
+name Directeurs
+vlan 60
+name Management
+int range fa0/1-10
+switchport mode access
+switchport access vlan 10
+switchport port-security
+switchport port-security mac-address sticky
+exit
+int range fa0/11-19
+switchport mode access
+switchport access vlan 20
+exit
+int range fa0/20-24
+switchport mode access
+sw ac vlan 30
+exit
+int g0/1
+switchport trunk native vlan 60
+switchport mode trunk
+exit
+int g0/2
+sw mode trunk
+sw trunk native vlan 30
+
+

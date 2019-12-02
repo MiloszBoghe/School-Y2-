@@ -82,9 +82,7 @@ Converter{
 	//Xaml:
 		//
 		<Window.Resources>
-			<c:RatingConverter x:Key="ratingConverter">
-				
-			</c:RatingConverter>
+			<c:RatingConverter x:Key="ratingConverter"/>
 		</Window.Resources>
 		//
 		
@@ -185,15 +183,16 @@ Databases{
 	
 	Repository{
 	//repository (Dient om gegevens uit de database te halen met query en terug te geven):
-	
-		//
-		public static ObservableCollection<Album> GetAlbumsByGenre(int id){
-			SqlDataReader reader = null;
-			ObservableCollection<Album> albumList = new ObservableCollection<Album>();
-			SqlConnection connection = ConnectionFactory.CreateSqlConnection();
-            SqlParameter test = new SqlParameter();
-            test.parameterName = "@id";
-            test.value = id;
+		
+		Get{
+			//
+			public static ObservableCollection<Album> GetAlbumsByGenre(int id){
+				SqlDataReader reader = null;
+				ObservableCollection<Album> albumList = new ObservableCollection<Album>();
+				SqlConnection connection = ConnectionFactory.CreateSqlConnection();
+				SqlParameter test = new SqlParameter();
+				test.parameterName = "@id";
+				test.value = id;
 
 
             string selectStatement =
@@ -202,29 +201,66 @@ Databases{
 				"where genreId = @id";
 
 			SqlCommand command = new SqlCommand(selectStatement, connection);
-			try
-			{
-				connection.Open();
-				reader = command.ExecuteReader();
-				int genreId = reader.GetOrdinal("GenreId");
-				while (reader.Read())
+				try
 				{
-					Album album = new Album()
+					connection.Open();
+					reader = command.ExecuteReader();
+					int genreId = reader.GetOrdinal("GenreId");
+					while (reader.Read())
 					{
-						GenreId = reader.GetInt32(genreId),
-					};
-					albumList.Add(album);
+						Album album = new Album()
+						{
+							GenreId = reader.GetInt32(genreId),
+						};
+						albumList.Add(album);
+					}
 				}
+				finally
+				{
+					reader?.Close();
+					connection?.Close();
+				}
+				return albumList;
+				}
+				//
 			}
-			finally
-			{
-				reader?.Close();
-				connection?.Close();
-			}
-			return albumList;
-		}
-		//
 		
+		
+		Add{
+			public void Add(int lotteryGameId, IList<int> numbers)
+			{
+				SqlConnection connection = _connectionFactory.CreateSqlConnection();
+				SqlTransaction lotteryTransaction = connection.BeginTransaction();
+
+				connection.Open();
+				SqlCommand insertDrawCommand = new SqlCommand();
+				insertDrawCommand.Connection = connection;
+				insertDrawCommand.Transaction = lotteryTransaction;
+				lotteryTransaction.Commit();
+				connection.Close();
+			}			
+
+		}
+		
+	}
+
+
+	Linq{
+		
+		Join{
+			//voegt een list samen met komma's tussen elk element
+			string.Join(",", list)
+		}
+		
+		OrderBy{
+			//sorteert een list op wat je wil..
+			list.OrderBy(a => a.[PropertyNaam]) //sorteert op die property.	
+		}
+		
+		Select{
+			//selecteert alleen een bepaalde property uit elk element van de list
+			list.Select(n=>n.Number) //Pakt alleen het "Number"
+		}
 	}
 
 }

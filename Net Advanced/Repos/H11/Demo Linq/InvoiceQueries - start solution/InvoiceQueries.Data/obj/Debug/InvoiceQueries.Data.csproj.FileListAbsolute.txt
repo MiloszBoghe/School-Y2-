@@ -1,0 +1,5 @@
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\Demo Linq\InvoiceQueries - start solution\InvoiceQueries.Data\bin\Debug\InvoiceQueries.Data.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\Demo Linq\InvoiceQueries - start solution\InvoiceQueries.Data\bin\Debug\InvoiceQueries.Data.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\Demo Linq\InvoiceQueries - start solution\InvoiceQueries.Data\obj\Debug\InvoiceQueries.Data.csprojAssemblyReference.cache
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\Demo Linq\InvoiceQueries - start solution\InvoiceQueries.Data\obj\Debug\InvoiceQueries.Data.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\Demo Linq\InvoiceQueries - start solution\InvoiceQueries.Data\obj\Debug\InvoiceQueries.Data.pdb
