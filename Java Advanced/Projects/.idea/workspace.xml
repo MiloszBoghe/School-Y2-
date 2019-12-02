@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JAVATemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVATemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/AdventOfCode/Ex1/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week4/HerhalingsOef/Main/Robbery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/Week4/HerhalingsOef/Main/Robbery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/UnitTestDemo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week4/HerhalingsOef/Main/Robbery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/pxl/ja/Week4/HerhalingsOef/Main/Robbery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Net Advanced/Repos/MusicStore/.vs/MusicStore/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Net Advanced/Repos/MusicStore/.vs/MusicStore/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Net Advanced/Repos/InvoicesDueSolution/.vs/InvoicesDueSolution/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Net Advanced/Repos/InvoicesDueSolution/.vs/InvoicesDueSolution/v16/.suo" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,13 +84,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Robbery">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week6.lambdaExpressiesDemo.Main" />
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.AdventOfCode.Ex1.App" />
       <module name="UnitTestDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.Week6.lambdaExpressiesDemo.*" />
+          <option name="PATTERN" value="be.pxl.ja.AdventOfCode.Ex1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Readertje" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week8.demo.Readertje" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week6.lambdaExpressiesDemo.Main" />
       <module name="UnitTestDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.Week8.demo.*" />
+          <option name="PATTERN" value="be.pxl.ja.Week6.lambdaExpressiesDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,26 +137,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week8.demo.test" />
+    <configuration name="PersoonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTestDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.Week8.demo.*" />
+          <option name="PATTERN" value="be.pxl.ja.Week1.unittesting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="be.pxl.ja.Week1.unittesting" />
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week1.unittesting.PersoonTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.PersoonTest" />
         <item itemvalue="Application.Robbery" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.SpaarrekeningApp" />
-        <item itemvalue="Application.Readertje" />
-        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +196,9 @@
       <workItem from="1574333548230" duration="278000" />
       <workItem from="1574333857968" duration="21000" />
       <workItem from="1574539051343" duration="5685000" />
+      <workItem from="1575027555992" duration="806000" />
+      <workItem from="1575035700257" duration="17000" />
+      <workItem from="1575195727250" duration="3161000" />
     </task>
     <servers />
   </component>
