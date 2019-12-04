@@ -1,6 +1,4 @@
-package be.pxl.ja.AdventOfCode.Ex1;
-
-import java.util.List;
+package be.pxl.ja.AdventOfCode.Day1;
 
 public class App {
     public static void main(String[] args) {

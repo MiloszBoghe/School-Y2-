@@ -1,8 +1,6 @@
-package be.pxl.ja.AdventOfCode.Ex3;
+package be.pxl.ja.AdventOfCode.Day3;
 
-import java.awt.*;
 import java.awt.geom.Point2D;
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class App {
