@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/AdventOfCode/Ex2/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/pxl/ja/AdventOfCode/Ex3/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +32,7 @@
   </component>
   <component name="ProjectId" id="1R3A0o96M3ihPy97TQaxPaQUcrG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
@@ -83,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App (1)">
+  <component name="RunManager" selected="Application.App (2)">
     <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.pxl.ja.AdventOfCode.Ex2.App" />
       <module name="UnitTestDemo" />
@@ -97,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.AdventOfCode.Ex1.App" />
+    <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.AdventOfCode.Ex3.App" />
       <module name="UnitTestDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.AdventOfCode.Ex1.*" />
+          <option name="PATTERN" value="be.pxl.ja.AdventOfCode.Ex3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week6.lambdaExpressiesDemo.Main" />
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.AdventOfCode.Ex1.App" />
       <module name="UnitTestDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.Week6.lambdaExpressiesDemo.*" />
+          <option name="PATTERN" value="be.pxl.ja.AdventOfCode.Ex1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App (2)" />
         <item itemvalue="Application.App (1)" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.PersoonTest" />
         <item itemvalue="Application.Robbery" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +200,7 @@
       <workItem from="1575035700257" duration="17000" />
       <workItem from="1575195727250" duration="3161000" />
       <workItem from="1575282802153" duration="2209000" />
+      <workItem from="1575376127471" duration="5045000" />
     </task>
     <servers />
   </component>
@@ -228,5 +230,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="points2" />
+        <watch expression="coords.get(394)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
