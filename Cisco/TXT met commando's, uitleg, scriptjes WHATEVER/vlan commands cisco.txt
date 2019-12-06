@@ -21,8 +21,8 @@ switchport access vlan [number] (bv 10)
 default vlan instellen:
 interface g0/1 (of weer met range)
 switchport mode trunk
-switchport trunk native-vlan 20
-switchport trunk allowed-vlan 10,20
+switchport trunk native vlan 20
+switchport trunk allowed vlan 10,20
 
 
 Een vlan upgraden naar virtuele netwerkkaart:
