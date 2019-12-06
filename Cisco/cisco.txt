@@ -1,0 +1,3 @@
+router rip:
+No auto summary
+ip version 2
