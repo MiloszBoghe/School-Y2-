@@ -1,4 +1,19 @@
 
+Path{
+		//user.home verwijst naar je home directory.
+		//.resolve plakt hier automatisch het vervolg van het pad aan. (is dus niet verplicht).
+		//Vb:  C:\Users\11800460
+		Path p = Paths.get(System.getProperty("user.home")).resolve("Desktop\\School-Y2-\\Java Advanced\\Data\\phonedirectory.txt");
+		
+		//user.dir verwijst naar je huidige project directory
+		//Vb: C:\Users\Satan\Desktop\Java-PE\JavaAdvancedPE
+		Path p = Paths.get(System.getProperty("user.dir")).resolve(...);
+	}
+
+Stream{
+	
+}
+
 Serializable{
 	File Writing{
 		public static void main(String[] args) {
@@ -24,22 +39,8 @@ Serializable{
 }
 		
 
-
-
 File Reading{
-	
-	Path{
-		//user.home verwijst naar je home directory.
-		//.resolve plakt hier automatisch het volgende pad aan.
-		//Vb:  C:\Users\11800460
-		Path p = Paths.get(System.getProperty("user.home")).resolve("Desktop\\School-Y2-\\Java Advanced\\Data\\phonedirectory.txt");
-		
-		//user.dir verwijst naar je huidige project directory
-		//Vb: C:\Users\Satan\Desktop\Java-PE\JavaAdvancedPE
-		Path p = Paths.get(System.getProperty("user.dir")).resolve(...);
-	}
-	
-	
+
 	BufferedReader{
 		//BufferedReader gebruik:
 	   try (BufferedReader reader = Files.newBufferedReader(p)) {
@@ -59,7 +60,9 @@ File Reading{
 	
 	Stream{
 		//Stream gebruik:
+		Path p = Paths.get(System.getProperty("user.home")).resolve("Opdrachten/Opdracht1/code.code");
 		try {
+			
 			Stream<String> lines = Files.lines(p);
 			//Je kan heel de stream in een list steken:
 			//List<String> result = lines.sorted().distinct().collect(Collectors.toList());
@@ -93,8 +96,17 @@ Generics {
 	//Als je met Collections.sort gaat werken moet je comparable implementen in de klasse die gebruikt wordt:
 	public class Attraction implements Item, Comparable<Attraction>{
 	// in de compareTo methode:
-	public int compareTo(Attraction attraction) {
-        return Integer.compare(attraction.rating, this.rating);
-    }
-	
+		public int compareTo(Attraction attraction) {
+			return Integer.compare(attraction.rating, this.rating);
+		}	
+	}
 }
+
+
+
+	
+	
+	
+	
+	
+	
