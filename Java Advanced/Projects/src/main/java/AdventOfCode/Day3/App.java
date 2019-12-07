@@ -1,4 +1,4 @@
-package be.pxl.ja.AdventOfCode.Day3;
+package AdventOfCode.Day3;
 
 import java.awt.geom.Point2D;
 import java.util.*;
@@ -54,7 +54,6 @@ public class App {
         int minLength = Integer.MAX_VALUE;
         int length=0;
         for (Map.Entry me : points.entrySet()) {
-            //noinspection SuspiciousMethodCalls
             if (points2.containsKey(me.getKey())) {
                 length = 0;
                 intersections.put((Point2D) me.getKey(), (Integer) me.getValue());

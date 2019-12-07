@@ -1,4 +1,4 @@
-package be.pxl.ja.AdventOfCode.Day2;
+package AdventOfCode.Day2;
 
 public class App {
     public static void main(String[] args) {
