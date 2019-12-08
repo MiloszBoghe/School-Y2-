@@ -18,7 +18,7 @@ switchport mode access
 switchport access vlan 20
 exit
 int g0/1
-sw native vlan 20
+switchport trunk native vlan 20
 sw mode trunk
 
 Switch1:
@@ -28,6 +28,7 @@ Switch2:
 
 
 LinkseRouter:
+
 en
 conf t
 int g0/0
@@ -43,13 +44,23 @@ exit
 int g0/1.20
 encapsulation dot1q 20 native
 ip add 10.0.0.65 255.255.255.240
+ip helper-address 10.0.0.93
 no sh
 exit
 int g0/1
 no sh
 exit
+router rip
+version 2
+no auto-summary
+passive-interface g0/1
+network 10.0.0.0
+network 10.0.0.64
+network 10.0.0.80
+exit
 
 BorderRouter:
+
 en
 conf t
 int se0/0/0
@@ -62,19 +73,25 @@ no sh
 exit
 ip dhcp pool STUDENTEN
 network 10.0.0.0 255.255.255.192
-default-router 10.0.0.81
+default-router 10.0.0.1
 exit
-ip dhcp excluded-address 10.0.0.1
 ip dhcp pool DOCENTEN
 network 10.0.0.64 255.255.255.240
-default-router 10.0.0.81
+default-router 10.0.0.65
 exit
-ip dhcp excluded-address 10.0.0.65
 ip dhcp pool DMZ
 network 10.0.0.80 255.255.255.240
 default-router 10.0.0.81 
 exit
+ip dhcp excluded-address 10.0.0.1
+ip dhcp excluded-address 10.0.0.65
 ip dhcp excluded-address 10.0.0.81
+router rip
+version 2
+no auto-summary
+default-information originate
+network 50.0.0.0
+network 10.0.0.80
 
 ISPRouter:
 
