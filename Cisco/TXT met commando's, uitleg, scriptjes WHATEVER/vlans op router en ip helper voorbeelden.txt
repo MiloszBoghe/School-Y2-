@@ -1,3 +1,6 @@
+ip helper: als de router het ip niet kent (en dus niet weet wat te doen)
+, stuurt die het gewoon door naar de ip helper.
+
 //VLAN 10-30
 enable
 conf t
