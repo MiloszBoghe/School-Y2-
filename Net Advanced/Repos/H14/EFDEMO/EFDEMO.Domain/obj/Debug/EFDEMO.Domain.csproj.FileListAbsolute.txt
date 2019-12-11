@@ -1,0 +1,4 @@
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\H14\EFDEMO\EFDEMO.Domain\bin\Debug\EFDEMO.Domain.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\H14\EFDEMO\EFDEMO.Domain\bin\Debug\EFDEMO.Domain.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\H14\EFDEMO\EFDEMO.Domain\obj\Debug\EFDEMO.Domain.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Repos\H14\EFDEMO\EFDEMO.Domain\obj\Debug\EFDEMO.Domain.pdb
