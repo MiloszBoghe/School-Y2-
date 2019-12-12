@@ -1,6 +1,5 @@
 package be.pxl.ja.Week5;
 
-import be.pxl.ja.Collections.*;
 import be.pxl.ja.Week5.Collections.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

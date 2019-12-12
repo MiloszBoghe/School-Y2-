@@ -1,6 +1,5 @@
 package be.pxl.ja.Week3.Generics.Generics.Opgave1.Opgave_f;
 
-import be.pxl.ja.Generics.Generics.Opgave1.*;
 import be.pxl.ja.Week3.Generics.Generics.Opgave1.*;
 
 public class TestWorkingPlace {
