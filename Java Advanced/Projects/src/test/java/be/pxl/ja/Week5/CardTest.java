@@ -1,5 +1,7 @@
 package be.pxl.ja.Week5;
 
+import be.pxl.ja.Collections.*;
+import be.pxl.ja.Week5.Collections.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CardTest {
 
-    private static final int FULL_DECK_SIZE = Suit.values().length*Value.values().length;
+    private static final int FULL_DECK_SIZE = Suit.values().length* Value.values().length;
     private static final String LS = System.lineSeparator();
 
     private Deck deck;
