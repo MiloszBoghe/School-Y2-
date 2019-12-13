@@ -18,7 +18,7 @@ in/out:
 en
 conf t
 int ...
-ip not (out|in)side
+ip nat (out|in)side
 
 
 translation:
@@ -31,5 +31,10 @@ ip not (inside source) static 10.0.0.2 50.0.0.2 --> gef het inside ip adres van 
 dynamic PAT:
 en
 conf t
+Optie 1:
 access-list 1 permit any
-ip not pool WWW 50.0.0.3 50.0.0.4 netmask 255.255.255.0
+ip nat pool WWW 50.0.0.3 50.0.0.4 netmask 255.255.255.0
+ip nat inside source list 1 pool WWW overload
+optie 2:
+ip nat inside source list 1 int s0/0/0 overload
+
