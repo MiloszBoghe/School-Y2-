@@ -24,7 +24,7 @@ public class App {
             String strNumber = begin + "";
 
             for (char c : strNumber.toCharArray()){
-                adjacents;
+                //adjacents;
             }
 
         }

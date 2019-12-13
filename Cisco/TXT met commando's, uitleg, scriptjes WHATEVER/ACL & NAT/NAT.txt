@@ -1,0 +1,40 @@
+Static NAT
+1-1 => static in memory
+
+
+Dynamic NAT
+Many-Many
+
+
+
+Socket --> port based address translation (PAT)
+IP:Poort
+
+
+
+Commands
+--------
+in/out:
+en
+conf t
+int ...
+ip nat (out|in)side
+
+
+translation:
+static:
+
+en
+conf t
+ip not (inside source) static 10.0.0.2 50.0.0.2 --> gef het inside ip adres van de server
+
+dynamic PAT:
+en
+conf t
+Optie 1:
+access-list 1 permit any
+ip nat pool WWW 50.0.0.3 50.0.0.4 netmask 255.255.255.0
+ip nat inside source list 1 pool WWW overload
+optie 2:
+ip nat inside source list 1 int s0/0/0 overload
+
