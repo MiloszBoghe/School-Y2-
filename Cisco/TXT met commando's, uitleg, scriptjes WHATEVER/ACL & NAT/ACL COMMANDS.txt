@@ -1,0 +1,15 @@
+config# 	acceslist 7 deny 10.0.0.0 _ 0.0.0.255
+config#		acceslist 7 permit any
+config#		interface g0/0
+      # 	ip access-group 7 out
+________________________________________
+NAMED ACL 
+
+config#			ip access-list standard EXAMEN
+configs-stad-acl# 	permit host 10.0.0.10
+			deny 10.0.0.0 0.0.0.255
+			permit any
+			ip access-group EXAMEN out
+			no 10
+			10 permit host 10.0.0.9
+			15 permit host 10.0.0.8
