@@ -18,11 +18,7 @@ switchport mode access
 switchport access vlan 20
 exit
 int g0/1
-<<<<<<< HEAD:Cisco/TXT met commando's, uitleg, scriptjes WHATEVER/CH8_Grote_oef.txt
-switchport trunk native vlan 20
-=======
 sw trunk native vlan 20
->>>>>>> 67ab94c765e1e39efedf41a4443ed597514adee1:Cisco/Packet Tracer Oef/Ch8 - DHCP/CH8_Grote_oef.txt
 sw mode trunk
 do copy run start
 
@@ -34,7 +30,6 @@ Switch2:
 
 
 LinkseRouter:
-
 en
 conf t
 int g0/0
@@ -59,13 +54,6 @@ exit
 router rip
 version 2
 no auto-summary
-<<<<<<< HEAD:Cisco/TXT met commando's, uitleg, scriptjes WHATEVER/CH8_Grote_oef.txt
-passive-interface g0/1
-network 10.0.0.0
-network 10.0.0.64
-network 10.0.0.80
-exit
-=======
 network 10.0.0.0
 network 10.0.0.64
 network 10.0.0.80
@@ -73,10 +61,8 @@ passive-interface g0/1
 do copy run start
 
 
->>>>>>> 67ab94c765e1e39efedf41a4443ed597514adee1:Cisco/Packet Tracer Oef/Ch8 - DHCP/CH8_Grote_oef.txt
 
 BorderRouter:
-
 en
 conf t
 int se0/0/0
@@ -91,31 +77,23 @@ ip dhcp pool STUDENTEN
 network 10.0.0.0 255.255.255.192
 default-router 10.0.0.1
 exit
+ip dhcp excluded-address 10.0.0.1
 ip dhcp pool DOCENTEN
 network 10.0.0.64 255.255.255.240
 default-router 10.0.0.65
 exit
+ip dhcp excluded-address 10.0.0.65
 ip dhcp pool DMZ
 network 10.0.0.80 255.255.255.240
 default-router 10.0.0.81 
 exit
-ip dhcp excluded-address 10.0.0.1
-ip dhcp excluded-address 10.0.0.65
 ip dhcp excluded-address 10.0.0.81
 router rip
-<<<<<<< HEAD:Cisco/TXT met commando's, uitleg, scriptjes WHATEVER/CH8_Grote_oef.txt
-version 2
-no auto-summary
-default-information originate
-network 50.0.0.0
-network 10.0.0.80
-=======
 network 50.0.0.0
 network 10.0.0.80
 default-information originate
 do copy run start
 
->>>>>>> 67ab94c765e1e39efedf41a4443ed597514adee1:Cisco/Packet Tracer Oef/Ch8 - DHCP/CH8_Grote_oef.txt
 
 ISPRouter:
 
