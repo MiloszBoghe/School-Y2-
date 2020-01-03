@@ -427,12 +427,12 @@ EntityFramework{
 	
 	Extra{
 		//Om een property required te maken:
-        modelBuilder.Entity<Customer>().Property(c => c.Name).IsRequired();
+        modelBuilder.Entity<Person>().Property(p => p.Name).IsRequired();
 
 		
 		//Om aan EFCore duidelijk te maken wat de PK is --> in de context klasse:
 		protected override void OnModelCreating(ModelBuilder modelBuilder){
-			modelBuilder.Entity<City>().HasKey(c => c.ZipCode);
+			modelBuilder.Entity<Blog>().HasKey(b => b.Url);
 		}
 	}
 }
