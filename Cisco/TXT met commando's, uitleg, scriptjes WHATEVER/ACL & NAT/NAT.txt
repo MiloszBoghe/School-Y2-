@@ -1,16 +1,11 @@
 Static NAT
 1-1 => static in memory
 
-
 Dynamic NAT
 Many-Many
 
-
-
 Socket --> port based address translation (PAT)
 IP:Poort
-
-
 
 Commands
 --------
@@ -26,7 +21,7 @@ static:
 
 en
 conf t
-ip not (inside source) static 10.0.0.2 50.0.0.2 --> gef het inside ip adres van de server
+ip not (inside source) static 10.0.0.2 50.0.0.2 --> geef het inside ip adres van de server
 
 dynamic PAT:
 en
