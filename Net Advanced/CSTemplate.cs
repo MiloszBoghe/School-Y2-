@@ -245,18 +245,6 @@ Databases{
 	}
 
 
-MigrationShit{
-	
-	
-	
-	
-	
-	
-	
-	
-}
-
-
 
 	Linq{
 		
@@ -276,6 +264,177 @@ MigrationShit{
 		}
 	}
 
+}
+
+
+
+
+EntityFramework{
+	//nieuwe solution? Voeg projecten toe: (
+	//[Naam].Data (CLASS LIBRARY - NET FRAMEWORK)
+	//[Naam].Domain (CLASS LIBRARY - NET FRAMEWORK)
+	//UI (WPF - NET FRAMEWORK)
+	//rightclick .Data-->manage nuGet --> microsoft.entityframeworkcore --> .Sqlserver (VERSIE 2.2.6!!) --> install
+	
+	Context{
+		//In de .Data zal moet de context klasse staan. Deze extend "DbContext"
+		//wat doen?
+		//1. alle DbSets aanmaken als properties (tip: prop tab tab)
+		//2. override OnConfiguring
+		public class SamuraiContext:DbContext
+		{
+			public DbSet<Samurai> Samurais { get; set; }
+			public DbSet <Battle> Battles { get; set; }
+			public DbSet<Quote> Quotes { get; set; }
+		
+			protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+			{
+				string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SamuraiAppData;Integrated Security=True";
+				optionsBuilder.UseSqlServer(connectionString);
+				
+			}
+		}
+	}
+	
+	
+	Migrations{
+		//Volg deze stappen:
+		//Om migrations te kunnen doen --> .Data --> Manage nuGet --> microsoft.entityframeworkcore.tools (VERSIE 2.2.6)!!-->install
+		//UI --> add reference-->projects--> .Data en .Domain
+		//UI --> rightclick --> manage nuGet --> microsoft.entityframeworkcore.design --> install
+		//UI --> rightclick --> set as startup project
+		//Tip: Voor packet manager console: View-->other windows --> packet manager console
+		//Tip: in de packet manager console: get-help entityframeworkcore
+		//in de console --> Default project: .Data
+	
+		Add-Migration{
+			//in console
+			add-migration initial
+		}
+		
+		Script-Migration{
+			//in console:
+			script-migration
+			//Dit maakt een .sql file met de hele sql in.
+			//Waarschijnlijk niet nodig. Dit is om te delen met andere mensen in een project ofzo.
+		}
+		
+		Update-Database{
+			//in console:
+			update-database
+			//als de database nog niet bestaat zal het deze ook aanmaken. 
+		}
+		
+	}
+
+
+	Relationships{
+		//one to one, many to many, ...
+
+		One to one{
+			//nieuwe klasse om in dit geval de echte naam van een samurai bij te houden.
+			//deze heeft een PK "Id" en samuraiId en samuraiNaam.
+			public class SecretIdentity
+			{
+				public int Id { get; set; }
+				public string RealName { get; set; }
+				public int SamuraiId { get; set; }
+			}
+			
+			//Aan de Samurai klasse voegen we ook een property toe:
+			public SecretIdentity SecretIdentity{get; set; }
+			//nu kan EFCore er aan uit. In orde.
+			
+		}
+			
+		
+		One to many{
+			//Extra property maken in de domain klassen
+			//In de "one" klasse --> [Object] Object:
+			public class Post
+			{
+				public int PostId { get; set; }
+				public string Title { get; set; }
+				public string Content { get; set; }
+
+				public int BlogId { get; set; }
+				public Blog Blog { get; set; }
+			}
+			//In degene met many --> ICollection<[WatHijVeelHeeft]>:
+			public class Blog
+			{
+				public int BlogId { get; set; }
+				public string Url { get; set; }
+
+				public ICollection<Post> Posts { get; set; }
+			}
+
+
+			//Dan kunnen we in de OnModelCreating klasse:
+			protected override void OnModelCreating(ModelBuilder modelBuilder)
+			{
+				modelBuilder.Entity<Post>()
+					.HasOne(a => a.Blog)
+					.WithMany(b => b.Posts)
+					.HasForeignKey(c => c.BlogId)
+					.HasPrincipalKey(d => d.Url);
+			}
+		
+		}
+		
+		
+		Many to many{
+			//Voor een many to many relationship (bv Samurais meerdere battles, battles meerdere samurais)
+			//Moet er een join entity aangemaakt worden. Dit is een nieuwe klasse in .Domain
+			//Deze heeft de primary keys van beide (Id)
+			//
+			public class SamuraiBattle
+			{
+				public int SamuraiId { get; set; }
+				public Samurai Samurai { get; set; }
+				public int BattleId { get; set; }
+				public Battle Battle { get; set; }
+			}
+			
+			//Dan pas je in Battle klasse en Samurai klasse de properties aan:
+			//In Samurai:
+			public class Samurai
+			{
+				//public int BattleId { get; set; } DEZE GAAT IN COMMENT
+				//in de plaats komt deze:
+				public List<SamuraiBattle> SamuraiBatttles {get; set; }
+			}
+			//in Battle:
+			public class Battle
+			{
+				//public List<Samurai> Samurais { get; set; } DEZE GAAT IN COMMENT
+				//in de plaats komt deze:
+				public List<SamuraiBattle> SamuraiBatttles { get; set; }
+			}
+			
+			//Dan naar de Context klasse:
+			protected override void OnModelCreating(ModelBuilder modelBuilder)
+			{
+				modelBuilder.Entity<SamuraiBattle>().HasKey(s => new { s.SamuraiId, s.BattleId }); 
+			}
+		}
+
+	
+}
+	
+	
+	}	
+	
+	Extra{
+		//Om een property required te maken:
+        modelBuilder.Entity<Customer>().Property(c => c.Name).IsRequired();
+
+		
+		//Om aan EFCore duidelijk te maken wat de PK is --> in de context klasse:
+		protected override void OnModelCreating(ModelBuilder modelBuilder){
+			modelBuilder.Entity<City>().HasKey(c => c.ZipCode);
+		}
+	}
 }
 
 
