@@ -44,6 +44,9 @@ Binding{
             </DataGrid.Columns>
         </DataGrid>
 		//
+		//CS:
+		    CustomersDataGrid.ItemsSource = _customers;
+            CityComboBoxColumn.ItemsSource = _cityRepository.GetAll();
 	}
 	
 	
@@ -294,8 +297,8 @@ EntityFramework{
 				
 			}
 		}
-	}
 	
+	}
 	
 	Migrations{
 		//Volg deze stappen:
@@ -421,13 +424,11 @@ EntityFramework{
 
 	
 }
+		
 	
-	
-	}	
-	
-	Extra{
+	modelBuilder (Required, PK, ...){
 		//Om een property required te maken:
-        modelBuilder.Entity<Person>().Property(p => p.Name).IsRequired();
+		modelBuilder.Entity<Person>().Property(p => p.Name).IsRequired();
 
 		
 		//Om aan EFCore duidelijk te maken wat de PK is --> in de context klasse:

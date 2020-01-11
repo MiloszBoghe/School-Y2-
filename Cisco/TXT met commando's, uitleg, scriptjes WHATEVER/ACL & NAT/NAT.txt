@@ -1,35 +1,81 @@
-Static NAT
-1-1 => static in memory
+Static NAT{
+	1-1 => static in memory
+	voorbeeld{
+		R2>enable
+		R2#configure terminal
+		Enter configuration commands, one per line. End with CNTL/Z.
+		R2(config)#ip nat inside source static 192.168.1.10 200.0.0.10
+		R2(config)#interface Serial 0/0/0
+		R2(config-if)#ip nat outside
+		R2(config-if)#exit
+		R2(config)#interface FastEthernet 0/0
+		R2(config-if)#ip nat inside
+		R2(config-if)#exit
+		R2(config)#
+	}
+}
 
-Dynamic NAT
+
+Dynamic NAT{
 Many-Many
 
-Socket --> port based address translation (PAT)
-IP:Poort
+}
 
-Commands
---------
-in/out:
+
+//Socket --> port based address translation (PAT)
+//IP:Poort
+
+
+static PAT:
 en
 conf t
-int ...
-ip nat (out|in)side
+ip nat inside source static tcp 10.0.0.2 443 50.0.0.2 443 
+// ip nat inside source static [protocol] [intern ip] [poort] [extern ip] [poort]
 
+dynamic PAT{
+	en
+	conf t
 
-translation:
-static:
+	//Optie 1{
+		//Maak ACL aan, moet toegelaten hosts/denied hosts:
+		access-list 1 permit 10.0.0.10 0.0.0.0
+		access-list 1 permit 10.0.0.20 0.0.0.0
+		access-list 1 deny any
 
-en
-conf t
-ip not (inside source) static 10.0.0.2 50.0.0.2 --> geef het inside ip adres van de server
+		//NAT pool maken:
+		ip nat pool WWW 50.0.0.3 50.0.0.4 netmask 255.255.255.0
+		//dus --> ip nat pool [pool naam] [begin ip] [eind ip] netmask [subnetmask]
 
-dynamic PAT:
-en
-conf t
-Optie 1:
-access-list 1 permit any
-ip nat pool WWW 50.0.0.3 50.0.0.4 netmask 255.255.255.0
-ip nat inside source list 1 pool WWW overload
-optie 2:
-ip nat inside source list 1 int s0/0/0 overload
+		//Pool toevoegen aan ACL
+		ip nat inside source list 1 pool WWW overload
+		//dus --> ip nat inside source list [ACL nummer] pool [pool naam] overload
 
+		//dan gaan we naar de interne interface:
+		int g0/0
+		ip nat inside
+
+		//dan naar de externe interface:
+		int g0/1 
+		ip nat outside
+		
+		
+		//Voorbeeld{
+			R1>enable
+			R1#configure terminal
+			Enter configuration commands, one per line. End with CNTL/Z.
+			R1(config)#access-list 1 permit 10.0.0.10 0.0.0.0
+			R1(config)#access-list 1 permit 10.0.0.20 0.0.0.0
+			R1(config)#access-list 1 deny any
+			R1(config)#ip nat pool ccna 50.0.0.1 50.0.0.1 netmask 255.0.0.0
+			R1(config)#ip nat inside source list 1 pool ccna overload
+			R1(config)#interface FastEthernet 0/0
+			R1(config-if)#ip nat inside
+			R1(config-if)#exit
+			R1(config)#interface Serial 0/0/0
+			R1(config-if)#ip nat outside
+			R1(config-if)#exit
+			R1(config)#
+		}
+	}
+
+}
