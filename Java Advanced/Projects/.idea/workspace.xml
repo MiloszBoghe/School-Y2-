@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="" />
+    <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/Property.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/gegevens.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Software Analysis/PE Files/user_req.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVATemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVATemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/pxl/ja/AdventOfCode/Day4/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.txt" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Java-PE/JavaAdvancedPE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -45,12 +56,21 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="be.pxl.ja.Week8.demo" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.pxl.ja.Week4.HerhalingsOef.Classes" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="be.pxl.ja.Week4.HerhalingsOef" />
       <recent name="be.pxl.ja.Week3.Opgave1.Opgave_a" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\resources" />
+      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja\Week8\Oefening1" />
+      <recent name="C:\Users\11800460\Desktop\School\Java Advanced\Projects\src\main\java\be\pxl\ja\Week4\HerhalingsOef" />
+      <recent name="C:\Users\11800460\Desktop\Java Advanced\Projects\src\main\java\be\pxl\ja\Week2\Oefening1" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.pxl.ja.Week8.demo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja" />
@@ -58,14 +78,6 @@
       <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\test\java\be\pxl\ja\Week6\lambda_expressies\opdracht2" />
       <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\test\java\be\pxl\ja\Week6\lambda_expressies\opdracht1" />
       <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\test\java\be\pxl\ja\Week6" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="be.pxl.ja.Week4.HerhalingsOef.Classes" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja\Week8\Oefening1" />
-      <recent name="C:\Users\11800460\Desktop\School\Java Advanced\Projects\src\main\java\be\pxl\ja\Week4\HerhalingsOef" />
-      <recent name="C:\Users\11800460\Desktop\Java Advanced\Projects\src\main\java\be\pxl\ja\Week2\Oefening1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -80,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App (2)">
+  <component name="RunManager" selected="Application.App (3)">
     <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.pxl.ja.AdventOfCode.Ex2.App" />
       <module name="UnitTestDemo" />
@@ -107,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.AdventOfCode.Ex1.App" />
-      <module name="UnitTestDemo" />
+    <configuration name="App (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HerhalingsOefening.App" />
+      <module name="Projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.AdventOfCode.Ex1.*" />
+          <option name="PATTERN" value="HerhalingsOefening.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Robbery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week4.HerhalingsOef.Main.Robbery" />
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.AdventOfCode.Ex1.App" />
       <module name="UnitTestDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.Week4.HerhalingsOef.Main.*" />
+          <option name="PATTERN" value="be.pxl.ja.AdventOfCode.Ex1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App (3)" />
         <item itemvalue="Application.App (2)" />
         <item itemvalue="Application.App (1)" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.PersoonTest" />
-        <item itemvalue="Application.Robbery" />
       </list>
     </recent_temporary>
   </component>
@@ -200,11 +212,16 @@
       <workItem from="1575417929953" duration="599000" />
       <workItem from="1575491884226" duration="1291000" />
       <workItem from="1576425505568" duration="32000" />
+      <workItem from="1578565014607" duration="4864000" />
+      <workItem from="1578577843760" duration="34000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

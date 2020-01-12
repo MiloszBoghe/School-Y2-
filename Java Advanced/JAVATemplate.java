@@ -1,13 +1,13 @@
 
 Path{
 		//user.home verwijst naar je home directory.
-		//.resolve plakt hier automatisch het vervolg van het pad aan. (is dus niet verplicht).
 		//Vb:  C:\Users\11800460
-		Path p = Paths.get(System.getProperty("user.home")).resolve("Desktop\\School-Y2-\\Java Advanced\\Data\\phonedirectory.txt");
+		//.resolve plakt hier automatisch het vervolg van het pad aan. (is dus niet verplicht).
+		Path p = Paths.get(System.getProperty("user.home")).resolve("Desktop/School-Y2-/Java Advanced/Data/phonedirectory.txt");
 		
 		//user.dir verwijst naar je huidige project directory
 		//Vb: C:\Users\Satan\Desktop\Java-PE\JavaAdvancedPE
-		Path p = Paths.get(System.getProperty("user.dir")).resolve(...);
+		Path p = Paths.get(System.getProperty("user.dir")).resolve("src/main/...");
 	}
 
 Stream{
@@ -52,10 +52,9 @@ File Reading{
 		} catch (IOException ex) {
 			System.out.println("Oops, something went wrong!");
 			System.out.println(ex.getMessage());
-		}finally{
-			
-		}
+
 	}
+}
 	
 	
 	Stream{
