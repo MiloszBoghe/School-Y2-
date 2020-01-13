@@ -1,0 +1,5 @@
+C:\Users\Satan\Desktop\School\Net Advanced\Repos\H12 EntityFramework\SamuraiApp\SamuraiApp.Domain\bin\Debug\SamuraiApp.Domain.dll
+C:\Users\Satan\Desktop\School\Net Advanced\Repos\H12 EntityFramework\SamuraiApp\SamuraiApp.Domain\bin\Debug\SamuraiApp.Domain.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\Repos\H12 EntityFramework\SamuraiApp\SamuraiApp.Domain\obj\Debug\SamuraiApp.Domain.dll
+C:\Users\Satan\Desktop\School\Net Advanced\Repos\H12 EntityFramework\SamuraiApp\SamuraiApp.Domain\obj\Debug\SamuraiApp.Domain.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\Repos\H12 EntityFramework\SamuraiApp\SamuraiApp.Domain\obj\Debug\SamuraiApp.Domain.csprojAssemblyReference.cache

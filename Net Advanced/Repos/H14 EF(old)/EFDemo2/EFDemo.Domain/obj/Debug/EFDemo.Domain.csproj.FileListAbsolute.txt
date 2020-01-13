@@ -1,0 +1,10 @@
+C:\Users\Amando\source\repos\EFDemo\EFDemo.Domain\bin\Debug\EFDemo.Domain.dll
+C:\Users\Amando\source\repos\EFDemo\EFDemo.Domain\bin\Debug\EFDemo.Domain.pdb
+C:\Users\Amando\source\repos\EFDemo\EFDemo.Domain\obj\Debug\EFDemo.Domain.csprojAssemblyReference.cache
+C:\Users\Amando\source\repos\EFDemo\EFDemo.Domain\obj\Debug\EFDemo.Domain.dll
+C:\Users\Amando\source\repos\EFDemo\EFDemo.Domain\obj\Debug\EFDemo.Domain.pdb
+C:\Users\Jurgen\source\repos\EFDemo2\EFDemo.Domain\bin\Debug\EFDemo.Domain.dll
+C:\Users\Jurgen\source\repos\EFDemo2\EFDemo.Domain\bin\Debug\EFDemo.Domain.pdb
+C:\Users\Jurgen\source\repos\EFDemo2\EFDemo.Domain\obj\Debug\EFDemo.Domain.csprojAssemblyReference.cache
+C:\Users\Jurgen\source\repos\EFDemo2\EFDemo.Domain\obj\Debug\EFDemo.Domain.dll
+C:\Users\Jurgen\source\repos\EFDemo2\EFDemo.Domain\obj\Debug\EFDemo.Domain.pdb

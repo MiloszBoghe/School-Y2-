@@ -1,0 +1,12 @@
+//exclude addresses:
+ip dhcp excluded-address 192.168.100.1 192.168.100.10
+ip dhcp excluded-address 192.168.101.254
+
+//geef de pool een naam en ga in configuration mode:
+ip dhcp pool LAN-POOL-100
+
+//stel het netwerk in:
+network 192.168.100.0 255.255.254.0
+
+//stel de default-gateway voor de dhcp server in
+default-router 192.168.100.1
