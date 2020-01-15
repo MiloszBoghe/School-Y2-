@@ -128,4 +128,21 @@ public class Property {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MMM/yyyy", Locale.US);
         return "ZipCode: " + zip + "\nPrice: " + price + "\nDate sold: " + saleDate.format(formatter);
     }
+
+
+    public String toFormattedOutput() {
+        // street,city,zip,state,beds,baths,sq__ft,type,sale_date,price,latitude,longitude
+        return  getStreet() + "," +
+                getCity() + "," +
+                getZip() + "," +
+                getState() + "," +
+                getBedrooms() + "," +
+                getBathrooms() + "," +
+                getSqft() + "," +
+                getType() + "," +
+                getSaleDate() + "," +
+                getPrice() + "," +
+                getLatitude() + "," +
+                getLongitude();
+    }
 }

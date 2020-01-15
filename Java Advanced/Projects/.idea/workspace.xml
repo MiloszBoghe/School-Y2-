@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVATemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVATemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Software Analysis/Exercises &amp; projects/Salamander/1920 - SWM-TAAK01 - Checklist for identifying stakeholders 01.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Software Analysis/Exercises &amp; projects/Salamander/20191113 Salamander - Opdracht SWM - versie 01.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Software Analysis/Exercises &amp; projects/Salamander/PE Software Analysis.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Software Analysis/Exercises &amp; projects/Salamander/WK03 - 01b - SWA1920 - System and System Context - SRS - Cafetaria Ordering System(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Software Analysis/Exercises &amp; projects/Salamander/WK03 - 01c - SWA1920 - System and System Context - SRS - Cafetaria Ordering System - Vision &amp; scope(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Software Analysis/Exercises &amp; projects/Salamander/checklist-stakeholderanalyse.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Software Analysis/Lessen/W02 - Introduction continued/WK02 - 02 - SWA1920 - Intro - Requirements development &amp; management.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Software Analysis/Lessen/W02 - Introduction continued/WK02 - 02 - SWA1920 - Intro - Requirements development &amp; management.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HerhalingsOefening/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HerhalingsOefening/App.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -146,17 +141,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersoonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UnitTestDemo" />
+    <configuration name="Talker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week10.Multithreading.Demo.Talker" />
+      <module name="Projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.Week1.unittesting.*" />
+          <option name="PATTERN" value="be.pxl.ja.Week10.Multithreading.Demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.pxl.ja.Week1.unittesting" />
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.Week1.unittesting.PersoonTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,10 +157,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App (3)" />
+        <item itemvalue="Application.Talker" />
         <item itemvalue="Application.App (2)" />
         <item itemvalue="Application.App (1)" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.PersoonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +208,7 @@
       <workItem from="1576425505568" duration="32000" />
       <workItem from="1578565014607" duration="4864000" />
       <workItem from="1578577843760" duration="34000" />
-      <workItem from="1579094872382" duration="6183000" />
+      <workItem from="1579094872382" duration="15589000" />
     </task>
     <servers />
   </component>
@@ -245,14 +238,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/be/pxl/ja/Week4/HerhalingsOef/KnapsackUtil.java</url>
           <line>8</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/HerhalingsOefening/App.java</url>
-          <line>55</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
