@@ -91,17 +91,44 @@ File Reading{
 
 Generics {
 	
-	//Welke letter maakt geen kloot uit. 
-	//Als je met Collections.sort gaat werken moet je comparable implementen in de klasse die gebruikt wordt:
-	public class Attraction implements Item, Comparable<Attraction>{
-	// in de compareTo methode:
-		public int compareTo(Attraction attraction) {
-			return Integer.compare(attraction.rating, this.rating);
-		}	
+	Letter{
+		//Welke letter maakt geen kloot uit. 
+		public class DistanceUtil {
+			public static <T extends DistanceFunction<T>> T findClosest(Set<T> elements, T otherElement) {
+				ArrayList<T> listOfElements = new ArrayList<T>(elements);
+				T smallest = null;
+				double smallestDistance = 1000000;
+				for (T element : listOfElements) {
+					if (element != otherElement) {
+						double distance = element.Distance(otherElement);
+						if (distance < smallestDistance) {
+							smallestDistance = distance;
+							smallest = element;
+						}
+					}
+				}
+				return smallest;
+			}
+		}
+	}	
+	
+	Sort/Comparable{
+		//Als je met Collections.sort gaat werken moet je comparable implementen in de klasse die gebruikt wordt:
+		public class Attraction implements Item, Comparable<Attraction>{
+		// in de compareTo methode:
+			public int compareTo(Attraction attraction) {
+				return Integer.compare(attraction.rating, this.rating);
+			}	
+		}
 	}
 }
 
 
+Formatter{
+	//formatter maken
+	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss z yyyy", Locale.US);
+    LocalDateTime saleDate = LocalDateTime.parse(split[8], formatter);
+}
 
 	
 	

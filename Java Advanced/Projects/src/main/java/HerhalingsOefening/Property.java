@@ -3,7 +3,9 @@ package HerhalingsOefening;
 import java.nio.file.Path;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Property {
     private String street;
@@ -14,12 +16,12 @@ public class Property {
     private int bathrooms;
     private double sqft;
     private String type;
-    private LocalDateTime saledate;
+    private LocalDateTime saleDate;
     private double price;
     private double latitude;
     private double longitude;
 
-    public Property(){
+    public Property() {
 
     }
 
@@ -88,12 +90,12 @@ public class Property {
         this.type = type;
     }
 
-    public LocalDateTime getSaledate() {
-        return saledate;
+    public LocalDateTime getSaleDate() {
+        return saleDate;
     }
 
-    public void setSaledate(LocalDateTime saledate) {
-        this.saledate = saledate;
+    public void setSaleDate(LocalDateTime saleDate) {
+        this.saleDate = saleDate;
     }
 
     public double getPrice() {
@@ -121,26 +123,9 @@ public class Property {
     }
     //endregion
 
-    public static ArrayList<Property> propertiesAbovePrice(int price){
-        return null;
-    }
-    public static ArrayList<Property> propertiesForZIPCode(String zip){
-        return null;
-    }
-
-    public static ArrayList<Property> propertiesSoldAfter(LocalDate date){
-        return null;
-    }
-
-    public static ArrayList<Property> lastPropertiesSold(int amount) {
-        return null;
-    }
-
-    public static Property findCheapest(){
-        return null;
-    }
-
-    public static ArrayList<Property> Read(Path path){
-        return null;
+    @Override
+    public String toString() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MMM/yyyy", Locale.US);
+        return "ZipCode: " + zip + "\nPrice: " + price + "\nDate sold: " + saleDate.format(formatter);
     }
 }
