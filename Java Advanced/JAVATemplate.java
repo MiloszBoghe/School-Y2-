@@ -159,16 +159,21 @@ MultiThreading{
 		private Path filePath;
 		private List<Property> properties;
 		
+		//constructor
 		public Writer(String filename, List<Property> properties) {
 			this.filePath = Paths.get(System.getProperty("user.dir")).resolve("src/main/resources/" + filename);
 			this.properties = properties;
 		}
+		
+		
 		//Bij runnable moet je in je main klasse een Thread maken met als constructor
 		//het Object dat je wil multithreaden.
 		 public static void main(String[] args) {
 			Thread Writer = new Thread(new Writer(".........."));
 			Writer.start();
 		 }
+		 
+		 
 		 //writer.start() zal dan de run() methode oproepen. GEBRUIK GEEN .RUN().
 		@Override
 		public void run() {
@@ -184,14 +189,15 @@ MultiThreading{
 			} catch (IOException ex) {
 				ex.printStackTrace();
 			}
-		}	 
+		} 
 	}
+	
 	//Bij Thread:
 	//als een klasse Thread extend dan kan je de methode .start() erop uitvoeren.
 	//deze methode zal de .run() methode in de klasse runnen , met multithreading.
 	//dus om dit te gebruiken moet je in main klasse ook nog een object van deze klasse maken en dan .start():
 	public static void main(String[] args) {
-			Writer writer = new Writer("output.txt", [een of andere list] ));
+			Writer writer = new Writer("output.txt", [een of andere list] );
 			Writer.start();
 	}
 	
@@ -220,8 +226,9 @@ MultiThreading{
 			}
 		}
 	}
-	
+
 }
+
 	
 	
 	

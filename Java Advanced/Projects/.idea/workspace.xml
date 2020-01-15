@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/Writer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JAVATemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVATemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HerhalingsOefening/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HerhalingsOefening/App.class" afterDir="false" />
-    </list>
+    <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +201,7 @@
       <workItem from="1576425505568" duration="32000" />
       <workItem from="1578565014607" duration="4864000" />
       <workItem from="1578577843760" duration="34000" />
-      <workItem from="1579094872382" duration="15589000" />
+      <workItem from="1579094872382" duration="15832000" />
     </task>
     <servers />
   </component>
