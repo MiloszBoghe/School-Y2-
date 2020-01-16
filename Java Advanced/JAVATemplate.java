@@ -63,34 +63,22 @@ File Reading/Writing{
 	
 	//BufferedWriter gebruik:
 		public static void main(String[] args) {
-			Path path = Paths.get("MyFile.txt"); 
+			Path path = Paths.get(System.getProperty("user.dir)).resolve("src/main/resources/myfile.txt"); 
 			try(BufferedWriter writer = Files.newBufferedWriter(path)) {
 				writer.write("test");
 			} 
 			catch (IOException ex) {
-				System.out.println("Oops, something went wrong!"); System.out.println(ex.getMessage());
+				System.out.println(ex.getMessage());
 			} 
 		}
 	
-	
-	//BufferedWriter Append:
-	    boolean exists = Files.exists(errorFile); //Checkt of het bestand bestaat
-        File file = new File(errorFile.toString()); //maak een file
-        BufferedWriter bw = null; //initializatie
-        FileWriter fw = null; //initializatie
-        try {
-            fw = new FileWriter(file, exists); //if(exists){ append } else { write }
-            bw = new BufferedWriter(fw); // hangt van 
-
+	//BufferedWriter with Append or create, depending if file exists.
+		Path path = Paths.get(System.getProperty("user.dir)).resolve("src/main/resources/myfile.txt"); 
+	    try (BufferedWriter writer = Files.newBufferedWriter(path, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
+            writer.append(message);
+            writer.newLine();
         } catch (IOException ex) {
-			ex.getMessage();
-        } finally {
-            try {
-                bw.close();
-                fw.close();
-            } catch (IOException ex2) {
-				ex2.getMessage();
-            }
+            ex.getMessage();
         }
 
 	}

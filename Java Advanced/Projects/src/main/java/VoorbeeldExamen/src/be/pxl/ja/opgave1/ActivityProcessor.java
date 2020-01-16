@@ -2,7 +2,9 @@ package VoorbeeldExamen.src.be.pxl.ja.opgave1;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.OpenOption;
 import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -47,9 +49,8 @@ public class ActivityProcessor {
                 }
             } catch (IOException ex) {
                 ex.printStackTrace();
-            }
-            catch(DateTimeParseException ex2){
-                writeError(errorFile,"Wrongly parsed date!");
+            } catch (DateTimeParseException ex2) {
+                writeError(errorFile, "Wrongly parsed date!");
             }
 
         } else if (activityFile.toString().contains("endomodo")) {
@@ -77,12 +78,10 @@ public class ActivityProcessor {
                 }
             } catch (IOException ex) {
                 System.out.println(ex.getMessage());
-            }
-            catch (IllegalArgumentException ex2){
-                writeError(errorFile,"Wrong type.");
-            }
-            catch(DateTimeParseException ex3){
-                writeError(errorFile,"Wrongly parsed date!");
+            } catch (IllegalArgumentException ex2) {
+                writeError(errorFile, "Wrong type.");
+            } catch (DateTimeParseException ex3) {
+                writeError(errorFile, "Wrongly parsed date!");
             }
 
         } else {
@@ -94,45 +93,37 @@ public class ActivityProcessor {
 
 
     private void writeError(Path errorFile, String message) {
-        boolean exists = Files.exists(errorFile);
-        File file = new File(errorFile.toString());
-        BufferedWriter writer = null;
-        FileWriter fw = null;
+        //if folder doesn't exist, create folder.
         try {
             if (!Files.exists(errorFile.getParent())) {
                 Files.createDirectory(errorFile.getParent());
-                writer = new BufferedWriter(Files.newBufferedWriter(errorFile));
-            } else {
-                fw = new FileWriter(file, exists);
-                writer = new Files.newBufferedWriter();
-                writer.newLine();
             }
-            writer.append(message);
         } catch (IOException ex) {
-            ex.printStackTrace();
-        } finally {
-            try {
-                writer.close();
-                fw.close();
-            } catch (IOException ex) {
-                System.out.println(ex.getMessage());
-            }
+            ex.getMessage();
+        }
+
+        //create writer, allow appends.
+        try (BufferedWriter writer = Files.newBufferedWriter(errorFile, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
+            writer.append(message);
+            writer.newLine();
+        } catch (IOException ex2) {
+            ex2.getMessage();
         }
     }
 
     private void addPoints(ActivityType type, String customerNumber, double distance) {
         Customer customer = customerRepository.getByCustomerNumber(customerNumber);
-        customer.setPoints((int) (customer.getPoints()+getPoints(type,distance)));
+        customer.setPoints((int) (customer.getPoints() + getPoints(type, distance)));
     }
 
-    public static double getPoints(ActivityType type, double distance){
+    public static double getPoints(ActivityType type, double distance) {
         switch (type) {
             case RIDING:
                 return (ActivityType.RIDING.getPointsPerKm() * distance);
             case RUNNING:
                 return (ActivityType.RUNNING.getPointsPerKm() * distance);
             case SWIMMING:
-                return(ActivityType.SWIMMING.getPointsPerKm() * (distance / 1000));
+                return (ActivityType.SWIMMING.getPointsPerKm() * (distance / 1000));
         }
         return 0;
     }
