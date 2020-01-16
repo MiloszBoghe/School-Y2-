@@ -20,10 +20,34 @@ Stream (filter, limit, min, max){
 }
 	
 
+Working with Maps{
+	//Een map is zoals een Dictionary in C#.
+	//Dus je hebt een Value en een key.
+	//vb:
+	private Map<String, Customer> customers = new HashMap<>();
+	
+	//om hier gegevens uit te halen:
+	//.get(key) 
+	customers.get(id);
+	
+	//Dit zal dus de customer halen met als key dit id.
+	//om alle values op te halen of alle keys op te halen kunnen we streams en collect gebruiken
+	//dan krijg je dus een ArrayList<Customer> of ArrayList<??> van de key type:
+	customers.values().stream().collect(Collectors.toList());
+	customers.keySet().stream().collect(Collectors.toList());
+	
+	
+	
+	
+	
+	
+}
+
+
 File Reading/Writing{
 
 	BufferedReader + BufferedWriter{
-	//BufferedReader gebruik:
+	//BufferedReader gebruik: 
 	   try (BufferedReader reader = Files.newBufferedReader(p)) {
 			String line = null;
 			while ((line = reader.readLine()) != null) {
@@ -38,7 +62,6 @@ File Reading/Writing{
 	}
 	
 	//BufferedWriter gebruik:
-	public class ReadFile {
 		public static void main(String[] args) {
 			Path path = Paths.get("MyFile.txt"); 
 			try(BufferedWriter writer = Files.newBufferedWriter(path)) {
@@ -48,6 +71,28 @@ File Reading/Writing{
 				System.out.println("Oops, something went wrong!"); System.out.println(ex.getMessage());
 			} 
 		}
+	
+	
+	//BufferedWriter Append:
+	    boolean exists = Files.exists(errorFile); //Checkt of het bestand bestaat
+        File file = new File(errorFile.toString()); //maak een file
+        BufferedWriter bw = null; //initializatie
+        FileWriter fw = null; //initializatie
+        try {
+            fw = new FileWriter(file, exists); //if(exists){ append } else { write }
+            bw = new BufferedWriter(fw); // hangt van 
+
+        } catch (IOException ex) {
+			ex.getMessage();
+        } finally {
+            try {
+                bw.close();
+                fw.close();
+            } catch (IOException ex2) {
+				ex2.getMessage();
+            }
+        }
+
 	}
 	
 	

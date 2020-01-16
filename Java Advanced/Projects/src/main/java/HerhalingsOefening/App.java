@@ -58,7 +58,6 @@ public class App{
         System.out.println(cheapest);
         */
         //endregion
-
     }
 
     public static ArrayList<Property> propertiesAbovePrice(int price) {

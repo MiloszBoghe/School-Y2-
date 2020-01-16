@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="" />
+    <list default="true" id="cc373a41-e01c-4fba-9979-cea895a7a1a8" name="Default Changelist" comment="java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/TestApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVATemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVATemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rekening.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HerhalingsOefening/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/opgave_sacramento_homes.pdf" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,24 +49,19 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40674156" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="be.pxl.ja.Week4.HerhalingsOef.Classes" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Satan\Desktop\School\Java Advanced\Projects\src\main\resources" />
+      <recent name="C:\Users\Satan\Desktop\School\Java Advanced\Projects\src\main\java\VoorbeeldExamen" />
+      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\resources" />
+      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja\Week8\Oefening1" />
+      <recent name="C:\Users\11800460\Desktop\School\Java Advanced\Projects\src\main\java\be\pxl\ja\Week4\HerhalingsOef" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="be.pxl.ja.Week4.HerhalingsOef" />
       <recent name="be.pxl.ja.Week3.Opgave1.Opgave_a" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\resources" />
-      <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja\Week8\Oefening1" />
-      <recent name="C:\Users\11800460\Desktop\School\Java Advanced\Projects\src\main\java\be\pxl\ja\Week4\HerhalingsOef" />
-      <recent name="C:\Users\11800460\Desktop\Java Advanced\Projects\src\main\java\be\pxl\ja\Week2\Oefening1" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="be.pxl.ja.Week8.demo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\main\java\be\pxl\ja" />
@@ -67,6 +69,12 @@
       <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\test\java\be\pxl\ja\Week6\lambda_expressies\opdracht2" />
       <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\test\java\be\pxl\ja\Week6\lambda_expressies\opdracht1" />
       <recent name="C:\Users\11800460\Desktop\School-Y2-\Java Advanced\Projects\src\test\java\be\pxl\ja\Week6" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.pxl.ja.Week8.demo" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.pxl.ja.Week4.HerhalingsOef.Classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -81,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App (3)">
+  <component name="RunManager" selected="Application.Opgave1">
     <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.pxl.ja.AdventOfCode.Ex2.App" />
       <module name="UnitTestDemo" />
@@ -108,7 +116,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HerhalingsOefening.App" />
+      <module name="Projects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.pxl.ja.AdventOfCode.Ex1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HerhalingsOefening.App" />
       <module name="Projects" />
       <extension name="coverage">
@@ -121,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.pxl.ja.AdventOfCode.Ex1.App" />
-      <module name="UnitTestDemo" />
+    <configuration name="Opgave1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VoorbeeldExamen.src.be.pxl.ja.opgave1.Opgave1" />
+      <module name="Projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.pxl.ja.AdventOfCode.Ex1.*" />
+          <option name="PATTERN" value="VoorbeeldExamen.src.be.pxl.ja.opgave1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App (3)" />
+        <item itemvalue="Application.Opgave1" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.Talker" />
         <item itemvalue="Application.App (2)" />
         <item itemvalue="Application.App (1)" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -202,6 +223,8 @@
       <workItem from="1578565014607" duration="4864000" />
       <workItem from="1578577843760" duration="34000" />
       <workItem from="1579094872382" duration="15832000" />
+      <workItem from="1579114377205" duration="494000" />
+      <workItem from="1579114893554" duration="17521000" />
     </task>
     <servers />
   </component>
