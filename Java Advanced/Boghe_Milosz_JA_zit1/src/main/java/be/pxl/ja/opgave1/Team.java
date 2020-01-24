@@ -41,7 +41,6 @@ public class Team {
                 throw new PositionFullException("Position is full.");
             }
         }
-
     }
 
     public boolean isFull() {

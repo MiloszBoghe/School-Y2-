@@ -30,7 +30,7 @@ public class PositionTest {
     }
 
     @Test
-    public void testAddPlayerThrowsExceptionWhenFull() throws PositionFullException {
+    public void testAddPlayerThrowsExceptionWhenFull(){
         if(pos.isFull()){
             Assertions.assertThrows(PositionFullException.class, () -> pos.addPlayer(new Defender(testData)));
         }
