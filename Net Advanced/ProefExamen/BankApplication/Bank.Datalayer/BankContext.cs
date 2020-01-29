@@ -19,10 +19,11 @@ namespace Bank.Datalayer
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<City>().HasKey(z => z.ZipCode);
-            //relatie account-customer
+            //pk account
+            modelBuilder.Entity<Account>().HasKey(a => a.Id);
+            //relatie account-customer + pk customer + fk account
             modelBuilder.Entity<Account>()
-                        .HasOne(a => a.customer)
+                        .HasOne(a => a.Customer)
                         .WithMany(c => c.Accounts)
                         .HasForeignKey(a => a.CustomerId)
                         .HasPrincipalKey(c => c.CustomerId);
