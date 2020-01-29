@@ -440,7 +440,7 @@ EntityFramework{
 		
 		One to many{
 			//Extra property maken in de domain klassen
-			//In de "one" klasse --> [Object] Object:
+			//In de klasse die "one" van iets heeft --> [Object] Object:
 			public class Post
 			{
 				public int PostId { get; set; }
@@ -450,7 +450,7 @@ EntityFramework{
 				public int BlogId { get; set; }
 				public Blog Blog { get; set; }
 			}
-			//In degene met many --> ICollection<[WatHijVeelHeeft]>:
+			//In de klasse met many van iets --> ICollection<[WatHijVeelHeeft]>:
 			public class Blog
 			{
 				public int BlogId { get; set; }
@@ -461,15 +461,18 @@ EntityFramework{
 
 
 			//Dan kunnen we in de OnModelCreating klasse:
-			protected override void OnModelCreating(ModelBuilder modelBuilder)
+			//deze staat in de context klasse:
+			public class BankContext : DbContext
 			{
-				modelBuilder.Entity<Post>()
-					.HasOne(a => a.Blog)
-					.WithMany(b => b.Posts)
-					.HasForeignKey(c => c.BlogId)
-					.HasPrincipalKey(d => d.Url);
+				protected override void OnModelCreating(ModelBuilder modelBuilder)
+				{
+					modelBuilder.Entity<Post>()
+						.HasOne(a => a.Blog)
+						.WithMany(b => b.Posts)
+						.HasForeignKey(c => c.BlogId)
+						.HasPrincipalKey(d => d.Url);
+				}
 			}
-		
 		}
 		
 		

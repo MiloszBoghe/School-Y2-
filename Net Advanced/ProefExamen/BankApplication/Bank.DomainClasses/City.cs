@@ -3,7 +3,10 @@
 namespace Bank.DomainClasses
 {
     public class City
-    {        
-        // TODO: vul deze klasse aan
+    {
+        // Done: vul deze klasse aan
+        public int ZipCode { get; set; }
+        public string Name { get; set; }
+        public List<Customer> Customers { get; set; }
     }
 }

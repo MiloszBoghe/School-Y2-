@@ -1,4 +1,4 @@
-USE [BankDB_EF]
+USE [BankDB]
 GO
 
 BEGIN TRANSACTION

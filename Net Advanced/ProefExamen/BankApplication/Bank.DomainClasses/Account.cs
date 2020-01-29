@@ -6,6 +6,12 @@ namespace Bank.DomainClasses
 {
     public class Account
     {
-        // TODO: vul deze klasse aan
+        // DONE: vul deze klasse aan
+        public int Id { get; set; }
+        public string AccountNumber { get; set; }
+        public decimal Balance { get; set; }
+        public AccountType AccountType { get; set; }
+        public int CustomerId { get; set; }
+        public Customer Customer { get; set; }
     }
 }
