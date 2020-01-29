@@ -1,0 +1,40 @@
+﻿<Application x:Class="Exercise11.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Exercise11"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ControlTemplate x:Key="triangularButton" TargetType="{x:Type Button}">
+            <Grid Name="gridTriangle">
+                <Grid.RenderTransformOrigin>
+                    <Point X="0.5" Y="0.5"></Point>
+                </Grid.RenderTransformOrigin>
+                <Grid.RenderTransform>
+                    <RotateTransform x:Name="rotation">
+
+                    </RotateTransform>
+                </Grid.RenderTransform>
+                <Polygon Stretch="Fill" Fill="LightGray">
+                    <Polygon.Points>
+                        <Point X="0" Y="50"></Point>
+                        <Point X="50" Y="0"></Point>
+                        <Point X="100" Y="50"></Point>
+                    </Polygon.Points>
+                </Polygon>
+                <ContentPresenter Margin="0,0,0,10" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <EventTrigger RoutedEvent="Button.Click">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Duration="0:0:0:0.25" From="0.0" To="360.0" 
+                                             Storyboard.TargetName="rotation" 
+                                             Storyboard.TargetProperty="Angle"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>
+ 

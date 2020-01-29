@@ -1,0 +1,9 @@
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Data\bin\Debug\Lottery.Data.dll.config
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Data\bin\Debug\Lottery.Data.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Data\bin\Debug\Lottery.Data.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Data\bin\Debug\Lottery.Domain.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Data\bin\Debug\Lottery.Domain.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Data\obj\Debug\Lottery.Data.csprojAssemblyReference.cache
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Data\obj\Debug\Lottery.Data.csproj.CopyComplete
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Data\obj\Debug\Lottery.Data.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Data\obj\Debug\Lottery.Data.pdb

@@ -1,0 +1,15 @@
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\bin\Debug\Exercise12.exe.config
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\bin\Debug\Exercise12.exe
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\bin\Debug\Exercise12.pdb
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\MainWindow.g.cs
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\App.g.cs
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\Exercise12_MarkupCompile.cache
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\Exercise12_MarkupCompile.lref
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\MainWindow.baml
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\Exercise12.g.resources
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\Exercise12.Properties.Resources.resources
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\Exercise12.csproj.GenerateResource.cache
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\Exercise12.csproj.CoreCompileInputs.cache
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\Exercise12.exe
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\Exercise12.pdb
+C:\Users\11800460\Source\Repos\Guts-DotNetAdvanced\Chapter2_WPF_Controls\Exercise12\obj\Debug\Exercise12.csprojAssemblyReference.cache

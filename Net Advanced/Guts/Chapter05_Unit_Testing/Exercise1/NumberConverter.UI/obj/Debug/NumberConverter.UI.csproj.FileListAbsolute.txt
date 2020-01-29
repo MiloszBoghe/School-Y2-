@@ -1,0 +1,30 @@
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\bin\Debug\NumberConverter.UI.exe.config
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\bin\Debug\NumberConverter.UI.exe
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\bin\Debug\NumberConverter.UI.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.csprojAssemblyReference.cache
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\MainWindow.g.cs
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\App.g.cs
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI_MarkupCompile.cache
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI_MarkupCompile.lref
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\MainWindow.baml
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.g.resources
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.Properties.Resources.resources
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.csproj.GenerateResource.cache
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.exe
+C:\Users\Satan\Desktop\School\Net Advanced\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.pdb
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\bin\Debug\NumberConverter.UI.exe.config
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\bin\Debug\NumberConverter.UI.exe
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\bin\Debug\NumberConverter.UI.pdb
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.csprojAssemblyReference.cache
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\MainWindow.g.cs
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\App.g.cs
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI_MarkupCompile.cache
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI_MarkupCompile.lref
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\MainWindow.baml
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.g.resources
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.Properties.Resources.resources
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.csproj.GenerateResource.cache
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.exe
+C:\Users\11800460\Desktop\Guts\Chapter5_Unit_Testing\Exercise1\NumberConverter.UI\obj\Debug\NumberConverter.UI.pdb

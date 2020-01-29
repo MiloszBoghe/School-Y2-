@@ -1,0 +1,15 @@
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\nunit.engine.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\nunit.engine.api.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\LinqExamples.Tests.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\LinqExamples.Tests.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\LinqExamples.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\nunit.framework.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\LinqExamples.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\nunit.framework.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\bin\Debug\nunit.framework.xml
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\obj\Debug\LinqExamples.Tests.csprojAssemblyReference.cache
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\obj\Debug\LinqExamples.Tests.csproj.CopyComplete
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\obj\Debug\LinqExamples.Tests.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples.Tests\obj\Debug\LinqExamples.Tests.pdb

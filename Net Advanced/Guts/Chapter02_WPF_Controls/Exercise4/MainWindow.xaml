@@ -1,0 +1,39 @@
+﻿<Window x:Class="Exercise4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercise4"
+        mc:Ignorable="d"
+        Title="Toggle and group" Height="350" Width="200">
+    <Window.Resources>
+        <Style TargetType="{x:Type ToggleButton}">
+            <Setter Property="Content" Value="Aan"></Setter>
+            <Setter Property="IsChecked" Value="True"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="False">
+                    <Setter Property="Content" Value="Uit"/>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="Content" Value="Aan"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Canvas Height="300" VerticalAlignment="Top" Width="190">
+        <ToggleButton Canvas.Left="19" Canvas.Top="23" Height="32" Width="49"/>
+        <GroupBox Header="Leeftijd" Width="100" Height="80" Canvas.Left="19" Canvas.Top="100">
+            <StackPanel>
+                <CheckBox Content="0-18" Height="20" IsChecked="True"/>
+                <CheckBox Content="19-50" Height="20"/>
+                <CheckBox Content="50-80" Height="20"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Geslacht" Width="100" Height="60" Canvas.Left="19" Canvas.Top="205">
+            <StackPanel>
+                <RadioButton Content="Man" IsChecked="True"/>
+                <RadioButton Content="Vrouw"/>
+            </StackPanel>
+        </GroupBox>
+    </Canvas>
+</Window>

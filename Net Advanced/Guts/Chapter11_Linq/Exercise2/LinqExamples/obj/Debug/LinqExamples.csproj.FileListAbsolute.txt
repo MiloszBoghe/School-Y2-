@@ -1,0 +1,4 @@
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples\bin\Debug\LinqExamples.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples\bin\Debug\LinqExamples.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples\obj\Debug\LinqExamples.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter11_Linq\Exercise2\LinqExamples\obj\Debug\LinqExamples.pdb

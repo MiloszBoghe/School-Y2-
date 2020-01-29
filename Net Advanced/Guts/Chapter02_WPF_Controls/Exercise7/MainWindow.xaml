@@ -1,0 +1,41 @@
+﻿<Window x:Class="Exercise7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercise7"
+        mc:Ignorable="d"
+        Title="Color ListView" Height="300" Width="300">
+    <Window.Resources>
+        <Style TargetType="{x:Type StackPanel}">
+            <Setter Property="Orientation" Value="Horizontal"/>
+        </Style>
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="Width" Value="20"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ListView>
+            <ListViewItem>
+                <ListViewItem.Content>
+                    <StackPanel>
+                        <Image Source="images/red.png"></Image>
+                        <TextBlock>Red</TextBlock>
+                    </StackPanel>
+                </ListViewItem.Content>
+            </ListViewItem>
+            <ListViewItem>
+                <StackPanel>
+                    <Image Source="images/yellow.png"></Image>
+                    <TextBlock>Yellow</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem>
+                <StackPanel>
+                    <Image Source="images/green.png"></Image>
+                    <TextBlock>Green</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+        </ListView>
+    </Grid>
+</Window>

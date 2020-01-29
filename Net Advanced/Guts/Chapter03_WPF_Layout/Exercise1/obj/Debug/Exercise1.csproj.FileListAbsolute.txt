@@ -1,0 +1,14 @@
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\bin\Debug\Exercise1.exe.config
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\bin\Debug\Exercise1.exe
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\bin\Debug\Exercise1.pdb
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\Exercise1.csprojAssemblyReference.cache
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\MainWindow.g.cs
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\App.g.cs
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\Exercise1_MarkupCompile.cache
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\Exercise1_MarkupCompile.lref
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\MainWindow.baml
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\Exercise1.g.resources
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\Exercise1.Properties.Resources.resources
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\Exercise1.csproj.GenerateResource.cache
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\Exercise1.exe
+C:\Users\11800460\Desktop\Guts\Chapter3_WPF_Layout\Exercise1\obj\Debug\Exercise1.pdb

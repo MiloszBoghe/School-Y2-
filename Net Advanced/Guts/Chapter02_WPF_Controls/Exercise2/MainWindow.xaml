@@ -1,0 +1,33 @@
+﻿<Window x:Class="Exercise2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercise2"
+        mc:Ignorable="d"
+        Title="Buttons with style" Height="350" Width="525">
+    <Window.Resources>
+        <Style x:Key="myStyle" TargetType="{x:Type Button}">
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush  StartPoint="1,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="Green"/>
+                        <GradientStop Offset=".5" Color="LimeGreen"/>
+                        <GradientStop Offset="1" Color="Green"/>
+                    </LinearGradientBrush>
+
+                </Setter.Value>
+            </Setter>
+            
+        </Style>
+            
+    </Window.Resources>
+
+    <Grid>
+        <Button Style="{StaticResource myStyle}" Content="Hello" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166" Margin="182,63,0,0" Height="30"/>
+        <Button Style="{StaticResource myStyle}" FontSize="22" Content="BIG BUTTON" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166" Margin="182,112,0,0" Height="30"/>
+        <Button Style="{StaticResource myStyle}" IsEnabled="False" Content="DISABLED" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166" Margin="182,156,0,0" Height="30"/>
+
+    </Grid>
+</Window>
