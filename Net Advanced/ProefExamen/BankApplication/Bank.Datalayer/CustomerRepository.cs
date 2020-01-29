@@ -1,4 +1,6 @@
 ﻿using Bank.DomainClasses;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -15,14 +17,16 @@ namespace Bank.Datalayer
 
         public ICollection<Customer> GetAll()
         {
-            // TODO: voeg de code toe om alle klanten op te halen
-            return null;
+            // DONE: voeg de code toe om alle klanten op te halen
+            return _context.Customers.Include(c => c.Accounts).ToList();
         }
 
         public void Add(Customer newCustomer)
         {
-            // TODO: voeg de code toe om een customer aan de database toe te voegen
+            // DONE: voeg de code toe om een customer aan de database toe te voegen
             // Let op: de aanpassing mag nog niet doorgevoerd worden in de database
+            if (_context.Customers.Contains(newCustomer)) throw new ArgumentException();
+            _context.Entry(newCustomer).State = EntityState.Added;
         }
 
         /// <summary>
@@ -32,13 +36,17 @@ namespace Bank.Datalayer
         /// <param name="source">A (possibly untracked) customer object from which the properties will be copied to the existing customer</param>
         public void UpdateCustomer(int customerId, Customer source)
         {
-            // TODO: voeg de code toe om een klant (met doorgegeven customerId) aan te passen
+            // DONE: voeg de code toe om een klant (met doorgegeven customerId) aan te passen
             // Let op: de aanpassing mag nog niet doorgevoerd worden in de database
+            Customer customer = _context.Customers.Find(customerId);
+            if (customer == null) throw new ArgumentException();
+            _context.Entry(customer).CurrentValues.SetValues(source);
         }
 
         public void Commit()
         {
-            // TODO: voeg code toe die de gedane aanpassingen doorvoert in de database
+            // DONE: voeg code toe die de gedane aanpassingen doorvoert in de database
+            _context.SaveChanges();
         }
     }
 }

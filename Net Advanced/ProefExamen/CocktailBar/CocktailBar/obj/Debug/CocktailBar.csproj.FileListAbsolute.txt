@@ -18,3 +18,23 @@ C:\Users\Satan\Desktop\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar
 C:\Users\Satan\Desktop\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar.exe
 C:\Users\Satan\Desktop\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar.pdb
 C:\Users\Satan\Desktop\ProefExamen\CocktailBar\CocktailBar\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\bin\Debug\CocktailBar.exe.config
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\bin\Debug\CocktailBar.exe
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\bin\Debug\CocktailBar.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\bin\Debug\CocktailBarData.dll
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\bin\Debug\CocktailBarData.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar.csprojAssemblyReference.cache
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\MainWindow.baml
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailDetailsWindow.g.cs
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\MainWindow.g.cs
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\App.g.cs
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar_MarkupCompile.cache
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar_MarkupCompile.lref
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailDetailsWindow.baml
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar.g.resources
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar.Properties.Resources.resources
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar.csproj.GenerateResource.cache
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar.csproj.CopyComplete
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar.exe
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailBar\obj\Debug\CocktailBar.pdb

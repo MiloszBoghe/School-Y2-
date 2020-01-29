@@ -30,12 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.EntityFrameworkCore, Version=2.2.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.EntityFrameworkCore.2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
     </Reference>
@@ -126,6 +120,15 @@
     <Compile Include="AccountRepository.cs" />
     <Compile Include="BankContext.cs" />
     <Compile Include="CustomerRepository.cs" />
+    <Compile Include="Migrations\20200129152615_initial.cs" />
+    <Compile Include="Migrations\20200129152615_initial.designer.cs">
+      <DependentUpon>20200129152615_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20200129163803_fx.cs" />
+    <Compile Include="Migrations\20200129163803_fx.designer.cs">
+      <DependentUpon>20200129163803_fx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\BankContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CityRepository.cs" />
   </ItemGroup>
@@ -139,5 +142,6 @@
       <Name>Bank.DomainClasses</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

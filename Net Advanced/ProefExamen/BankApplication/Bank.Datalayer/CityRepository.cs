@@ -15,8 +15,7 @@ namespace Bank.Datalayer
 
         public IList<City> GetAllCities()
         {
-            // TODO: voeg de code toe om alle cities uit de database te lezen
-            return null;
+            return _context.Cities.ToList();
         }
     }
 }

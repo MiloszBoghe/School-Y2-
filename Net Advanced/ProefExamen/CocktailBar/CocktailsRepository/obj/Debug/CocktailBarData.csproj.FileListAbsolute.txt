@@ -3,3 +3,8 @@ C:\Users\Satan\Desktop\ProefExamen\CocktailBar\CocktailsRepository\bin\Debug\Coc
 C:\Users\Satan\Desktop\ProefExamen\CocktailBar\CocktailsRepository\obj\Debug\CocktailBarData.csprojAssemblyReference.cache
 C:\Users\Satan\Desktop\ProefExamen\CocktailBar\CocktailsRepository\obj\Debug\CocktailBarData.dll
 C:\Users\Satan\Desktop\ProefExamen\CocktailBar\CocktailsRepository\obj\Debug\CocktailBarData.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailsRepository\bin\Debug\CocktailBarData.dll
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailsRepository\bin\Debug\CocktailBarData.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailsRepository\obj\Debug\CocktailBarData.csprojAssemblyReference.cache
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailsRepository\obj\Debug\CocktailBarData.dll
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\CocktailBar\CocktailsRepository\obj\Debug\CocktailBarData.pdb

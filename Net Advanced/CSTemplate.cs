@@ -1,4 +1,5 @@
 WPF{
+	
 	LISTVIEW (inc binding){
 		<ListView x:Name="cocktailstListView" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="37,111,23,67" Width="700" MouseDoubleClick="CocktailstListView_MouseDoubleClick">
 			<ListView.View>
@@ -12,6 +13,7 @@ WPF{
 			</ListView.View>
 		</ListView>
 	}
+	
 	
 	LinearGradientBrush:{
 		<LinearGradientBrush>
@@ -45,6 +47,128 @@ WPF{
 	</Window.Resources>
 	<Image Style="{StaticResource buttonStyle}" x:Name="test" Grid.Column="1" Grid.Row="2" Margin="5" Source="{Binding Path=Name, Mode=TwoWay, Converter={StaticResource convertImage}}"/>
 	}
+
+
+	Event (storyboard){
+		<Grid>
+			<Rectangle x:Name="myRectangle" Width="100" Height="100">
+				<Rectangle.Triggers>
+					<EventTrigger RoutedEvent="Rectangle.Loaded">
+						<BeginStoryboard>
+							<Storyboard>
+								<ColorAnimation
+									Storyboard.TargetName="rectangleBrush"
+									Storyboard.TargetProperty="Color"
+									From="Blue" To="Red" Duration="0:0:2"
+									AutoReverse="True" RepeatBehavior="Forever"/>
+							</Storyboard>
+						</BeginStoryboard>
+					</EventTrigger>
+				</Rectangle.Triggers>
+				
+				<Rectangle.Fill>
+					<SolidColorBrush x:Name="rectangleBrush" Color="Red"></SolidColorBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+		</Grid>
+	}
+
+
+	Dockpanel{
+		<Grid>
+			<DockPanel>
+				<Button Content="Top" DockPanel.Dock="Top"/>
+				<Button Content="Bottom" DockPanel.Dock="Bottom"/>
+				<Button Content="Left" DockPanel.Dock="Left"/>
+				<Button Content="Right" DockPanel.Dock="Right"/>
+				<Button Content="Fill"/>
+			</DockPanel>
+		</Grid>	
+	}
+
+
+
+}
+
+
+
+Test{
+	
+	Hele testklasse voorbeeld{
+		[TestFixture]
+		public class AccountManagerTests
+		{
+			private AccountManager accountManager;
+			private Account fromYouthAccount;
+			private Account fromOtherAccount;
+			private Account toAccount;
+
+			[SetUp]
+			public void SetUp()
+			{
+				accountManager = new AccountManager();
+
+				toAccount = new Account()
+				{
+					Balance = 500
+				};
+			}
+
+			[Test]
+			public void ShouldCorrectlyTransferMoneyWhenBalanceIsSufficient()
+			{
+				CreateOtherAccount();
+				accountManager.TransferMoney(fromOtherAccount, toAccount, 1000);
+				Assert.That(fromOtherAccount.Balance, Is.EqualTo(1000));
+				Assert.That(toAccount.Balance, Is.EqualTo(1500));
+			}
+
+			[Test]
+			public void ShouldThrowInvalidTransferExceptionWhenBalanceIsInsufficient()
+			{
+				CreateOtherAccount();
+				Assert.Throws<InvalidTransferException>(() => accountManager.TransferMoney(fromOtherAccount, toAccount, 5000));
+			}
+
+			[Test]
+			public void ShouldThrowInvalidTransferExceptionForYouthAccountWhenAmountIsBiggerThan1000()
+			{
+				CreateYouthAccount();
+				Assert.Throws<InvalidTransferException>(() => accountManager.TransferMoney(fromYouthAccount, toAccount, 2000));
+			}
+
+			public void CreateYouthAccount()
+			{
+				fromYouthAccount = new Account()
+				{
+					Balance = 3000,
+					AccountType = AccountType.YouthAccount
+				};
+			}
+
+			public void CreateOtherAccount()
+			{
+				fromOtherAccount = new Account()
+				{
+					Balance = 2000
+				};
+			}
+		}
+	}
+	
+	
+	
+	Assert Equal{
+		//Assert.That(METHODE, Is.EqualTo(UITKOMST));
+		Assert.That(fromOtherAccount.Balance, Is.EqualTo(1000));
+	}
+	
+	Exception{
+		//Om te kijken of een methode een specifieke exception throwed:
+		//Assert.Throws<EXCEPTIONTYPE>(() => METHODE);
+		Assert.Throws<InvalidTransferException>(() => accountManager.TransferMoney(fromYouthAccount, toAccount, 2000));
+	}
+	
 }
 
 
@@ -166,6 +290,7 @@ Converter{
 }
 
 }
+
 
 
 
@@ -337,25 +462,10 @@ Databases{
 
 
 
-	Linq{
-		
-		Join{
-			//voegt een list samen met komma's tussen elk element
-			string.Join(",", list)
-		}
-		
-		OrderBy{
-			//sorteert een list op wat je wil..
-			list.OrderBy(a => a.[PropertyNaam]) //sorteert op die property.	
-		}
-		
-		Select{
-			//selecteert alleen een bepaalde property uit elk element van de list
-			list.Select(n=>n.Number) //Pakt alleen het "Number"
-		}
-	}
+
 
 }
+
 
 
 
@@ -386,6 +496,7 @@ EntityFramework{
 		}
 	
 	}
+	
 	
 	Migrations{
 		//Volg deze stappen:
@@ -515,6 +626,7 @@ EntityFramework{
 	
 }
 		
+		
 	
 	modelBuilder (Required, PK, ...){
 		//Om een property required te maken:
@@ -526,12 +638,83 @@ EntityFramework{
 			modelBuilder.Entity<Blog>().HasKey(b => b.Url);
 		}
 	}
+
+
+	Add{
+		public void Add(Customer newCustomer)
+		{
+			if (_bankContext.Customers.Contains(newCustomer)) throw new ArgumentException();
+			_bankContext.Entry(newCustomer).State = EntityState.Added;
+			_bankContext.SaveChanges();
+		}
+	}
+
+
+	Update{
+		//KIES 1:
+		public void Update(Customer existingCustomer)
+		{
+			if (!_bankContext.Customers.Contains(existingCustomer)) throw new ArgumentException();
+			_bankContext.Update(existingCustomer);
+			_bankContext.SaveChanges();
+		}
+	
+	
+		public void UpdateCustomer(int customerId, Customer source)
+		{
+			Customer customer = _context.Customers.Find(customerId);
+			if (customer == null)  throw new ArgumentException() ;
+			_context.Entry(customer).CurrentValues.SetValues(source);
+		}
+
+	}
+	
+
+	GetAll{
+		public IList<City> GetAll()
+        {
+           return _bankContext.Cities.ToList();
+        }
+		
+		//Het kan zijn dat je bijvoorbeeld een lijst van accounts ook moet hebben, waar geen kolom voor bestaat
+		//in je database. Maar wel een collectie in je domain klasse. Om deze mee te nemen moet je een include doen:
+        public ICollection<Customer> GetAll()
+        {
+            // DONE: voeg de code toe om alle klanten op te halen
+            return _context.Customers.Include(c => c.Accounts).ToList();
+        }
+	}
+	
+
 }
 
 
 
 
+Linq{
+	
+	Join{
+		//voegt een list samen met komma's tussen elk element
+		string.Join(",", list)
+	}
+	
+	OrderBy{
+		//sorteert een list op wat je wil..
+		list.OrderBy(a => a.[PropertyNaam]) //sorteert op die property.	
+	}
+	
+	Select{
+		//selecteert alleen een bepaalde property uit elk element van de list
+		list.Select(n=>n.Number) //Pakt alleen het "Number"
+	}
+	
+	//Get maar met de one to many erbij ofzo:
+	public IList<Customer> GetAllWithAccounts()
+	{
+		return _bankContext.Customers.Include(c=>c.Accounts).ToList();
+	}
 
+}
 
 
 
