@@ -3,3 +3,8 @@ C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.DomainClasses\bin\Debug\
 C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.DomainClasses\obj\Debug\Bank.DomainClasses.csprojAssemblyReference.cache
 C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.DomainClasses\obj\Debug\Bank.DomainClasses.dll
 C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.DomainClasses\obj\Debug\Bank.DomainClasses.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.DomainClasses\bin\Debug\Bank.DomainClasses.dll
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.DomainClasses\bin\Debug\Bank.DomainClasses.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.DomainClasses\obj\Debug\Bank.DomainClasses.dll
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.DomainClasses\obj\Debug\Bank.DomainClasses.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.DomainClasses\obj\Debug\Bank.DomainClasses.csprojAssemblyReference.cache

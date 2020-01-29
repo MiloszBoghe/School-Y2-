@@ -6,3 +6,11 @@ C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Business\obj\Debug\Bank.
 C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Business\obj\Debug\Bank.Business.csproj.CopyComplete
 C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Business\obj\Debug\Bank.Business.dll
 C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Business\obj\Debug\Bank.Business.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.Business\bin\Debug\Bank.Business.dll
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.Business\bin\Debug\Bank.Business.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.Business\bin\Debug\Bank.DomainClasses.dll
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.Business\bin\Debug\Bank.DomainClasses.pdb
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.Business\obj\Debug\Bank.Business.csprojAssemblyReference.cache
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.Business\obj\Debug\Bank.Business.csproj.CopyComplete
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.Business\obj\Debug\Bank.Business.dll
+C:\Users\Satan\Desktop\School\Net Advanced\ProefExamen\BankApplication\Bank.Business\obj\Debug\Bank.Business.pdb

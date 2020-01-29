@@ -10,7 +10,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="36,45,0,0" TextWrapping="Wrap" Text="From:" FontWeight="Bold" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="138,44,0,0" TextWrapping="Wrap" Text="To:" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="266,44,0,0" TextWrapping="Wrap" Text="Amount:" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="FromAccountTextBlock" HorizontalAlignment="Left" Margin="36,81,0,0" TextWrapping="Wrap" Text="From account no." VerticalAlignment="Top"/>
+        <TextBlock x:Name="FromAccountTextBlock" HorizontalAlignment="Left" Margin="36,81,0,0" TextWrapping="Wrap" Text="{Binding Path=AccountNumber}" VerticalAlignment="Top"/>
         <ComboBox x:Name="ToAccountComboBox" SelectedValuePath="Id" DisplayMemberPath="AccountNumber"
                   HorizontalAlignment="Left" Margin="138,78,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBox x:Name="AmountTextBox" HorizontalAlignment="Left" Margin="266,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="70"/>
