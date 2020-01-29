@@ -7,3 +7,12 @@ C:\Users\11800460\Desktop\Guts\Chapter4_WPF_Databinding\TestUtils\obj\Debug\Test
 C:\Users\11800460\Desktop\Guts\Chapter4_WPF_Databinding\TestUtils\obj\Debug\TestUtils.csproj.CopyComplete
 C:\Users\11800460\Desktop\Guts\Chapter4_WPF_Databinding\TestUtils\obj\Debug\TestUtils.dll
 C:\Users\11800460\Desktop\Guts\Chapter4_WPF_Databinding\TestUtils\obj\Debug\TestUtils.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter04_WPF_Databinding\TestUtils\bin\Debug\TestUtils.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter04_WPF_Databinding\TestUtils\bin\Debug\TestUtils.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter04_WPF_Databinding\TestUtils\bin\Debug\nunit.framework.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter04_WPF_Databinding\TestUtils\bin\Debug\nunit.framework.pdb
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter04_WPF_Databinding\TestUtils\bin\Debug\nunit.framework.xml
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter04_WPF_Databinding\TestUtils\obj\Debug\TestUtils.csprojAssemblyReference.cache
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter04_WPF_Databinding\TestUtils\obj\Debug\TestUtils.csproj.CopyComplete
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter04_WPF_Databinding\TestUtils\obj\Debug\TestUtils.dll
+C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter04_WPF_Databinding\TestUtils\obj\Debug\TestUtils.pdb
