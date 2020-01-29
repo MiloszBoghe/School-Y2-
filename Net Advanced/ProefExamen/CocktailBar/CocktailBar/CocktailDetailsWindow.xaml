@@ -1,0 +1,78 @@
+﻿<Window x:Class="CocktailBar.CocktailDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:converters="clr-namespace:CocktailBar.Converters"
+        mc:Ignorable="d"
+        Title="{Binding Path=Name, Mode=OneWay}" Height="auto" Width="678.824"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <converters:ImageConverter x:Key="convertImage"/>
+        <Style x:Key="transformImage" TargetType="{x:Type Image}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="1.7" ScaleY="1.7"></ScaleTransform>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="RenderTransformOrigin">
+                        <Setter.Value>
+                            <Point X="1" Y="1"></Point>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="GreenYellow" Offset="0"/>
+                <GradientStop Color="Green" Offset="0.25"/>
+                <GradientStop Color="Yellow" Offset="0.5"/>
+                <GradientStop Color="Green" Offset="0.75"/>
+                <GradientStop Color="GreenYellow" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1.*"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontWeight="Bold"/>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="0">
+            <TextBlock Margin="10,0,10,0" Text="Beschrijving" FontSize="18" FontWeight="Bold" />
+            <TextBlock Margin="10,0,10,0" Text="" TextWrapping="Wrap" />
+        </StackPanel>
+        <StackPanel Margin="10,0,10,0" Orientation="Vertical" Grid.Row="1" Grid.Column="1"  Grid.RowSpan="2">
+            <TextBlock Text="Ingrediënten" FontSize="18" FontWeight="Bold" />
+            <ListView x:Name="IngredientsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Path=IngredientName}" />
+                            <TextBlock Text=" " />
+                            <TextBlock x:Name="quantityTextBlock" Text="{Binding Path=Quantity}" />
+                            <TextBlock Text=" " />
+                            <TextBlock Text="{Binding Path=Unit}"/>
+                        </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="0" >
+            <TextBlock Margin="10,0,10,10" Text="Instructies"  FontSize="18" FontWeight="Bold" />
+            <TextBlock Margin="10,0,10,10" TextWrapping="Wrap"/>
+        </StackPanel>
+        <Image Style="{StaticResource transformImage}" x:Name="test" Grid.Column="1" Grid.Row="2" Margin="5" Source="{Binding Path=Name, Mode=TwoWay, Converter={StaticResource convertImage}}"/>
+    </Grid>
+</Window>

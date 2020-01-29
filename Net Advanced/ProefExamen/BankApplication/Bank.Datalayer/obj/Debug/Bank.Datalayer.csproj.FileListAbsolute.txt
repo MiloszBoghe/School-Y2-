@@ -1,0 +1,13 @@
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\bin\Debug\Bank.Datalayer.dll.config
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\bin\Debug\Bank.Datalayer.dll
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\bin\Debug\Bank.Datalayer.pdb
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\bin\Debug\Bank.DomainClasses.dll
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\bin\Debug\EntityFramework.dll
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\bin\Debug\Bank.DomainClasses.pdb
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\bin\Debug\EntityFramework.xml
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\obj\Debug\Bank.Datalayer.csprojAssemblyReference.cache
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\obj\Debug\Bank.Datalayer.csproj.CopyComplete
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\obj\Debug\Bank.Datalayer.dll
+C:\Users\Satan\Desktop\ProefExamen\BankApplication\Bank.Datalayer\obj\Debug\Bank.Datalayer.pdb

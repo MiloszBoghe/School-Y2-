@@ -1,0 +1,26 @@
+﻿<Window x:Class="CocktailBar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Cocktails"       
+        WindowStartupLocation="CenterScreen"
+        Height="300"
+        Width="auto"
+        Background="LimeGreen">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontWeight="Bold" Foreground="White" Margin="287,52,289,184">PXL Cocktailbar</TextBlock>
+        <ListView x:Name="cocktailstListView" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="37,111,23,35" Width="700" MouseDoubleClick="CocktailstListView_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Id" Width="40" DisplayMemberBinding="{Binding Path=Id, Mode=OneWay}"/>
+                        <GridViewColumn Header="Name" Width="60" DisplayMemberBinding="{Binding Path=Name, Mode=OneWay}"/>
+                        <GridViewColumn Header="Description" Width="600" DisplayMemberBinding="{Binding Path=Description, Mode=OneWay}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
