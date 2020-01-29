@@ -1,3 +1,54 @@
+WPF{
+	LISTVIEW (inc binding){
+		<ListView x:Name="cocktailstListView" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="37,111,23,67" Width="700" MouseDoubleClick="CocktailstListView_MouseDoubleClick">
+			<ListView.View>
+				<GridView>
+					<GridView.Columns>
+						<GridViewColumn Header="Id" Width="40" DisplayMemberBinding="{Binding Path=Id, Mode=OneWay}"/>
+						<GridViewColumn Header="Name" Width="60" DisplayMemberBinding="{Binding Path=Name, Mode=OneWay}"/>
+						<GridViewColumn Header="Description" Width="600" DisplayMemberBinding="{Binding Path=Description, Mode=OneWay}"/>
+					</GridView.Columns>
+				</GridView>
+			</ListView.View>
+		</ListView>
+	}
+	
+	LinearGradientBrush:{
+		<LinearGradientBrush>
+			<GradientStop Color="GreenYellow" Offset="0"/>
+			<GradientStop Color="Green" Offset="0.25"/>
+			<GradientStop Color="Yellow" Offset="0.5"/>
+			<GradientStop Color="Green" Offset="0.75"/>
+			<GradientStop Color="GreenYellow" Offset="1"/>
+		</LinearGradientBrush>
+	}
+	
+	//Resources gebruik:
+	RenderTransform { //vergroten/verkleinen van image.
+	<Window.Resources>
+		<Style x:Key="buttonStyle" TargetType="{x:Type Image}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="1.7" ScaleY="1.7"></ScaleTransform>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="RenderTransformOrigin">
+                        <Setter.Value>
+                            <Point X="1" Y="1"></Point>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+	</Window.Resources>
+	<Image Style="{StaticResource buttonStyle}" x:Name="test" Grid.Column="1" Grid.Row="2" Margin="5" Source="{Binding Path=Name, Mode=TwoWay, Converter={StaticResource convertImage}}"/>
+	}
+}
+
+
+
 Binding{
 	ComboBox{
 		//Stel itemsSource in op een List of Collection
@@ -149,7 +200,7 @@ Databases{
 		//In de ConnectionFactory.cs:
 			
 			//
-			internal static class ConnectionFactory
+			public class ConnectionFactory
 			{
 				public static SqlConnection CreateSqlConnection()
 				{
@@ -189,44 +240,81 @@ Databases{
 		
 		Get{
 			//
-			public static ObservableCollection<Album> GetAlbumsByGenre(int id){
+			public static List<CocktailIngredient> GetCocktailIngredients(int cocktailId)
+			{
+
 				SqlDataReader reader = null;
-				ObservableCollection<Album> albumList = new ObservableCollection<Album>();
-				SqlConnection connection = ConnectionFactory.CreateSqlConnection();
-				SqlParameter test = new SqlParameter();
-				test.parameterName = "@id";
-				test.value = id;
+				List<CocktailIngredient> cocktailIngredients = new List<CocktailIngredient>();
+				SqlConnection connection = ConnectionFactory.GetConnection();
 
+				string selectStatement =
+					"SELECT ci.CocktailId, ci.IngredientId, i.Name, ci.Quantity, i.unit " +
+					"FROM CocktailIngredients as ci " +
+					"INNER JOIN Ingredients as i " +
+					"ON ci.IngredientId=i.Id " +
+					"WHERE ci.CocktailId = @Cid ";
 
-            string selectStatement =
-				"select albumid, title, genreid, artistid, price " +
-				"From album " +
-				"where genreId = @id";
+				SqlCommand command = new SqlCommand();
+				command.Connection = connection;
+				command.Parameters.AddWithValue("@Cid", cocktailId);
+				command.CommandText = selectStatement;
+				
+				SqlCommand command = new SqlCommand(selectStatement, connection);
+				
+				//2 manieren voor while:
+				/* Ordinal manier: 
+				try
+				{ 
+					connection.Open();
+					reader = command.ExecuteReader();
 
-			SqlCommand command = new SqlCommand(selectStatement, connection);
+					int ingredientIdOrdinal = reader.GetOrdinal("IngredientId");
+					int nameOrdinal = reader.GetOrdinal("Name");
+					int quantityOrdinal = reader.GetOrdinal("Quantity");
+					int unitOrdinal = reader.GetOrdinal("Unit");
+
+					while (reader.Read())
+					{
+						CocktailIngredient cocktailIngredient = new CocktailIngredient()
+						{
+							CocktailId = cocktailId,
+							IngredientId = reader.GetInt32(ingredientIdOrdinal),
+							IngredientName = reader.IsDBNull(nameOrdinal) ? null : reader.GetString(nameOrdinal),
+							Quantity = reader.IsDBNull(quantityOrdinal) ? (decimal?)null : reader.GetDecimal(quantityOrdinal),
+							Unit = reader.IsDBNull(unitOrdinal) ? null : reader.GetString(unitOrdinal)
+						};
+						cocktailIngredients.Add(cocktailIngredient);
+					}
+				}
+				*/
+				//geen ordinals manier:
 				try
 				{
 					connection.Open();
 					reader = command.ExecuteReader();
-					int genreId = reader.GetOrdinal("GenreId");
+
 					while (reader.Read())
 					{
-						Album album = new Album()
+						CocktailIngredient ci = new CocktailIngredient()
 						{
-							GenreId = reader.GetInt32(genreId),
+							CocktailId = cocktailId,
+							IngredientId = Convert.ToInt32(reader["IngredientId"]),
+							IngredientName = Convert.ToString(reader["Name"]),
+							Quantity = reader["Quantity"] == DBNull.Value ? null : (decimal?)reader["Quantity"],
+							Unit = Convert.ToString(reader["Unit"])
 						};
-						albumList.Add(album);
+						cocktailIngredients.Add(ci);
 					}
 				}
+				
 				finally
 				{
 					reader?.Close();
 					connection?.Close();
 				}
-				return albumList;
-				}
-				//
+			return cocktailIngredients;
 			}
+		}
 		
 		
 		Add{
@@ -268,7 +356,6 @@ Databases{
 	}
 
 }
-
 
 
 
