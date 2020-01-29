@@ -708,12 +708,13 @@ Linq{
 		list.Select(n=>n.Number) //Pakt alleen het "Number"
 	}
 	
-	//Get maar met de one to many erbij ofzo:
-	public IList<Customer> GetAllWithAccounts()
-	{
-		return _bankContext.Customers.Include(c=>c.Accounts).ToList();
+	Include{
+		//Get maar met de one to many erbij ofzo:
+		public IList<Customer> GetAllWithAccounts()
+		{
+			return _bankContext.Customers.Include(c=>c.Accounts).ToList();
+		}
 	}
-
 }
 
 
