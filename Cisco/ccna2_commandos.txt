@@ -1,0 +1,336 @@
+Ip route <niet direct verbonden adres> <niet direct verbonden subnet mask> <ip adres(next hop address)>
+==> in conf t
+==> dit niet direct verbonden adres is bereikbaar via dit adres
+==> recursive static route
+
+Ip route <niet direct verbonden adres> <niet direct verbonden subnet mask> <exit interface>
+==> in conf t
+==> deze exit interface is een alternatieve route voor dit niet verbonden adres
+==> directly attached route
+
+Ip route 0.0.0.0 0.0.0.0 <exit interface>
+==> in conf t
+==> ieder netwerk dat niet direct verbonden is is bereikbaar
+==> default route
+
+Ip route <niet direct verbonden adres> <niet direct verbonden subnet mask> <exit interface> <next hop address>
+==> in conf t
+==> fully specified route
+
+Ipv6 unicast-routing
+==> dit commando zorgt ervoor dat de router ipv6 packets forward
+==> in conf t
+
+Ipv6 route ::/0 <next hop address>
+==> in conf t
+==> ieder netwerk dat niet direct verbonden is is bereikbaar
+==> recursive default route
+
+Shutdown
+==> interface disablen
+
+No shutdown
+==> interface enablen
+
+Router rip ==> ga je in rip config mode ==> in conf t
+==> Version 1 of version 2
+==> No auto-summary ==> disable summarization of networks
+
+Network <ip address> ==> in router rip
+==> rip configureren voor dit netwerk
+
+Passive interface <interface>
+==> in router rip
+==> Als de interface geen routers heeft als passief declareren zodat het geen routing info stuurt
+
+Default-information originate
+==> in router rip
+==> De default route advertisen bij andere routers
+
+Show ip route ==> toont routing table
+
+Telnet <ip adres>
+==> in command prompt
+==> insecure plain tekst communication ==> SSH is veiliger
+
+Service password encryption
+==> in conf t
+==> plain tekst wachtwoorden encrypteren
+
+Ip domain-name <naam>
+==> in conf t
+==> domeinnaam instellen
+
+Crypto key generate rsa ==> hierna de key length ingeven na dit commando (wordt naar gevraagd)
+==> in conf t
+==> secure RSA keys gebruiken om data te encrypteren
+
+Username <gebruikersnaam> secret <secret passwoord>
+==> in conf t
+==> user aanmaken met secret passwoord
+
+Login local ==> inloggen met de lokale gebruiker
+Transport input ssh ==> alleen SSH toestaan voor remote access
+No password <paswoord> ==> wachtwoord verwijderen
+==> in line interface
+
+Ssh -l <username> <password>
+==> telnet gaat niet meer na inschakelen SSH, dus dit gebruiken
+==> in command prompt
+
+Interface range fastEthernet 0/1-2
+==> in conf t
+==> een manier om bijvoorbeeld in de interface fastEthernet 0/1 en 0/2 tegelijk te zitten
+
+Switchport port-securiy
+==> in interface
+==> port security enablen
+
+Switchport port-security maximum 1
+==> in interface
+==> er kan maar 1 toestel tegelijk op deze interface
+
+Switchport port-security mac-address sticky
+==> in interface
+==> mac address is dynamically learned and added to the running config
+
+Switchport port-securiy violation restrict
+==> in interface
+==> als er een violation gebeurd in de interface deze niet disablen maar de packets van een onbekende bron droppen
+
+Switchport mode access
+==> in interface
+==> access port
+
+Shutdown
+==> in een interface
+==> interface disablen
+
+Vlan <nummer>
+==> nieuwe vlan maken
+==> in conf t
+
+Name <naam>
+==> in nieuwe vlan
+==> geeft de vlan een naam
+
+Switchport access vlan <nummer>
+==> in interface
+==> vlan toewijzen aan interface
+
+Switchport voice vlan <nummer>
+==> in interface
+==> vlan voor voice traffic toewijzen aan interface
+
+Switchport mode trunk
+==> in interface
+==> trunking enablen voor interface
+
+Switchport trunk native vlan <nummer>
+==> in interface
+==> trunking characteristic: native vlan instellen
+==> (als je 2 switches vebindt in VLAN, moet de poort in trunk mode zijn)
+
+Interface gigabitEthernet 0/0.10
+==> dit is een voorbeeld waar de subinterface G0/0.10 wordt aangemaakt
+==> in conf t
+
+Encapsulation dot1Q <vlan>
+==> in subinterface
+==> encapsulation type zetten naar 802.1Q en vlan toewijzen
+
+No ip access-group <ACL number> out
+==> in interface
+==> de ACL als outgoing filter verwijderen van de interface
+
+No access-list <ACL number>
+==> in conf t
+==> een specifieke ACL verwijderen
+==> als je het ACL nummer weg laat verwijderd je alle ACL geconfigureerd op het toestel
+
+Access-list <ACL number> deny <ip adres> <subnet mask>
+==> in conf t
+==> toegang weigeren tot dat bepaalde netwerk
+
+Access-list <ACL number> permit any
+==> in conf t
+==> alle ander verkeer toestaan
+
+Ip access-group <ACL number> out
+==> in interface
+==> zodat een interface effectief verkeer filtert moet het toegepast zijn op een router operation, nu is het geplaatst voor outbound traffic op de bepaalde interface
+
+Ip access-list standard <name>
+==> in conf t
+==> hierin kan je een named ACL configureren en aanmaken
+
+Permit host <ip adres>
+==> in de configure named ACL
+==> een host toestaan
+
+Deny any
+==> in de configure named ACL
+==> al de rest weigeren
+
+Ip access-group <name> out
+==> in de interface
+==> een named ACL toewijzen aan de interface voor outbound traffic
+
+Access-class <ACL number> in
+==> in line
+==> de ACL naar meerdere vty lines toewijzen voor inbound traffic
+
+Do show ip route
+==> in router rip config mode
+==> alle attached networks tonen
+
+Ip dhcp excluded-adress <begin adres> <eind adres>
+==> in conf t
+==> exclude ip adressen
+
+Ip dhcp pool <name>
+==> in conf t
+==> dhcp pool aanmaken
+==> kom je in dhcp config mode terecht
+
+Network <network adres> <subnet mask>
+==> in dhcp config mode
+==> netwerk adres toewijze naan dhcp pool
+
+Default-router <ip adres>
+==> in dhcp config mode
+==> default-router toewijzen aan dhcp pool
+
+Dns-server <dns server ip adres>
+==> in dhcp config mode
+==> dns server toewijzen aan dhcp pool
+
+Ip helper-address <ip adres>
+==> in interface
+==> een router als dhcp relay agent configureren
+
+Ip address dhcp
+==> in interface
+==> dhcp ip adres toewijzen aan interface
+
+Show ip nat translations
+==> in enable
+
+Ip nat inside source static <inside local/inside address> <inside global/outside address>
+==> in conf t
+==> static NAT translation maken om de inside address te mappen naar het outside address
+
+Ip nat inside
+==> in interface
+==> als inside interface configureren
+==> niet rechtstreeks verbonden met bv internet
+
+Ip nat outside
+==> in interface
+==> als outside interface configureren
+==> wel rechtstreeks verbonden met bv internet
+
+Ip nat pool <pool name> <start ip address> <end ip address> netmask <network mask>
+==> in conf t
+==> een pool met adressen configureren voor NAT
+==> als je hetzelfde ip adres als end adres neemt dan laat je gewoon dat ene adres toe
+
+Ip nat inside source list <acl list name/number> pool <pool name>
+==> in conf t
+==> een acl associëren met een NAT pool
+
+Permit <ip address> <netmask>
+==> in de configue named acl
+==> een ip adres toestaan
+
+Ip nat inside source list <acl list name/number> pool <pool name> overload
+==> in conf t
+==> een acl met een NAT pool associëren en PAT enablen
+
+WILDCARDS BIJ ACL!! NETWORK MASK GEWOON OMGEDRAAGD
+==> /8 is dus in wildcard 0.255.255.255
+==> network mask zou zijn 255.0.0.0
+
+Router ospf <id>
+==> in conf t
+==> een ospf proces gebruiken
+==> brengt je in router ospf
+
+Router-id <id>
+==> in router ospf
+==> id toewijzen aan de router
+
+Network <netwerk adres> <subnet mask> area <area id>
+==> router ospf configureren voor dit netwerk met dit area id
+==> area id was in de oef 0, waarom weet ik niet
+
+Passive-interface <interface>
+==> in router ospf
+==> Als de interface geen routers heeft als passief declareren zodat het geen routing info stuurt
+
+No cdp enable
+==> in interface
+==> cdp disablen op die interface
+
+Cdp run
+==> in conf t
+==> cdp protocol aan zetten
+
+Ntp server <ip adres>
+==> in conf t
+==> ntp server specifieren
+
+Logging <ip adres>
+==> in conf t
+==> log events sturen naar dit adres (syslog server)
+
+Clock set 11:47:00 July 10 2013
+==> voorbeeldje
+==> in enable
+==> de klok manueel zetten
+
+Service timestamps log datetime msec
+==> in conf t
+==> configureren zodat timestamps met logs naar de syslog server verstuurd worden
+
+Copy tftp runnnig-config
+==> in enable
+==> tftp kopiëren naar running-config
+==> configuratie transferen van de tftp server
+
+Copy running-config tftp
+==> in enable
+==> running-config kopiëren naar de tftp server
+==> configuratie back-uppen op de tftp  server
+
+Copy flash tftp
+==> in enable
+==> flash kopiëren naar de tftp server
+==> IOS back-uppen op de tftp server
+
+Show flash
+==> in enable
+==> memory zien (gebruikt, vrij, totaal)
+
+Copy  tftp flash
+==> in enable
+==> een ios kopiëren van de TFTP server naar de router
+
+Show version
+==> in enable
+==> de IOS zien
+
+Boot system flash <file>
+==> in conf t
+==> de IOS gebruiken vanaf de volgende keer (reloaden)
+
+Reload
+==> in enable
+==> rebooten
+
+DE EERSTE IMAGE DIE JE ZIET ALS JE SHOW FLASH DOET IS LOADED BY DEFAULT
+
+Ip ssh version 2 ==> versie 2 ssh
+Ip ssh authentication-retries 2 ==> 2 authentication attempts
+Ip ssh time-out 60 ==> 60 second timeout
+==> in conf t

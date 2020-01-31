@@ -384,7 +384,7 @@ Databases{
 				command.Parameters.AddWithValue("@Cid", cocktailId);
 				command.CommandText = selectStatement;
 				
-				SqlCommand command = new SqlCommand(selectStatement, connection);
+				//SqlCommand command = new SqlCommand(selectStatement, connection);
 				
 				//2 manieren voor while:
 				/* Ordinal manier: 
