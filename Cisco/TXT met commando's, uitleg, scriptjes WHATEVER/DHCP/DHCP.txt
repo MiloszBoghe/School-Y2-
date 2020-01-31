@@ -10,3 +10,28 @@ network 192.168.100.0 255.255.254.0
 
 //stel de default-gateway voor de dhcp server in
 default-router 192.168.100.1
+
+
+
+
+
+
+//SCRIPTJE voor dhcp met 3 vlans. (voorbeeldexamen)
+en
+conf t
+ip dhcp pool DHCP_VLAN10
+network 192.168.0.0 255.255.255.0
+default-router 192.168.0.1
+exit
+ip dhcp pool DHCP_VLAN20
+network 192.168.1.0 255.255.255.192
+default-router 192.168.1.1
+exit
+ip dhcp pool DHCP_VLAN30
+network 192.168.1.64 255.255.255.224
+default-router 192.168.1.65
+exit 
+ip dhcp excluded-address 192.168.1.66 192.168.1.68
+//-----------------------^^^^^^dit is een range^^^
+
+  
