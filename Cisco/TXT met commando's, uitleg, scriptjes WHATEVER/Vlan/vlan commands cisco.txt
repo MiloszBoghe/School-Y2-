@@ -1,0 +1,40 @@
+Vlans aanmaken en naam geven:
+
+vlan 10 (maakt vlan 10 aan en gaat in config-vlan)
+name Studenten (name is case sensitive) 
+
+
+
+interfaces toewijzen aan een vlan:
+
+enable
+conf t
+interface fa0/1 (voor alleen fa0/1)
+kan ook een range:
+interface range fa0/1-5 (1 tot en met 5)
+
+switchport mode access
+switchport access vlan [number] (bv 10)
+
+
+
+default vlan instellen:
+interface g0/1 (of weer met range)
+switchport mode trunk
+switchport trunk native vlan 20
+switchport trunk allowed vlan 10,20
+
+
+Een vlan upgraden naar virtuele netwerkkaart:
+interface vlan [number] ------> MAAR MET 1 VLAN DOEN, ANDERS MESSY SHIT
+
+
+
+
+CH6 oef script (enkel interfaces en vlans aanpassen):
+
+en
+conf t
+int fa0/4
+switchport mode access
+switchport access vlan 3

@@ -1,0 +1,12 @@
+router rip:
+	altijd:
+		No auto summary
+		version 2
+	soms:
+		passive-interface [interface]
+	tussen routers:
+		network [netword ID]
+	Router met verbinding naar ISP:
+		default-information originate
+		
+	

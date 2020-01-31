@@ -1,0 +1,202 @@
+//VLAN 10-30
+en
+conf t
+vlan 10
+name studenten
+vlan 20
+name docenten
+vlan 30
+name management
+int range fa0/1-10
+switchport mode access
+switchport access vlan 10
+switchport port-security
+switchport port-security mac-address sticky
+exit
+int range fa0/11-19
+switchport mode access
+switchport access vlan 20
+exit
+int range fa0/20-24
+switchport mode access
+sw ac vlan 30
+exit
+int g0/1
+switchport trunk native vlan 30
+switchport mode trunk
+exit
+int g0/2
+sw mode trunk
+sw trunk native vlan 30
+
+//VLAN40-60
+en
+conf t
+vlan 40
+name Administratie
+vlan 50
+name Directeurs
+vlan 60
+name Management
+int range fa0/1-10
+switchport mode access
+switchport access vlan 40
+switchport port-security
+switchport port-security mac-address sticky
+exit
+int range fa0/11-19
+switchport mode access
+switchport access vlan 50
+exit
+int range fa0/20-24
+switchport mode access
+sw ac vlan 60
+exit
+int g0/1
+switchport trunk native vlan 60
+switchport mode trunk
+exit
+int g0/2
+sw mode trunk
+sw trunk native vlan 60
+
+
+
+
+
+
+
+
+
+
+
+
+////VOORBEELDEXAMEN SCRIPTS:
+//VLAN 10-30
+//HOST S TOP
+en
+conf t
+vlan 10
+name studenten
+vlan 20
+name docenten
+vlan 30
+name management
+int range fa0/1-24
+shutdown
+exit
+int vlan 30
+ip address 192.168.1.66 255.255.255.224
+no sh
+int fa0/2
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+int fa0/4
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+int fa0/1
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+
+
+//HOST S LEFT
+en
+conf t
+vlan 10
+name studenten
+vlan 20
+name docenten
+vlan 30
+name management
+int range fa0/1-24
+shutdown
+exit
+int vlan 30
+ip address 192.168.1.67 255.255.255.224
+no sh
+int fa0/2
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+int fa0/3
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+int fa0/1
+switchport mode access
+switchport access vlan 10
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+int fa0/4
+switchport mode access
+switchport access vlan 20
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+int fa0/5
+switchport mode access
+switchport access vlan 30
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+
+//HOST S RIGHT
+en
+conf t
+vlan 10
+name studenten
+vlan 20
+name docenten
+vlan 30
+name management
+int range fa0/1-24
+shutdown
+exit
+int vlan 30
+ip address 192.168.1.68 255.255.255.224
+no sh
+int fa0/3
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+int fa0/4
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+int fa0/1
+switchport mode access
+switchport access vlan 10
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+int fa0/2
+switchport mode access
+switchport access vlan 20
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+
+

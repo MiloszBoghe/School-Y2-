@@ -1,0 +1,15 @@
+SSH instellen:
+router:
+
+en
+conf t
+hostname name
+ip domain-name examen.com
+crypto key generate rs 
+2048
+username admin secret cisco
+line vty 0 15
+transport input ssh
+login local
+exit
+ip ssh version 2
