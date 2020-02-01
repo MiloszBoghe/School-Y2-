@@ -1,0 +1,30 @@
+Deze methode geeft alle gebruikers toegang tot het internet met slechts één inside globaal adres, maar met overloading
+
+--Te volgen stappen
+      1. enable
+      2. configure terminal
+      3. access-list [access-list-number] permit source [source-wildcard]
+      4. ip nat inside source list [access-list-number] interface [interface-name] overload
+      5. interface [type/number]
+      6. ip address [ip-address] [mask]
+      7. ip nat inside
+      8. exit
+      9. interface [type/number]
+      10. ip address [ip-address] [mask]
+      11. ip nat outside
+      12. end
+
+      Router> enable
+      Router# configure terminal
+      Router(config)# access-list 1 permit 192.168.1.0 0.0.0.255
+      Router(config)# ip nat inside source list 1 interface g0/0 overload
+
+      Router(config)# interface g 0/0
+      Router(config-if)# ip address 192.168.1.1 255.255.255.0
+      Router(config-if)# ip nat inside
+      Router(config-if)# exit
+
+      Router(config)# interface S0/0/0
+      Router(config-if)# ip address 20.0.0.2 255.255.255.252
+      Router(config-if)# ip nat outside
+      Router(config-if)# end

@@ -1,0 +1,66 @@
+.network {
+	color: blue;
+}
+.top {
+    margin: 0 auto;
+    text-align: center;
+    top: -34px;
+    position: relative;
+    width: 73%;
+
+}
+.subnet {
+	color: red;
+}
+.host {
+	color: green;
+}
+.uneditable-input {
+	border: 1px solid #ccc !important;
+}
+body {
+	padding-top: 40px;
+	max-width: 1024px !important;
+    margin: 0 auto !important;
+}
+.nav li {
+float: left;
+background: #efefef;
+font-size: 18px;
+margin-left: 25px;
+border-right: 1px solid #fff;
+margin-right: 0px;
+padding-right: 0px;
+}
+.nav {
+    margin-bottom: 18px;
+    margin-left: 0;
+    list-style: none;
+    background: #efefef;
+padding: 16px 0px;
+height: 16px;
+border-bottom: 3px solid #d4d4d4;
+}
+.nav > li > a {
+    display: block;
+    border-right: 1px solid #d5d5d5 !important;
+padding-right: 25px !important;
+}
+.container {
+    max-width: 1024px !important;
+}
+.brand {
+    background: url('logo.svg');
+    background-size: 360px 34px;
+    width: 360px;
+    position: relative;
+    padding: 23px 0 0px 0;
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: -9999px;
+    margin-bottom: 16px;
+}
+.topbar {
+    margin-bottom: 20px;
+}
+
