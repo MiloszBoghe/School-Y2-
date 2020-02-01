@@ -1,0 +1,45 @@
+///PAT SCRIPT 
+//KLEINE SIDENOTE: bij de ACL is het een wildcard mask. Dit wil zeggen subnet maar dan omgekeerd.
+//0.0.0.0 = 255.255.255.255 dus ENKEL DAT IP.
+//Bij pool is het een gewoon subnet mask.
+
+
+//Voorbeeld examen scriptje: 
+//Main R: (dynamic PAT)
+	en
+	conf t
+	access-list 1 permit 10.0.0.0 0.0.0.255
+	access-list 1 permit 192.168.0.0 0.0.1.255
+	access-list 1 deny any
+	ip nat pool external 10.10.0.1 10.10.0.1 netmask 255.255.255.255
+	ip nat inside source list 1 pool external overload
+	int fa0/0
+	ip nat inside
+	exit
+	int s0/0/0
+	ip nat inside
+	exit
+	int se0/0/1
+	ip nat inside
+	exit
+	int fa0/1
+	ip nat outside
+	exit
+	
+//Border R: (Dynamic? PAT)
+	en
+	conf t
+	access-list 1 permit 10.0.0.0 0.0.0.255
+	access-list 1 deny any
+	ip nat pool DMZ_PAT 20.0.0.253 20.0.0.254 netmask 255.255.255.0
+	ip nat inside source list 1 pool DMZ_PAT overload
+	int fa0/0
+	ip nat inside
+	exit
+	int s0/0/0
+	ip nat inside
+	exit
+	
+	
+	
+	

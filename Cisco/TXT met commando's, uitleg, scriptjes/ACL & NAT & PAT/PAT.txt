@@ -1,30 +1,45 @@
-Deze methode geeft alle gebruikers toegang tot het internet met slechts één inside globaal adres, maar met overloading
 
---Te volgen stappen
-      1. enable
-      2. configure terminal
-      3. access-list [access-list-number] permit source [source-wildcard]
-      4. ip nat inside source list [access-list-number] interface [interface-name] overload
-      5. interface [type/number]
-      6. ip address [ip-address] [mask]
-      7. ip nat inside
-      8. exit
-      9. interface [type/number]
-      10. ip address [ip-address] [mask]
-      11. ip nat outside
-      12. end
+static PAT:
+en
+conf t
+ip nat inside source static tcp 10.0.0.2 443 50.0.0.2 443 
+// ip nat inside source static [protocol] [intern ip] [poort] [extern ip] [poort]
 
-      Router> enable
-      Router# configure terminal
-      Router(config)# access-list 1 permit 192.168.1.0 0.0.0.255
-      Router(config)# ip nat inside source list 1 interface g0/0 overload
 
-      Router(config)# interface g 0/0
-      Router(config-if)# ip address 192.168.1.1 255.255.255.0
-      Router(config-if)# ip nat inside
-      Router(config-if)# exit
+dynamic PAT{
 
-      Router(config)# interface S0/0/0
-      Router(config-if)# ip address 20.0.0.2 255.255.255.252
-      Router(config-if)# ip nat outside
-      Router(config-if)# end
+	en
+	conf t
+
+----//Maak ACL aan, toegelaten hosts/denied hosts:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//hosts met deze permitted IP's zullen dus vertaald worden naar externe IP's
+	access-list 1 permit 10.0.0.10 0.0.0.0
+	access-list 1 permit 10.0.0.20 0.0.0.0
+	access-list 1 deny anyS
+	
+----//NAT pool maken:-------------------------------------------------------------------------------------------------------------------------------------------
+	//in deze pool komen de IP's die extern gebruikt zullen worden.  
+	//Hiermee kan je dus een range van IP's instellen en hieruit zal 1 gekozen worden.
+	//in onderstaand voorbeeld zullen er 2 IP's gebruikt worden: 50.0.0.3 en 50.0.0.4:
+	
+	ip nat pool WWW 50.0.0.3 50.0.0.4 netmask 255.255.255.0
+	//dus --> ip nat pool [pool naam] [begin ip] [eind ip] netmask [subnetmask]
+
+--------//Pool toevoegen aan ACL----------------------------------------------------------------------------------------------------------------------
+	//De pool is aangemaakt maar je moet nog duidelijk maken waar je hem wil gebruiken:
+	ip nat inside source list 1 pool WWW overload
+	//dus --> ip nat inside source list [ACL nummer] pool [pool naam] overload
+
+	
+----//Instellen wat telt als INTERN en wat telt als EXTERN----------------------------------------------------------------------------------------------------------------------------------
+	//interne interface:
+	int g0/0
+	ip nat inside
+
+	//externe interface:
+	int g0/1 
+	ip nat outside
+	
+	//Zo hebben we duidelijk gemaakt waar welke IP's gebruikt moeten worden.
+	
+}
