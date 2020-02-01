@@ -1,0 +1,11 @@
+vlans ontbreken
+vlans staan nie als allowed op een trunk kabel
+gateway bij een client (pc) ontbreekt
+default-gateway op een switch ontbreekt (dus ping werkt nie ssh ook nie)
+in de route tabel ontbreekt een route
+default information originate ontbreekt bij een router
+da komt sowieso op uw examen
+ooh en interface op router staat in shutdown
+of native vlan mismatch op 2 uiteinde van een trunk
+verkeerd subnet mask bij een route in de route tabel
+trunk kabel staat op access i.p.v. trunk
