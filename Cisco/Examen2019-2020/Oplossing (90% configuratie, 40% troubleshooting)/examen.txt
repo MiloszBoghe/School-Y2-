@@ -1,0 +1,234 @@
+//Examen
+
+
+
+//R_HOST -- Vlans + DHCP
+enable
+conf t
+int g0/1
+no shut
+no ip add
+exit
+int g0/1.10
+encapsulation dot1q 10
+ip add 10.0.1.1 255.255.255.128
+exit 
+int g0/1.20
+encapsulation dot1q 20
+ip add 10.0.1.129 255.255.255.192
+exit
+int g0/1.30
+encapsulation dot1q 30 native
+ip add 10.0.1.193 255.255.255.224
+exit
+ip dhcp pool VL10_STUD
+network 10.0.1.0 255.255.255.128
+default-router 10.0.1.1
+exit
+ip dhcp pool VL20_DOC
+network 10.0.1.128 255.255.255.192
+default-router 10.0.1.129
+exit
+ip dhcp pool VL30_MGMT
+network 10.0.1.192 255.255.255.224
+default-router 10.0.1.193
+exit 
+ip dhcp excluded-address 10.0.1.194 10.0.1.196
+int se0/1/1
+ip add 10.0.100.2 255.255.255.252
+no sh
+
+
+
+//S_TOP----DONE vlans & trunks & shit.
+en
+conf t
+vlan 10
+name Studenten
+vlan 20
+name Docenten
+vlan 30
+name Management
+int range fa0/1-24
+shutdown
+exit
+int vlan 1
+no ip address
+shutdown
+exit
+int vlan 30
+ip address 10.0.1.196 255.255.255.224
+no sh
+exit
+int fa0/2
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+int g0/1
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+int fa0/1
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+
+
+//S_LEFT --- DONE behalve niet gebruikte uitzetten.
+en
+conf t
+vlan 10
+name Studenten
+vlan 20
+name Docenten
+vlan 30
+name Management
+int range fa0/1-24
+shutdown
+exit
+int vlan 1
+no ip address
+shutdown
+exit
+int vlan 30
+ip address 10.0.1.194 255.255.255.224
+no sh
+exit
+int fa0/1
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+int range fa0/03-09
+switchport mode access
+switchport access vlan 10
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+int range fa0/10-19
+switchport mode access
+switchport access vlan 20
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+int range fa0/20-24
+switchport mode access
+switchport access vlan 30
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+int range fa0/01-24
+shut
+exit
+
+
+//S_RIGHT -- DONE behalve niet gebruikte uitzetten.
+en
+conf t
+vlan 10
+name Studenten
+vlan 20
+name Docenten
+vlan 30
+name Management
+int vlan 1
+no ip address
+shutdown
+exit
+int vlan 30
+ip address 10.0.1.195 255.255.255.224
+no sh
+exit
+int fa0/02
+switchport mode trunk
+switchport trunk native vlan 30
+switchport trunk allowed vlan 10,20,30
+no shut
+exit
+int range fa0/03-09
+switchport mode access
+switchport access vlan 10
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+int range fa0/10-19
+switchport mode access
+switchport access vlan 20
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+int range fa0/20-24
+switchport mode access
+switchport access vlan 30
+switchport port-security
+switchport port-security mac-address sticky
+no shut
+exit
+
+
+
+//R_DC
+en
+conf t
+int se0/1/1
+ip add 10.0.200.2 255.255.255.252
+no sh
+exit
+int g0/1
+ip add 10.0.2.1 255.255.255.0
+no sh
+exit
+router rip
+version 2
+no auto-summary
+passive-interface g0/1
+network 10.0.2.0
+network 10.0.200.0
+
+//R_HQ
+en
+conf t
+int s0/0/0
+ip add 50.0.0.2 255.255.255.224
+no sh
+exit
+int s0/0/1
+ip add 10.0.100.1 255.255.255.252
+no sh
+exit
+int s0/1/1
+ip add 10.0.200.1 255.255.255.252
+no sh
+exit
+int g0/1
+ip add 10.0.0.1 255.255.255.0
+no sh
+exit
+ip route 0.0.0.0 0.0.0.0 s0/0/0
+router rip
+version 2
+no auto-summary
+default-information originate
+network 10.0.0.0
+network 50.0.0.0
+exit
+int s0/1/1
+ip nat inside
+exit
+int s0/0/0
+ip nat outside
+exit
+
+
