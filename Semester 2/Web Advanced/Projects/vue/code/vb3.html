@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VUE</title>
+    <meta name="description" content="VUE">
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="name in names">{{ name }}</li>
+    </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+            names: ['jan', 'tim', 'sofie']
+        }
+    });
+</script>
+</body>
+</html>

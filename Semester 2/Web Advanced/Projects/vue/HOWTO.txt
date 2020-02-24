@@ -1,0 +1,15 @@
+De meeste voorbeelden kunnen rechtstreeks in de browser geopend worden.
+
+Voor vb8_herwerkt voer je eerst
+npm install
+uit in de map vb8_herwerkt (dit downloadt alle dependencies naar 
+de map node_modules) en daarna
+npm run serve
+Je kan het voorbeeld dan openen in de browser via de URL http://localhost:8080/
+
+Installatie json-server:
+npm install -g json-server
+
+Voor vb9 en vb10 moet je eerst json-server starten.  In de map json-server voer je het commando
+json-server --watch persons.json
+uit.

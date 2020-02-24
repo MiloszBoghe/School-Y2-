@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VUE</title>
+    <meta name="description" content="VUE">
+</head>
+<body>
+<div id="app">
+    <p v-if="isMorning">Good morning</p>
+    <p v-else>Hello</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let timeInHours = new Date().getHours();
+    let app = new Vue({
+        el: '#app',
+        data: {
+            isMorning: timeInHours < 12 
+        }
+    });
+</script>
+</body>
+</html>

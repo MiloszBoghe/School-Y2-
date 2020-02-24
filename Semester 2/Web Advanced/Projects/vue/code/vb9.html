@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VUE</title>
+    <meta name="description" content="VUE">
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="person in persons">
+            {{ person.name }}
+        </li>
+    </ul>
+    <button v-on:click="fetchPersons">Get all persons</button> 
+    <span>{{ error }}</span>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+            persons: [],
+            error: ''
+        },
+        methods: {
+            fetchPersons: function () {
+                let url = 'http://localhost:3000/persons/';
+                this.persons=[];
+                fetch(url)
+                    .then((response) => {
+                        if (response.status == 200) {
+                            return response.json();
+                        } else {
+                            throw `error with status ${response.status}`;
+                        }
+                    })
+                    .then((persons) => {
+                        this.persons = persons;
+                    })
+                    .catch((error) => {
+                         this.error = error;
+                    });
+            }
+        }
+    });
+</script>
+</body>
+</html>

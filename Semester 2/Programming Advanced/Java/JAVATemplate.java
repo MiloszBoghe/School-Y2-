@@ -44,7 +44,8 @@ Semester1{
 
 		BufferedReader + BufferedWriter{
 		//BufferedReader gebruik: 
-		   try (BufferedReader reader = Files.newBufferedReader(p)) {
+		   Path path = Paths.get(System.getProperty("user.dir")).resolve("src/main/resources/myfile.txt"); 
+		   try (BufferedReader reader = Files.newBufferedReader(path)) {
 				String line = null;
 				while ((line = reader.readLine()) != null) {
 					System.out.println(line);
@@ -72,7 +73,7 @@ Semester1{
 			public static void main(String[] args) {
 				Path path = Paths.get(System.getProperty("user.dir")).resolve("src/main/resources/myfile.txt"); 
 				try (BufferedWriter writer = Files.newBufferedWriter(path, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
-					writer.append(message);
+					writer.append("message");
 					writer.newLine();
 				} catch (IOException ex) {
 					ex.getMessage();
