@@ -100,3 +100,6 @@ C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\
 C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp3.1\OdeToFood.RazorTargetAssemblyInfo.cs
 C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp3.1\OdeToFood.Views.pdb
 C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp3.1\OdeToFood.csproj.CopyComplete
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp3.1\Razor\Views\Home\details.cshtml.g.cs
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs

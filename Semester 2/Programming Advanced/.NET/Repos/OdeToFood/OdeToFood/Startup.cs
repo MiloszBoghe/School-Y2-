@@ -19,7 +19,9 @@ namespace OdeToFood
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddScoped<IRestaurantData, RestaurantData>();
+            services.AddScoped<IRestaurantData, InMemoryRestaurantData>();
+            services.AddSingleton<IGreeter, Greeter>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

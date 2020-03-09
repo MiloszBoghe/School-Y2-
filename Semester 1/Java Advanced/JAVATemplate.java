@@ -1,4 +1,19 @@
 
+Unit Testing{
+	//in pom.xml
+	<dependency>
+		<groupId>org.junit.jupiter</groupId>
+		<artifactId>junit-jupiter-api</artifactId>
+		<version>5.5.2</version>
+		<scope>test</scope>
+	</dependency>
+	
+	//groupId = be.pxl....? de packagestructuur waar je project in komt.
+	//artifactId = naam van het project.
+	
+}
+
+
 Path{
 		//user.home verwijst naar je home directory.
 		//Vb:  C:\Users\11800460

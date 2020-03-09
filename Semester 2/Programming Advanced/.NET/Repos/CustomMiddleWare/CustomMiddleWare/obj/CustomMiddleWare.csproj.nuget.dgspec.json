@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CustomMiddleWare\\CustomMiddleWare\\CustomMiddleWare.csproj": {}
+    "C:\\Users\\11800460\\Desktop\\MIDDELWARE\\CustomMiddleWare\\CustomMiddleWare.csproj": {}
   },
   "projects": {
-    "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CustomMiddleWare\\CustomMiddleWare\\CustomMiddleWare.csproj": {
+    "C:\\Users\\11800460\\Desktop\\MIDDELWARE\\CustomMiddleWare\\CustomMiddleWare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CustomMiddleWare\\CustomMiddleWare\\CustomMiddleWare.csproj",
+        "projectUniqueName": "C:\\Users\\11800460\\Desktop\\MIDDELWARE\\CustomMiddleWare\\CustomMiddleWare.csproj",
         "projectName": "CustomMiddleWare",
-        "projectPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CustomMiddleWare\\CustomMiddleWare\\CustomMiddleWare.csproj",
+        "projectPath": "C:\\Users\\11800460\\Desktop\\MIDDELWARE\\CustomMiddleWare\\CustomMiddleWare.csproj",
         "packagesPath": "C:\\Users\\11800460\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CustomMiddleWare\\CustomMiddleWare\\obj\\",
+        "outputPath": "C:\\Users\\11800460\\Desktop\\MIDDELWARE\\CustomMiddleWare\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
