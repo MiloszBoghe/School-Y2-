@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OdeToFood.ViewModels;
 using OdeToFood.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using OdeToFood.Entities;
 
 namespace OdeToFood.Controllers
@@ -18,6 +14,31 @@ namespace OdeToFood.Controllers
             _restaurantData = restaurantData;
             _greeter = greeter;
         }
+
+        #region createMethods
+        [HttpPost]
+        public IActionResult Create(EditRestaurantViewModel restaurantViewModel)
+        {
+            if (!ModelState.IsValid) return View(nameof(Create));
+
+            var restaurant = new Restaurant
+            {
+                CuisineType = restaurantViewModel.CuisineType,
+                Name = restaurantViewModel.Name
+            };
+            _restaurantData.Add(restaurant);
+            return RedirectToAction(nameof(Details), new { id = restaurant.Id });
+        }
+
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+        #endregion
+
+        #region Index
         public IActionResult Index()
         {
             var model = new HomePageViewModel()
@@ -27,25 +48,36 @@ namespace OdeToFood.Controllers
             };
             return View(model);
         }
+        #endregion
 
+        #region Details
         public IActionResult Details(int id)
         {
             var restaurant = _restaurantData.GetById(id);
             if (restaurant == null) return NotFound();
-            return View(restaurant);
+            return View(nameof(Details), restaurant);
         }
+        #endregion
 
-        [HttpGet]
-        public IActionResult Create()
-        {
-            return View();
-        }
+        #region Edit
 
-        [HttpPost]
-        public IActionResult Create(Restaurant restaurant)
+        public IActionResult Edit(EditRestaurantViewModel restaurantViewModel, int id)
         {
-            _restaurantData.Add(restaurant);
+            if (!ModelState.IsValid) return View(nameof(Edit));
+
+            var restaurant = new Restaurant
+            {
+                Id = id,
+                CuisineType = restaurantViewModel.CuisineType,
+                Name = restaurantViewModel.Name
+            };
+
+            _restaurantData.Edit(restaurant);
             return RedirectToAction(nameof(Details), new { id = restaurant.Id });
+            
         }
+
+        #endregion
+
     }
 }

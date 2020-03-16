@@ -1,11 +1,10 @@
-﻿@model OdeToFood.ViewModels.HomePageViewModel
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+﻿
+@model OdeToFood.ViewModels.HomePageViewModel
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Home";
+}
+
 <h1>@Model.CurrentMessageOfTheDay</h1>
 <table>
     @foreach (var restaurant in Model.Restaurants)
@@ -13,8 +12,13 @@
         <tr>
             <td>@restaurant.Id</td>
             <td><a asp-action="Details" asp-route-id="@restaurant.Id">@restaurant.Name</a></td>
+            <td><a asp-action="Edit" asp-route-id="@restaurant.Id">(edit)</a></td>
         </tr>
     }
 </table>
-</body>
-</html>
+@section footer{
+    <small>Ik ben de footer</small>
+
+}
+
+
