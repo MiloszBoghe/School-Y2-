@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {}
+    "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {}
   },
   "projects": {
-    "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {
+    "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+        "projectUniqueName": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
         "projectName": "OdeToFood",
-        "projectPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
-        "packagesPath": "C:\\Users\\11800460\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\obj\\",
+        "projectPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+        "packagesPath": "C:\\Users\\Satan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\11800460\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Satan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
