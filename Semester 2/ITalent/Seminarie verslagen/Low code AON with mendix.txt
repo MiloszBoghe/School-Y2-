@@ -1,0 +1,28 @@
+Wat is lowcode?
+	Visuele manier van applicaties ontwikkelen, hier moet je dus weinig tot niet voor programmeren.
+	Gewoon slepen.
+
+>30% van de projecten "falen" (voldoen niet aan de verwachtingen van de eindklant)
+
+Mendix is een low code applicatie-ontwikkelingsplatform dat iedereen toelaat om apps te ontwikkelen.
+	Mendix werkt op javascript. Dit betekent dat als je ergens vastloopt via low code dat je dit nog altijd 
+	kan oplossen via javascript. Je kan het volledig exporteren naar javascript code, zelf wat code schrijven 
+	en dan terug importeren naar mendix.
+	
+We hebben ons geregistreerd op mendix en zijn begonnen met een applicatie te maken aan de hand van user stories.
+De eerste user story was: 
+"As as user I want to be able to create, update and delete events with at least a name, 
+start date, end date, description ,address and location."
+Hiervoor ben ik begonnen met een pagina aan te maken "Event overview".
+Hier kon ik al kiezen uit een aantal templates. Ik koos de "List Default" template.
+Eerst was het onduidelijk hoe alles werkte maar al vrij snel kon ik er een beetje aan uit. 
+Om een datasource te selecteren, klik je op de list view en ga je naar de instellingen.
+Hier selecteer je Database en maak je een nieuwe entity aan (een event). Dan voeg je bij deze entity alle attributen toe. 
+Verder configureer je elke knop. Zowel de details knop als de Add knop verwijs je naar de Event_NewEdit pagina.
+Op deze pagina link je elk veld aan een attribuut van een event.
+
+Als je op details klikt, worden deze velden ingevuld met de data van het event en kun je deze aanpassen.
+Als je op add klikt, zijn deze velden leeg, maar kan je ze invullen om een nieuw event object aan te maken.
+
+Ik heb deze seminarie de basis geleerd van low code applicatie-ontwikkeling. 
+Het is niet meteen iets super interessant voor mij want ik houd van programmeren met code.

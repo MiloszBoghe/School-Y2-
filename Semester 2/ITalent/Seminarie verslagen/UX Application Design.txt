@@ -1,0 +1,89 @@
+UX Application Design
+
+- 80% van de mensen blijven bij hun stagebedrijf. Maar dit gaat niet altijd goed.
+Grasshopper kijkt welke bedrijven goed bij jou zouden passen (mentaliteit, ..)
+Als iemand afstudeert gaan ze evalueren wie je bent, wat je wilt, of je graag structuur hebt in een bedrijf , .....
+zo kunnen ze een bedrijf aanraden aan mensen.
+Meeste mensen weten niet wat ze willen , zij helpen zoeken.
+
+
+
+User Experience:
+- user experience is veel meer dan fonts en kleurtjes.
+
+
+Wat is user interface?
+space where interactions between humans and machines occur.
+
+Assumpties zijn slecht, je moet er zo min mogelijk van uit gaan dat mensen zullen weten wat jou icoontjes betekenen. 
+Best heb je dus wat tekst bij elk icoontje om verwarring te voorkomen.
+
+Goede vraag om jezelf te stellen: Wat verwacht de gebruiker van jou applicatie? 
+Deze vraag zou je moeten kunnen beantwoorden. Pas dan kan je zeggen dat het misschien een goede applicatie is.
+
+Probeer je in te leven als de gebruiker. Anders ben je niet een applicatie voor de klant aan het maken, maar een applicatie voor jezelf aan het maken.
+
+Flow:
+Belangrijk om in gedachten te houden. Je moet weten voor welke doelgroep je deze app maakt en je flow afstemmen voor deze doelgroep.
+vb:
+landing pagina --> login --> app
+of
+landing --> register --> activate --> app
+
+
+Doel:
+Wat is het doel van deze persoon? Wat wil hij bereiken?
+Instagram vb: Delen wat ze meegemaakt hebben. Likes zijn hierbij dan een bonus.
+
+
+
+Hermann grid: psychologische impact (opzoeken)
+
+
+Slechte kleuren hebben invloed op contrast/experience. Lastig voor de ogen.
+Placeholders alleen zijn niet genoeg. Als je begint te typen kan je niet meer zien wat in dat vak geschreven moet worden.
+Dit kan verwarring veroorzaken en is niet goed voor user experience.
+
+
+
+attentive load:
+vb: scrollen op een app neemt je attentie weg en je let niet meer op.
+Bij fb bijvoorbeeld spelen filmpjes daarom automatisch af om je aandacht terug te krijgen. Of je krijgt een melding, ....
+
+
+
+Cognitive load:
+mouse overs, button visuals, sound at notification, ...
+
+
+
+Memory:
+telephone formatting:
++32486795221 --> te lang, moeilijker om te lezen  / onthouden
++32 486 79 52 21 --> Goed, makkelijk te lezen / onthouden
+
+
+
+Motor load:
+Als een app niet intuitief is ben je volledig verloren.
+
+
+Duim positie op gsm:
+Je duim kan makkelijk aan de linker kant, ongeveer midden. Linksboven is moeilijk. rechtsonder is moeilijk.
+Daarom focussen apps de belangrijke dingen op de juiste positie.
+
+BAD UI's:
+Alles op 1 scherm werkt niet. Je moet iets belangrijk hebben en iets minder belangrijk zodat je weet waar je focus op moet leggen.
+Als alles op 1 scherm is omdat het "even belangrijk" is , is niets meer duidelijk of overzichtelijk.
+
+
+
+Voorbeeld van vakantiegeld en waarom dit slecht was voor de arbeider: teveel getallen en de arbeider was alleen geïnteresseerd in het netto bedrag. Niet al de rest.
+
+
+Mobile first: Als je weet dat de meerderheid van je doelpubliek alleen op gsm gaat kijken , begin dan met mobile. 
+Je kan altijd uitbreiden naar PC versies, maar het is gemakkelijker om naar PC uit te breiden dan het is om van PC naar mobile te gaan.
+Mobiel is kleiner dus is het moeilijker om een lay-out mooi te krijgen als je groot begint. Dingen groter maken is niet moeilijk, dingen kleiner maken wel.
+
+
+

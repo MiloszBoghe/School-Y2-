@@ -1,0 +1,23 @@
+﻿@model OdeToFood.Entities.Restaurant
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Edit Restaurant: ";
+}
+
+<body>
+    <div>
+        <form asp-route="Edit">
+            <div>
+                <label asp-for="Name"></label>
+                <input asp-for="Name" />
+            </div>
+            <div>
+                <label asp-for="CuisineType"></label>
+                <select asp-for="CuisineType" asp-items="@Html.GetEnumSelectList(typeof(CuisineType))"></select>
+            </div>
+            <div>
+                <input type="submit" value="Edit" />
+            </div>
+        </form>
+    </div>
+</body>
