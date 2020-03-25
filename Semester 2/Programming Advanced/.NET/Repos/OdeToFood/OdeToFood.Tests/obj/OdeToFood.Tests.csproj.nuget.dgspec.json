@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood.Tests\\OdeToFood.Tests.csproj": {}
   },
   "projects": {
@@ -18,6 +19,22 @@
         ],
         "configFilePaths": [
           "C:\\Users\\11800460\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood.Tests\\OdeToFood.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood.Tests\\OdeToFood.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood.Tests\\OdeToFood.Tests.csproj",
+        "projectName": "OdeToFood.Tests",
+        "projectPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood.Tests\\OdeToFood.Tests.csproj",
+        "packagesPath": "C:\\Users\\Satan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Satan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 9d7802e91a4525e9cb9b29dd64f96b665dd8bb5f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +47,13 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {
                 "projectPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj"
+=======
+              "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {
+                "projectPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj"
+>>>>>>> 9d7802e91a4525e9cb9b29dd64f96b665dd8bb5f
               }
             }
           }
@@ -80,6 +102,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -94,6 +117,19 @@
         ],
         "configFilePaths": [
           "C:\\Users\\11800460\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+        "projectName": "OdeToFood",
+        "projectPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+        "packagesPath": "C:\\Users\\Satan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\OdeToFood\\OdeToFood\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Satan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 9d7802e91a4525e9cb9b29dd64f96b665dd8bb5f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

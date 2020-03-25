@@ -1,0 +1,6 @@
+{
+    "name": "web/voorbeeld_oop",
+    "autoload": {
+        "psr-4": {"drawing\\": "src/drawing/"}
+    }
+}

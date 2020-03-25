@@ -1,0 +1,8 @@
+C:\Users\Satan\Desktop\School\Semester 2\Programming Advanced\.NET\Repos\PxlWebSecurityDemo\PxlWebSecurityDemo.Data\bin\Debug\netstandard2.1\PxlWebSecurityDemo.Data.deps.json
+C:\Users\Satan\Desktop\School\Semester 2\Programming Advanced\.NET\Repos\PxlWebSecurityDemo\PxlWebSecurityDemo.Data\bin\Debug\netstandard2.1\PxlWebSecurityDemo.Data.dll
+C:\Users\Satan\Desktop\School\Semester 2\Programming Advanced\.NET\Repos\PxlWebSecurityDemo\PxlWebSecurityDemo.Data\obj\Debug\netstandard2.1\PxlWebSecurityDemo.Data.csprojAssemblyReference.cache
+C:\Users\Satan\Desktop\School\Semester 2\Programming Advanced\.NET\Repos\PxlWebSecurityDemo\PxlWebSecurityDemo.Data\obj\Debug\netstandard2.1\PxlWebSecurityDemo.Data.AssemblyInfoInputs.cache
+C:\Users\Satan\Desktop\School\Semester 2\Programming Advanced\.NET\Repos\PxlWebSecurityDemo\PxlWebSecurityDemo.Data\obj\Debug\netstandard2.1\PxlWebSecurityDemo.Data.AssemblyInfo.cs
+C:\Users\Satan\Desktop\School\Semester 2\Programming Advanced\.NET\Repos\PxlWebSecurityDemo\PxlWebSecurityDemo.Data\bin\Debug\netstandard2.1\PxlWebSecurityDemo.Data.pdb
+C:\Users\Satan\Desktop\School\Semester 2\Programming Advanced\.NET\Repos\PxlWebSecurityDemo\PxlWebSecurityDemo.Data\obj\Debug\netstandard2.1\PxlWebSecurityDemo.Data.dll
+C:\Users\Satan\Desktop\School\Semester 2\Programming Advanced\.NET\Repos\PxlWebSecurityDemo\PxlWebSecurityDemo.Data\obj\Debug\netstandard2.1\PxlWebSecurityDemo.Data.pdb
