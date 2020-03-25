@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+@model OdeToFood.ViewModels.EditRestaurantViewModel
+@using OdeToFood.Entities
+<html>
+<head>
+    <title>Create</title>
+</head>
+<body>
+    <div>
+        <form asp-route="Create">
+            <div>
+                <label asp-for="Name"></label>
+                <input asp-for="Name" />
+            </div>
+            <div>
+                <label asp-for="CuisineType"></label>
+                <select asp-for="CuisineType" asp-items="@Html.GetEnumSelectList(typeof(CuisineType))"></select>
+            </div>
+            <div>
+                <input type="submit" value="Create" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,5 +1,0 @@
-C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Domain\bin\Debug\Lottery.Domain.dll
-C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Domain\bin\Debug\Lottery.Domain.pdb
-C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Domain\obj\Debug\Lottery.Domain.dll
-C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Domain\obj\Debug\Lottery.Domain.pdb
-C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter10_ADO_Transactions\Exercise2\Lottery.Domain\obj\Debug\Lottery.Domain.csprojAssemblyReference.cache
