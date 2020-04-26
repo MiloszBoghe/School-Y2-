@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata.Tests\\CalculatorKata.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata.Tests\\CalculatorKata.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata.Tests\\CalculatorKata.Tests.csproj",
+        "projectName": "CalculatorKata.Tests",
+        "projectPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata.Tests\\CalculatorKata.Tests.csproj",
+        "packagesPath": "C:\\Users\\11800460\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\11800460\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata\\CalculatorKata.csproj": {
+                "projectPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata\\CalculatorKata.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.15.1, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata\\CalculatorKata.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata\\CalculatorKata.csproj",
+        "projectName": "CalculatorKata",
+        "projectPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata\\CalculatorKata.csproj",
+        "packagesPath": "C:\\Users\\11800460\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\CalculatorKata\\CalculatorKata\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\11800460\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

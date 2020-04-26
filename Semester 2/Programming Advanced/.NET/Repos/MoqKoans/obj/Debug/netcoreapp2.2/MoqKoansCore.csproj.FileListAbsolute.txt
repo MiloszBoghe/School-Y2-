@@ -1,0 +1,26 @@
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\bin\Debug\netcoreapp2.2\MoqKoansCore.deps.json
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\bin\Debug\netcoreapp2.2\MoqKoansCore.runtimeconfig.json
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\bin\Debug\netcoreapp2.2\MoqKoansCore.runtimeconfig.dev.json
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\bin\Debug\netcoreapp2.2\MoqKoansCore.dll
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\bin\Debug\netcoreapp2.2\MoqKoansCore.pdb
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\obj\Debug\netcoreapp2.2\MoqKoansCore.csprojAssemblyReference.cache
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\obj\Debug\netcoreapp2.2\MoqKoansCore.AssemblyInfoInputs.cache
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\obj\Debug\netcoreapp2.2\MoqKoansCore.AssemblyInfo.cs
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\obj\Debug\netcoreapp2.2\MoqKoansCore.dll
+C:\Git\Programming-Advanced\Exercises\3_MoqKoans\obj\Debug\netcoreapp2.2\MoqKoansCore.pdb
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\bin\Debug\netcoreapp2.2\MoqKoansCore.deps.json
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\bin\Debug\netcoreapp2.2\MoqKoansCore.runtimeconfig.json
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\bin\Debug\netcoreapp2.2\MoqKoansCore.runtimeconfig.dev.json
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\bin\Debug\netcoreapp2.2\MoqKoansCore.dll
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\bin\Debug\netcoreapp2.2\MoqKoansCore.pdb
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\obj\Debug\netcoreapp2.2\MoqKoansCore.AssemblyInfoInputs.cache
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\obj\Debug\netcoreapp2.2\MoqKoansCore.AssemblyInfo.cs
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\obj\Debug\netcoreapp2.2\MoqKoansCore.dll
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\obj\Debug\netcoreapp2.2\MoqKoansCore.pdb
+C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\MoqKoans\obj\Debug\netcoreapp2.2\MoqKoansCore.csprojAssemblyReference.cache
