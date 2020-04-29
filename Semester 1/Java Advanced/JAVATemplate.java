@@ -9,21 +9,22 @@ Unit Testing{
 	</dependency>
 	
 	//groupId = be.pxl....? de packagestructuur waar je project in komt.
-	//artifactId = naam van het project.
+	//artifactId = name of the project.
 	
 }
 
 
 Path{
-		//user.home verwijst naar je home directory.
-		//Vb:  C:\Users\11800460
-		//.resolve plakt hier automatisch het vervolg van het pad aan. (is dus niet verplicht).
+		//user.home points to your home directory.
+		//Vb:  C:\Users\Satan
+		//.resolve adds whatever you put to it.
 		Path p = Paths.get(System.getProperty("user.home")).resolve("Desktop/School-Y2-/Java Advanced/Data/phonedirectory.txt");
 		
-		//user.dir verwijst naar je huidige project directory
+		//user.dir points to your current project, top level.
 		//Vb: C:\Users\Satan\Desktop\Java-PE\JavaAdvancedPE
 		Path p = Paths.get(System.getProperty("user.dir")).resolve("src/main/resources");
 	}
+
 
 Stream (filter, limit, min, max){
 	//filter gaat met een conditie werken, collect om er een lijst van te maken.
@@ -36,33 +37,26 @@ Stream (filter, limit, min, max){
 	
 
 Working with Maps{
-	//Een map is zoals een Dictionary in C#.
-	//Dus je hebt een Value en een key.
+	//A map is like a Dictionary in C#.
+	//So you have a value and a key.
 	//vb:
 	private Map<String, Customer> customers = new HashMap<>();
-	
-	//om hier gegevens uit te halen:
+	//to get data:
 	//.get(key) 
+	//This will get the customer with the given id:
 	customers.get(id);
 	
-	//Dit zal dus de customer halen met als key dit id.
-	//om alle values op te halen of alle keys op te halen kunnen we streams en collect gebruiken
-	//dan krijg je dus een ArrayList<Customer> of ArrayList<??> van de key type:
+	//to get all values or all keys we can use streams and collect:
+	//you'll get an ArrayList<Customer> or ArrayList<keytype>:
 	customers.values().stream().collect(Collectors.toList());
 	customers.keySet().stream().collect(Collectors.toList());
-	
-	
-	
-	
-	
-	
 }
 
 
 File Reading/Writing{
 
 	BufferedReader + BufferedWriter{
-	//BufferedReader gebruik: 
+	//BufferedReader: 
 	   try (BufferedReader reader = Files.newBufferedReader(p)) {
 			String line = null;
 			while ((line = reader.readLine()) != null) {
@@ -76,9 +70,9 @@ File Reading/Writing{
 		}
 	}
 	
-	//BufferedWriter gebruik:
+	//BufferedWriter:
 		public static void main(String[] args) {
-			Path path = Paths.get(System.getProperty("user.dir)).resolve("src/main/resources/myfile.txt"); 
+			Path path = Paths.get(System.getProperty("user.dir")).resolve("src/main/resources/myfile.txt"); 
 			try(BufferedWriter writer = Files.newBufferedWriter(path)) {
 				writer.write("test");
 			} 
@@ -100,11 +94,11 @@ File Reading/Writing{
 	
 	
 	Stream{
-		//Stream gebruik:
+		//Stream:
 		Path p = Paths.get(System.getProperty("user.home")).resolve("Opdrachten/Opdracht1/code.code");
 		try {
 			Stream<String> lines = Files.lines(p);
-			//Je kan heel de stream in een list steken:
+			//you can convert the stream to a list:
 			//List<String> result = lines.sorted().distinct().collect(Collectors.toList());
 			lines.filter(l -> l.toUpperCase() == l).forEach(System.out::print);
 
@@ -115,7 +109,7 @@ File Reading/Writing{
 		}
 	
 	
-		//Stream gebruik maar in een list opslaan:
+		//using Stream saving to list:
 		try {
 			Stream<String> lines = Files.lines(p);
 			List<String> result =
@@ -131,6 +125,7 @@ File Reading/Writing{
 
 	
 	Serializable{
+		//Buffered is easier, ignore this if you have a choice :P
 		File Writing{
 			public static void main(String[] args) {
 				Spaarrekening rekening = new Spaarrekening(666, "BE48 321 666 999", "Milosz Boghe");
@@ -142,7 +137,7 @@ File Reading/Writing{
 				}
 			}
 		}
-		
+		//Buffered is easier, ignore this if you have a choice :P
 		File Reading{
 			try (FileInputStream file = new FileInputStream("Rekening.ser");
 				 ObjectInputStream in = new ObjectInputStream(file)) {
@@ -156,11 +151,12 @@ File Reading/Writing{
 	
 }
 
+}
 
 Generics {
 	
 	Letter{
-		//Welke letter maakt geen kloot uit. 
+		//which letter you pick doesn't matter. <T>, <E> , ...? 
 		public class DistanceUtil {
 			public static <T extends DistanceFunction<T>> T findClosest(Set<T> elements, T otherElement) {
 				ArrayList<T> listOfElements = new ArrayList<T>(elements);
@@ -181,9 +177,9 @@ Generics {
 	}	
 	
 	Sort/Comparable{
-		//Als je met Collections.sort gaat werken moet je comparable implementen in de klasse die gebruikt wordt:
+		//If you're working with Collections.sort, you need to implement a Comparable to your class.
 		public class Attraction implements Item, Comparable<Attraction>{
-		// in de compareTo methode:
+		// compareTo method:
 			public int compareTo(Attraction attraction) {
 				return Integer.compare(attraction.rating, this.rating);
 			}	
@@ -193,7 +189,7 @@ Generics {
 
 
 Formatter{
-	//formatter maken
+	//formatter
 	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss z yyyy", Locale.US);
     LocalDateTime saleDate = LocalDateTime.parse(split[8], formatter);
 }
@@ -201,8 +197,8 @@ Formatter{
 	
 MultiThreading{
 	//Implement Runnable OF Thread.
-	//Thread is gemakkelijker. 
-	//Bij beide moet je instantievariabelen hebben die je kan aanroepen om te gebruiken in de run() methode.
+	//Thread is easier. 
+	//For both you'll need instance variabeles which you can call to use in run() method.
 	public class Writer implements Runnable{
 		private Path filePath;
 		private List<Property> properties;
@@ -214,15 +210,14 @@ MultiThreading{
 		}
 		
 		
-		//Bij runnable moet je in je main klasse een Thread maken met als constructor
-		//het Object dat je wil multithreaden.
+		//For runnable you'll make a Thread in your main method with the object you want as constructor parameter.
 		 public static void main(String[] args) {
 			Thread Writer = new Thread(new Writer(".........."));
 			Writer.start();
 		 }
 		 
 		 
-		 //writer.start() zal dan de run() methode oproepen. GEBRUIK GEEN .RUN().
+		 //writer.start() will call the run() method. DO NOT USE .run(). or it will call it single threaded.
 		@Override
 		public void run() {
 			try (BufferedWriter writer = Files.newBufferedWriter(filePath)) {
@@ -240,10 +235,11 @@ MultiThreading{
 		} 
 	}
 	
-	//Bij Thread:
-	//als een klasse Thread extend dan kan je de methode .start() erop uitvoeren.
-	//deze methode zal de .run() methode in de klasse runnen , met multithreading.
-	//dus om dit te gebruiken moet je in main klasse ook nog een object van deze klasse maken en dan .start():
+	//Using Thread:
+	//If a class extends Thread then you can call .start() on it.
+	//This method will start the .run() method you override in that class.
+	//This will be multithreaded.
+	//So to use this , you'll just need to make the Object you want in your main method and call .start().
 	public static void main(String[] args) {
 			Writer writer = new Writer("output.txt", [een of andere list] );
 			Writer.start();
@@ -277,7 +273,6 @@ MultiThreading{
 
 }
 
-	
-	
-	
-	
+
+
+

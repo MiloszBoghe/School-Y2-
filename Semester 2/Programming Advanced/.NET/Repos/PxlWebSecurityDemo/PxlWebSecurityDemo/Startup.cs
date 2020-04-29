@@ -32,12 +32,14 @@ namespace PxlWebSecurityDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddDbContext<DemoContext>(options =>
             {
                 var connectionString =
                     @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SecureWebApiDb;Integrated Security=True;";
                 options.UseSqlServer(connectionString);
             });
+
             services.AddIdentity<User, Role>(options =>
             {
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
