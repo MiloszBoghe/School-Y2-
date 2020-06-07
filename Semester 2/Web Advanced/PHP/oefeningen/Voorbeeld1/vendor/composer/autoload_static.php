@@ -20,17 +20,11 @@ class ComposerStaticInitf2c7aecc504cbb80835e459741481dd6
         ),
     );
 
-    public static $classMap = array (
-        'drawing\\Line' => __DIR__ . '/../..' . '/src/drawing/Line.php',
-        'drawing\\Point' => __DIR__ . '/../..' . '/src/drawing/Point.php',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitf2c7aecc504cbb80835e459741481dd6::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitf2c7aecc504cbb80835e459741481dd6::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitf2c7aecc504cbb80835e459741481dd6::$classMap;
 
         }, null, ClassLoader::class);
     }
