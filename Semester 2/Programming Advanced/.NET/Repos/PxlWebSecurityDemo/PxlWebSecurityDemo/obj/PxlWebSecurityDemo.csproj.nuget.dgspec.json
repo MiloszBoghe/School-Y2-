@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo\\PxlWebSecurityDemo.csproj": {}
+    "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo\\PxlWebSecurityDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\PxlWebSecurityDemo.Data.csproj": {
+    "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\PxlWebSecurityDemo.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\PxlWebSecurityDemo.Data.csproj",
+        "projectUniqueName": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\PxlWebSecurityDemo.Data.csproj",
         "projectName": "PxlWebSecurityDemo.Data",
-        "projectPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\PxlWebSecurityDemo.Data.csproj",
-        "packagesPath": "C:\\Users\\Satan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\obj\\",
+        "projectPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\PxlWebSecurityDemo.Data.csproj",
+        "packagesPath": "C:\\Users\\11800460\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Satan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\11800460\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,21 +71,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo\\PxlWebSecurityDemo.csproj": {
+    "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo\\PxlWebSecurityDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo\\PxlWebSecurityDemo.csproj",
+        "projectUniqueName": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo\\PxlWebSecurityDemo.csproj",
         "projectName": "PxlWebSecurityDemo",
-        "projectPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo\\PxlWebSecurityDemo.csproj",
-        "packagesPath": "C:\\Users\\Satan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo\\obj\\",
+        "projectPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo\\PxlWebSecurityDemo.csproj",
+        "packagesPath": "C:\\Users\\11800460\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Satan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\11800460\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,8 +101,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\PxlWebSecurityDemo.Data.csproj": {
-                "projectPath": "C:\\Users\\Satan\\Desktop\\School\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\PxlWebSecurityDemo.Data.csproj"
+              "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\PxlWebSecurityDemo.Data.csproj": {
+                "projectPath": "C:\\Users\\11800460\\Desktop\\School-Y2-\\Semester 2\\Programming Advanced\\.NET\\Repos\\PxlWebSecurityDemo\\PxlWebSecurityDemo.Data\\PxlWebSecurityDemo.Data.csproj"
               }
             }
           }
@@ -143,6 +149,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -151,7 +163,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
