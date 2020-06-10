@@ -1,0 +1,235 @@
+<div class="container">
+  <h1 class="mb-md-5">Profiel</h1>
+  <div class="form-row" *ngIf="isLoaded" (keyup.enter)="saveChanges()">
+    <div [formGroup]="userProfile" *ngIf="!bedrijf" id="user">
+      <img src="../../assets/images/profile-image.jpg" id="profile_icon" alt="profile image" width="140"
+           height="147">
+      <br>
+      <div class="form-row">
+        <div class="form-group col-sm-12">
+          <label class="font-weight-bold">Voornaam</label>
+          <input type="text" class="form-control" id="voornaam" formControlName="voornaam">
+          <span
+            *ngIf="userProfile.get('voornaam').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een voornaam in!</span
+          >
+          <span
+            *ngIf="
+            !userProfile.get('voornaam').hasError('required') &&
+            userProfile.get('voornaam').hasError('pattern')
+          "
+            class="alert-danger errorMessage"
+          >De voornaam mag enkel letters bevatten!</span
+          >
+        </div>
+        <div class="form-group col-md-6">
+          <label class="font-weight-bold">Achternaam</label>
+          <input type="text" class="form-control" id="naam" formControlName="naam">
+          <span
+            *ngIf="userProfile.get('naam').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een achternaam in!</span
+          >
+          <span
+            *ngIf="
+            !userProfile.get('naam').hasError('required') &&
+            userProfile.get('naam').hasError('pattern')
+          "
+            class="alert-danger errorMessage"
+          >De achternaam mag enkel letters bevatten!</span
+          >
+        </div>
+      </div>
+      <span class="font-weight-bold">Email</span>
+      <input type="text" class="form-control mb-md-3" id="email" formControlName="email">
+      <span
+        *ngIf="userProfile.get('email').hasError('required')"
+        class="alert-danger errorMessage"
+      >Vul een e-mail in!</span
+      >
+      <span
+        *ngIf="
+        !userProfile.get('email').hasError('required') &&
+        userProfile.get('email').hasError('email')
+      "
+        class="alert-danger errorMessage"
+      >Dit is geen geldig e-mailadres!</span
+      >
+    </div>
+
+    <div *ngIf="bedrijf" id="companyData" [formGroup]="bedrijfProfile">
+      <img src="../../assets/images/company_profile_image.png" id="profile_icon_bedrijf" alt="profile image" width="140"
+           height="147">
+      <br>
+      <div id="bedrijf">
+        <h2>Bedrijf</h2>
+        <div>
+          <label for="bedrijfNaam" class="font-weight-bold">Naam</label>
+          <input type="text" class="form-control w-auto" id="bedrijfNaam" formControlName="naamBedrijf">
+          <span
+            *ngIf="bedrijfProfile.get('naamBedrijf').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een naam in!</span
+          >
+        </div>
+        <div>
+          <label for="adres" class="font-weight-bold">Adres</label>
+          <input type="text" class="form-control w-auto" id="adres" formControlName="adresBedrijf">
+          <span
+            *ngIf="bedrijfProfile.get('adresBedrijf').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een adres in!</span
+          >
+        </div>
+        <div>
+          <label for="gemeente" class="font-weight-bold">Gemeente</label>
+          <input type="text" class="form-control w-auto" id="gemeente" formControlName="gemeente">
+          <span
+            *ngIf="bedrijfProfile.get('gemeente').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een gemeente in!</span
+          >
+        </div>
+        <div>
+          <label for="postcode" class="font-weight-bold">Postcode</label>
+          <input type="text" class="form-control w-auto" id="postcode" formControlName="postcode">
+          <span
+            *ngIf="bedrijfProfile.get('postcode').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een postcode in!</span
+          >
+        </div>
+        <div>
+          <label for="aantalMedewerkers" class="font-weight-bold">Aantal Medewerkers</label>
+          <input type="text" class="form-control w-auto" id="aantalMedewerkers" formControlName="aantalMedewerkers">
+          <span
+            *ngIf="bedrijfProfile.get('aantalMedewerkers').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul het aantal medewerkers in!</span
+          >
+        </div>
+        <div>
+          <label for="aantalITMedewerkers" class="font-weight-bold">aantal IT medewerkers</label>
+          <input type="text" class="form-control w-auto" id="aantalITMedewerkers" formControlName="aantalITMedewerkers">
+          <span
+            *ngIf="bedrijfProfile.get('aantalITMedewerkers').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een aantal IT Medewerkers in!</span
+          >
+        </div>
+        <div>
+          <label for="aantalBegeleidendeMedewerkers" class="font-weight-bold">Aantal begeleiders</label>
+          <input type="text" class="form-control w-auto" id="aantalBegeleidendeMedewerkers"
+                 formControlName="aantalBegeleiders">
+          <span
+            *ngIf="bedrijfProfile.get('aantalBegeleiders').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul het aantal begeleiders in!</span
+          >
+        </div>
+      </div>
+      <div id="contactPersoon">
+        <h2>Contactpersoon</h2>
+        <div>
+          <label for="titelContactpersoon" class="font-weight-bold">Titel</label>
+          <input type="text" class="form-control w-auto" id="titelContactpersoon" formControlName="titelContactpersoon">
+          <span
+            *ngIf="bedrijfProfile.get('titelContactpersoon').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een titel in!</span>
+        </div>
+        <div>
+          <label for="voornaamContactpersoon" class="font-weight-bold">Voornaam</label>
+          <input type="text" class="form-control w-auto" id="voornaamContactpersoon" formControlName="voornaamContactpersoon">
+          <span
+            *ngIf="bedrijfProfile.get('voornaamContactpersoon').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een voornaam in!</span
+          >
+        </div>
+        <div>
+          <label for="naamContactpersoon" class="font-weight-bold">Naam</label>
+          <input type="text" class="form-control w-auto" id="naamContactpersoon" formControlName="achternaamContactpersoon">
+          <span
+            *ngIf="bedrijfProfile.get('achternaamContactpersoon').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een naam in!</span
+          >
+        </div>
+        <div>
+          <label for="telContactpersoon" class="font-weight-bold">Tel.</label>
+          <input type="text" class="form-control w-auto" id="telContactpersoon" formControlName="telefoonnummerContactpersoon">
+          <span
+            *ngIf="bedrijfProfile.get('telefoonnummerContactpersoon').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een telefoonnummer in!</span>
+        </div>
+        <div>
+          <label for="emailContactpersoon" class="font-weight-bold">Email</label>
+          <input type="text" class="form-control w-auto" id="emailContactpersoon" formControlName="emailContactpersoon">
+          <span
+            *ngIf="bedrijfProfile.get('emailContactpersoon').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een email in!</span>
+        </div>
+      </div>
+      <div id="bedrijfsPromotor">
+        <h2>Bedrijfspromotor</h2>
+        <div>
+          <label for="titelBedrijfspromotor" class="font-weight-bold">Titel</label>
+          <input type="text" class="form-control w-auto" id="titelBedrijfspromotor" formControlName="titelBedrijfspromotor">
+          <span
+            *ngIf="bedrijfProfile.get('titelBedrijfspromotor').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een titel in!</span
+          >
+        </div>
+        <div>
+          <label for="voornaamBedrijfspromotor" class="font-weight-bold">Voornaam</label>
+          <input type="text" class="form-control w-auto" id="voornaamBedrijfspromotor" formControlName="voornaamBedrijfspromotor">
+          <span
+            *ngIf="bedrijfProfile.get('voornaamBedrijfspromotor').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een voornaam in!</span
+          >
+        </div>
+        <div>
+          <label for="achternaamBedrijfspromotor" class="font-weight-bold">Naam</label>
+          <input type="text" class="form-control w-auto" id="achternaamBedrijfspromotor" formControlName="achternaamBedrijfspromotor">
+          <span
+            *ngIf="bedrijfProfile.get('achternaamBedrijfspromotor').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een naam in!</span
+          >
+        </div>
+        <div>
+          <label for="telefoonnummerBedrijfspromotor" class="font-weight-bold">Tel.</label>
+          <input type="text" class="form-control w-auto" id="telefoonnummerBedrijfspromotor" formControlName="telefoonnummerBedrijfspromotor">
+          <span
+            *ngIf="bedrijfProfile.get('telefoonnummerBedrijfspromotor').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een telefoonnummer in!</span>
+        </div>
+        <div>
+          <label for="emailBedrijfspromotor" class="font-weight-bold">Email</label>
+          <input type="text" class="form-control w-auto" id="emailBedrijfspromotor" formControlName="emailBedrijfspromotor">
+          <span
+            *ngIf="bedrijfProfile.get('emailBedrijfspromotor').hasError('required')"
+            class="alert-danger errorMessage"
+          >Vul een email in!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3" *ngIf="isLoaded && user||bedrijf">
+    <button type="button" id="annuleer" class="btn btn-secondary" [routerLink]="['/profile', selectedUserId]">
+      Annuleer
+    </button>
+    <button id="opslaanUser" type="button" class="btn btn-primary ml-3 mr-2"
+            (click)="saveChanges()">Opslaan
+    </button>
+  </div>
+
+</div>

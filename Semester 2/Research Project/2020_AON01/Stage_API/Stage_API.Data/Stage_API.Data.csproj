@@ -1,0 +1,91 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200313114352_Add relations from stagevoorstellen.cs" />
+    <Compile Remove="Migrations\20200313114352_Add relations from stagevoorstellen.Designer.cs" />
+    <Compile Remove="Migrations\20200313114953_Add relations from stagevoorstellen.cs" />
+    <Compile Remove="Migrations\20200313114953_Add relations from stagevoorstellen.Designer.cs" />
+    <Compile Remove="Migrations\20200320204639_Coordinator inherits from Reviewer.cs" />
+    <Compile Remove="Migrations\20200320204639_Coordinator inherits from Reviewer.Designer.cs" />
+    <Compile Remove="Migrations\20200320213435_add relationship for reviewer %28voorkeurbegeleiding%29.cs" />
+    <Compile Remove="Migrations\20200320213435_add relationship for reviewer %28voorkeurbegeleiding%29.Designer.cs" />
+    <Compile Remove="Migrations\20200403130121_Implement_IdentityUser.cs" />
+    <Compile Remove="Migrations\20200403130121_Implement_IdentityUser.Designer.cs" />
+    <Compile Remove="Migrations\20200403175613_test.cs" />
+    <Compile Remove="Migrations\20200403175613_test.Designer.cs" />
+    <Compile Remove="Migrations\20200407174346_ChangedMessages.cs" />
+    <Compile Remove="Migrations\20200407174346_ChangedMessages.Designer.cs" />
+    <Compile Remove="Migrations\20200407174616_ChangedMessages.cs" />
+    <Compile Remove="Migrations\20200407174616_ChangedMessages.Designer.cs" />
+    <Compile Remove="Migrations\20200407174742_ChangedMessages.cs" />
+    <Compile Remove="Migrations\20200407174742_ChangedMessages.Designer.cs" />
+    <Compile Remove="Migrations\20200407175211_ChangedMessages.cs" />
+    <Compile Remove="Migrations\20200407175211_ChangedMessages.Designer.cs" />
+    <Compile Remove="Migrations\20200407201838_ChangedMessagesAgain.cs" />
+    <Compile Remove="Migrations\20200407201838_ChangedMessagesAgain.Designer.cs" />
+    <Compile Remove="Migrations\20200417135237_OneToMany For Student-Stagevoorstel %28toegewezen%29 and ManyToMany For Student - StudentStagevoorstel_Favorieten.cs" />
+    <Compile Remove="Migrations\20200417135237_OneToMany For Student-Stagevoorstel %28toegewezen%29 and ManyToMany For Student - StudentStagevoorstel_Favorieten.Designer.cs" />
+    <Compile Remove="Migrations\20200417192136_IgnoreDataMember on Id%27s in manyTomany classes.cs" />
+    <Compile Remove="Migrations\20200417192136_IgnoreDataMember on Id%27s in manyTomany classes.Designer.cs" />
+    <Compile Remove="Migrations\20200417192207_IgnoreDataMember on Id%27s in manyTomany classes.cs" />
+    <Compile Remove="Migrations\20200417192207_IgnoreDataMember on Id%27s in manyTomany classes.Designer.cs" />
+    <Compile Remove="Migrations\20200417194012_ignore some user properties when serializing.cs" />
+    <Compile Remove="Migrations\20200417194012_ignore some user properties when serializing.Designer.cs" />
+    <Compile Remove="Migrations\20200419185339_trying to fix many to many.cs" />
+    <Compile Remove="Migrations\20200419185339_trying to fix many to many.Designer.cs" />
+    <Compile Remove="Migrations\20200419192107_test.cs" />
+    <Compile Remove="Migrations\20200419192107_test.Designer.cs" />
+    <Compile Remove="Migrations\20200420214233_test.cs" />
+    <Compile Remove="Migrations\20200420214233_test.Designer.cs" />
+    <Compile Remove="Migrations\20200423014001_FixMessageRelations.cs" />
+    <Compile Remove="Migrations\20200423014001_FixMessageRelations.Designer.cs" />
+    <Compile Remove="Migrations\20200423182606_test.cs" />
+    <Compile Remove="Migrations\20200423182606_test.Designer.cs" />
+    <Compile Remove="Migrations\20200423182727_Fix.cs" />
+    <Compile Remove="Migrations\20200423182727_Fix.Designer.cs" />
+    <Compile Remove="Migrations\20200423182834_Fix.cs" />
+    <Compile Remove="Migrations\20200423182834_Fix.Designer.cs" />
+    <Compile Remove="Migrations\20200423184146_Fix.cs" />
+    <Compile Remove="Migrations\20200423184146_Fix.Designer.cs" />
+    <Compile Remove="Migrations\20200423184834_Fix.cs" />
+    <Compile Remove="Migrations\20200423184834_Fix.Designer.cs" />
+    <Compile Remove="Migrations\20200424070437_testµ.cs" />
+    <Compile Remove="Migrations\20200424070437_testµ.Designer.cs" />
+    <Compile Remove="Migrations\20200424075124_addReviewRelations.cs" />
+    <Compile Remove="Migrations\20200424075124_addReviewRelations.Designer.cs" />
+    <Compile Remove="Migrations\20200509191651_test.cs" />
+    <Compile Remove="Migrations\20200509191651_test.Designer.cs" />
+    <Compile Remove="Migrations\20200510195425_testingSomething.cs" />
+    <Compile Remove="Migrations\20200510195425_testingSomething.Designer.cs" />
+    <Compile Remove="Migrations\20200510195557_testingSomething.cs" />
+    <Compile Remove="Migrations\20200510195557_testingSomething.Designer.cs" />
+    <Compile Remove="Migrations\20200510195654_testingSomething.cs" />
+    <Compile Remove="Migrations\20200510195654_testingSomething.Designer.cs" />
+    <Compile Remove="Migrations\20200510195721_testingSomething.cs" />
+    <Compile Remove="Migrations\20200510195721_testingSomething.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stage_API.Business\Stage_API.Business.csproj" />
+    <ProjectReference Include="..\Stage_API.Domain\Stage_API.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>

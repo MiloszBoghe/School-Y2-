@@ -1,0 +1,15 @@
+<div id="role" [ngSwitch]="claim.role" *ngIf="claim">
+  <div *ngSwitchCase="'student'">
+    <app-student></app-student>
+  </div>
+  <div *ngSwitchCase="'reviewer'">
+    <app-reviewer></app-reviewer>
+  </div>
+  <div *ngSwitchCase="'bedrijf'">
+    <app-bedrijf></app-bedrijf>
+  </div>
+  <div *ngSwitchCase="'coordinator'">
+    <app-stagevoorstellen></app-stagevoorstellen>
+  </div>
+  <div *ngSwitchDefault>{{ router.navigate(["/logout"]) }}</div>
+</div>

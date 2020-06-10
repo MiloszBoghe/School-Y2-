@@ -1,0 +1,113 @@
+<div class="container-lg">
+  <h1 class="mb-md-5">Profiel</h1>
+  <!--User -->
+  <div class="row" id="body">
+    <div class="col-md-4 order-md-12 mb-3">
+      <img *ngIf="user" src="../../assets/images/profile-image.jpg" id="profile_icon" alt="profile image"
+           width="140"
+           height="147">
+
+      <br>
+      <div *ngIf="user">
+        <span id="voornaam" class="font-weight-bold">{{user.voornaam}}</span>
+        <span id="naam" class="font-weight-bold"> {{user.naam}}</span>
+        <br>
+        <span id="email" class="font-weight-bold">{{user.email}}</span>
+      </div>
+
+    </div>
+    <!--bedrijf-->
+    <img *ngIf="bedrijf" src="../../assets/images/company_profile_image.png" id="company_profile_icon"
+         alt="profile image"
+         width="140" height="147" class="float-right">
+    <div *ngIf="bedrijf" id="companyData" class="row ml-3">
+
+      <div id="bedrijf" class="row col-md-4 col-sm-12 pl-0 pr-2 d-block">
+        <h3 class="font-weight-bold" id="bedrijfNaam">{{bedrijf.naam}}</h3>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Adres</span>
+          <p id="adres">{{bedrijf.adres}}</p>
+        </div>
+        <div class="row col-12">
+          <div class="col-lg-5 col-md-6 col-sm-12 p-0">
+            <span class="font-weight-bold">Gemeente</span>
+            <p id="gemeente">{{bedrijf.gemeente}}</p>
+          </div>
+          <div class=" col-lg-5 col-md-6 col-sm-12 p-0">
+            <span class="font-weight-bold">Postcode</span>
+            <p id="postcode">{{bedrijf.postcode}}</p>
+          </div>
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Aantal medewerkers</span>
+          <p id="aantalMedewerkers">{{bedrijf.aantalMedewerkers}}</p>
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Aantal IT medewerkers</span>
+          <p id="aantalITMedewerkers">{{bedrijf.aantalITMedewerkers}}</p>
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Aantal begeleiders</span>
+          <p id="aantalBegeleidendeMedewerkers">{{bedrijf.aantalBegeleidendeMedewerkers}}</p>
+        </div>
+      </div>
+
+      <div id="contactPersoon" class="row col-md-4 col-sm-12 ml-sm-2 pl-0 pr-2 d-block">
+        <h3 class="font-weight-bold">Contactpersoon</h3>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Titel</span>
+          <p id="titelContactpersoon">{{bedrijf.contactpersoon.titel}}</p>
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Voornaam</span>
+          <p id="voornaamContactpersoon">{{bedrijf.contactpersoon.voornaam}}</p>
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Naam</span>
+          <p id="naamContactpersoon">{{bedrijf.contactpersoon.naam}}</p>
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Telefoonnummer</span>
+          <p id="telContactpersoon">{{bedrijf.contactpersoon.telefoonnummer}}</p>
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100 ">E-mail</span>
+          <p id="emailContactpersoon">{{bedrijf.contactpersoon.email}}</p>
+        </div>
+      </div>
+
+      <div id="bedrijfsPromotor" class="row col-md-4 col-sm-12 ml-sm-2 pl-0 pr-2 d-block">
+        <h3 class="font-weight-bold">Bedrijfspromotor</h3>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Titel</span>
+          <p id="titelBedrijfspromotor">{{bedrijf.bedrijfspromotor.titel}}</p>
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Voornaam</span>
+          <p id="voornaamBedrijfspromotor">{{bedrijf.bedrijfspromotor.voornaam}}
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Naam</span>
+          <p id="naamBedrijfspromotor">{{bedrijf.bedrijfspromotor.naam}}</p>
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">Telefoonnummer</span>
+          <p id="telBedrijfspromotor">{{bedrijf.bedrijfspromotor.telefoonnummer}}</p>
+        </div>
+        <div class="row col-12">
+          <span class="font-weight-bold w-100">E-mail</span>
+          <p id="emailBedrijfspromotor">{{bedrijf.bedrijfspromotor.email}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--bedrijf-->
+
+
+  <div class="row" *ngIf="user||bedrijf">
+    <button type="button" id="wijzig" class="btn btn-lg btn-primary ml-3 mr-2"
+            [routerLink]="['/edit-profile', selectedUserId]">
+      Wijzig
+    </button>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container" *ngIf="isLoaded">
+  <h1 class="mt-3 mb-3">Mijn stagevoorstellen</h1>
+  <div class="container">
+    <div class="row">
+      <button
+        id="createStagevoorstel"
+        type="button"
+        class="btn btn-primary btn-lg col-lg-7 mb-3"
+        [routerLink]="['/createVoorstel']"
+      >
+        Nieuw stagevoorstel aanmaken
+      </button>
+      <div class="col-lg-1"></div>
+      <button (click)="deleteStagevoorstel()"
+              type="button"
+              class="btn btn-secondary btn-lg col-lg-4 mb-3"
+      >
+        Verwijderen
+      </button>
+    </div>
+  </div>
+
+  <app-voorstel-list [id]="id" [claim]="claim" [pathing]="'/editVoorstel/'"
+                     (newSelection)="updateSelectedVoorstellen($event)"></app-voorstel-list>
+</div>

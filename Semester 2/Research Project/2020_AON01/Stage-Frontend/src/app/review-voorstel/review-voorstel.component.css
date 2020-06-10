@@ -1,0 +1,9 @@
+.main-footer {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}

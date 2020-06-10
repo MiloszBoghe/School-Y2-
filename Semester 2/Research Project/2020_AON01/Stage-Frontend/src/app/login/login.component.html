@@ -1,0 +1,103 @@
+<div class="container register">
+  <div class="row">
+    <div class="col-md-3 register-left">
+      <img
+        src="assets/images/logo_pxl.png"
+        id="logo_pxl"
+        width="50"
+        height="60"
+        class="d-inline-block align-top"
+        alt="Logo PXL"
+      />
+      <h3 style="margin-bottom: 25%;">Welkom bij PXL - Stageadministratie</h3>
+      <input
+        type="button"
+        id="register"
+        name=""
+        value="Registreren"
+        [routerLink]="['/register']"
+      /><br/>
+      <p>Nog geen account? Meld u hier aan!</p>
+    </div>
+    <div class="col-md-9 register-right">
+      <div class="tab-content mt-5 mb-5" id="myTabContent">
+        <!--#region StudentTab-->
+        <div
+          id="student"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          style="margin-top: 25%;"
+          (keyup.enter)="login()"
+        >
+          <h1 class="register-heading">Inloggen</h1>
+          <div class="row register-form justify-content-center">
+            <div class="col-md-6">
+              <div class="form-row justify-content-center">
+                <div class="form-group" [formGroup]="loginForm">
+                  <div class="form-row">
+                    <label for="email">E-mail</label>
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="E-mail *"
+                      value=""
+                      formControlName="email"
+                    />
+                    <span
+                      *ngIf="email.touched && email.errors?.required"
+                      class="alert-danger"
+                    >Vul een e-mail in!</span
+                    >
+                    <span *ngIf="email.errors?.email" class="alert-danger"
+                    >Vul een geldig e-mailadres in!</span
+                    >
+                  </div>
+                  <div class="form-row mt-4">
+                    <label for="wachtwoord">Wachtwoord</label>
+                    <input
+                      type="password"
+                      id="wachtwoord"
+                      class="form-control"
+                      placeholder="Wachtwoord *"
+                      value=""
+                      formControlName="password"
+                    />
+                    <span
+                      *ngIf="password.touched && password.errors?.required"
+                      class="alert-danger"
+                    >Vul een wachtwoord in!</span
+                    >
+                    <span *ngIf="errorMessage" class="alert-danger">{{
+                      errorMessage
+                      }}</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="form-row justify-content-center"
+                style="margin-bottom: 25%;"
+              >
+                <button
+                  [disabled]="!loginForm.valid"
+                  id="login"
+                  class="btn btn-primary btn-lg btn-block mt-4"
+                  (click)="login()"
+                >
+                  Login
+                </button>
+                <p id="forgottenPassword" type="button" class="btn">
+                  Wachtwoord vergeten?
+                  <ins [routerLink]="['/requestReset']">
+                    Klik hier!
+                  </ins>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--#endregion -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

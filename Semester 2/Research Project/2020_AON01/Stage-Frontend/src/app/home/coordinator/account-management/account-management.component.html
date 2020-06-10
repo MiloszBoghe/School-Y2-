@@ -1,0 +1,27 @@
+<div class="mt-3 mb-3 container">
+  <div id="mainDivUsers" class="list-group mt-3">
+    <div
+      *ngIf="isLoadedActivated && isLoadedDeactivated"
+    >
+      <h3>Gedeactiveerde accounts</h3>
+      <app-user-list
+        [users]="usersDeactivated"
+        #userDeactivatedList
+      ></app-user-list>
+      <hr/>
+      <h3>Geactiveerde accounts</h3>
+      <app-user-list
+        [users]="usersActivated"
+        #userActivatedList
+      ></app-user-list>
+      <hr/>
+      <button
+        id="SubmitOordeel"
+        class="btn btn-primary col-md-3"
+        (click)="patchUsers(userActivatedList, userDeactivatedList)"
+      >
+        Bevestig nieuwe activatie status
+      </button>
+    </div>
+  </div>
+</div>

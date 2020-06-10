@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+
+}
+
+#profile_icon {
+  max-width: 50%;
+  height: auto;
+}
+
+.invalid-feedback.invalidated {
+  display: block;
+}
+
+#search{
+  display:inline;
+}

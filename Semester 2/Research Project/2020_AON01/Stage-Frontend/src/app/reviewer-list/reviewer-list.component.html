@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Reviewers</h1>
+  <div class="list-group mt-3">
+    <a *ngFor="let reviewer of reviewers" (click)="reviewerProfile(reviewer.id)" type="button">
+      <div class="d-flex w-100 justify-content-between list-group-item mb-2">
+        <h5>{{ reviewer.voornaam + " " + reviewer.naam }}</h5>
+      </div>
+    </a>
+  </div>
+</div>

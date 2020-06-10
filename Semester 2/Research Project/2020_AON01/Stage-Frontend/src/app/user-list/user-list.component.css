@@ -1,0 +1,17 @@
+.item{
+  width: 95%;
+  vertical-align: center;
+  text-decoration: none;
+  color:inherit;
+}
+
+.mainDiv{
+  vertical-align: center;
+  width: 100%;
+}
+
+.checkBox{
+  height: 100%;
+  width: 5%;
+  padding: 0.6rem;
+}

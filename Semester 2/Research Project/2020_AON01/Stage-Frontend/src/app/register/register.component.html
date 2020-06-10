@@ -1,0 +1,1165 @@
+<div class="container register">
+  <div class="row">
+    <div class="col-md-3 register-left">
+      <img
+        src="assets/images/logo_pxl.png"
+        id="logo_pxl"
+        width="50"
+        height="60"
+        class="d-inline-block align-top"
+        alt="Logo PXL"
+      />
+      <h3>Welkom bij PXL - Stageadministratie</h3>
+      <input
+        id="login"
+        type="button"
+        name=""
+        value="Login"
+        [routerLink]="['/login']"
+      /><br />
+      <p>Heeft u al een account? Log hier in!</p>
+    </div>
+    <div class="col-md-9 register-right">
+      <!--#region PersonNavigation  -->
+      <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+          <a class="nav-link" (click)="switchTabs(states.student)" type="button"
+            >Student</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            (click)="switchTabs(states.bedrijfAlgemeen)"
+            type="button"
+            >Bedrijf</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            (click)="switchTabs(states.reviewer)"
+            type="button"
+            >Reviewer</a
+          >
+        </li>
+      </ul>
+      <!--#endregion -->
+
+      <div class="tab-content" id="myTabContent">
+        <!--#region StudentTab-->
+        <div
+          [ngClass]="{ hidden: state !== states.student }"
+          [formGroup]="studentForm"
+          (keyup.enter)="registerStudent(studentForm)"
+        >
+          <h3 class="register-heading">Registreer als student</h3>
+          <div class="row register-form justify-content-center">
+            <div *ngFor="let error of errorMessages" class="alert alert-danger">
+              {{ error }}
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="voornaamS">Voornaam</label>
+                <input
+                  type="text"
+                  id="voornaamS"
+                  class="form-control"
+                  placeholder="Voornaam *"
+                  value=""
+                  formControlName="voornaam"
+                />
+                <span
+                  *ngIf="
+                    studentForm.get('voornaam').touched &&
+                    studentForm.get('voornaam').hasError('required')
+                  "
+                  class="alert-danger errorMessage"
+                  >Vul een voornaam in!</span
+                >
+                <span
+                  *ngIf="
+                    studentForm.get('voornaam').touched &&
+                    !studentForm.get('voornaam').hasError('required') &&
+                    studentForm.get('voornaam').hasError('pattern')
+                  "
+                  class="alert-danger errorMessage"
+                  >De voornaam mag enkel letters bevatten!</span
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="achternaamS">Achternaam</label>
+                <input
+                  type="text"
+                  id="achternaamS"
+                  class="form-control"
+                  placeholder="Achternaam *"
+                  value=""
+                  formControlName="achternaam"
+                />
+                <span
+                  *ngIf="
+                    studentForm.get('achternaam').touched &&
+                    studentForm.get('achternaam').hasError('required')
+                  "
+                  class="alert-danger errorMessage"
+                  >Vul een achternaam in!</span
+                >
+                <span
+                  *ngIf="
+                    studentForm.get('achternaam').touched &&
+                    !studentForm.get('achternaam').hasError('required') &&
+                    studentForm.get('achternaam').hasError('pattern')
+                  "
+                  class="alert-danger errorMessage"
+                  >De achternaam mag enkel letters bevatten!</span
+                >
+              </div>
+              <div class="form-group">
+                <label for="emailS">E-mail</label>
+                <input
+                  type="text"
+                  id="emailS"
+                  class="form-control"
+                  placeholder="E-mail *"
+                  value=""
+                  formControlName="email"
+                />
+                <span
+                  *ngIf="
+                    studentForm.get('email').touched &&
+                    studentForm.get('email').hasError('required')
+                  "
+                  class="alert-danger errorMessage"
+                  >Vul een e-mail in!</span
+                >
+                <span
+                  *ngIf="
+                    studentForm.get('email').touched &&
+                    !studentForm.get('email').hasError('required') &&
+                    studentForm.get('email').hasError('email')
+                  "
+                  class="alert-danger errorMessage"
+                >
+                  Dit is geen geldig e-mailadres!
+                </span>
+              </div>
+              <div formGroupName="wachtwoordGroup">
+                <div class="form-group">
+                  <label for="wachtwoordS">Wachtwoord</label>
+                  <input
+                    type="password"
+                    id="wachtwoordS"
+                    class="form-control"
+                    placeholder="Wachtwoord *"
+                    value=""
+                    formControlName="wachtwoord"
+                  />
+                  <span
+                    *ngIf="
+                      studentForm.controls['wachtwoordGroup']
+                        .get('wachtwoord')
+                        .hasError('required') &&
+                      studentForm.controls['wachtwoordGroup'].get('wachtwoord')
+                        .touched
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een wachtwoord in!</span
+                  >
+                  <span
+                    *ngIf="
+                      studentForm.controls['wachtwoordGroup']
+                        .get('wachtwoord')
+                        .hasError('minlength') &&
+                      studentForm.controls['wachtwoordGroup'].get('wachtwoord')
+                        .touched
+                    "
+                    class="alert-danger errorMessage"
+                    >Het wachtwoord moet minstens 6 tekens bevatten!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="wachtwoordBevestigingS"
+                    >Bevestig wachtwoord</label
+                  >
+                  <input
+                    type="password"
+                    id="wachtwoordBevestigingS"
+                    class="form-control"
+                    placeholder="Bevestig wachtwoord *"
+                    value=""
+                    formControlName="wachtwoordBevestiging"
+                  />
+                  <span
+                    *ngIf="
+                      studentForm.controls['wachtwoordGroup']
+                        .get('wachtwoordBevestiging')
+                        .hasError('required') &&
+                      studentForm.controls['wachtwoordGroup'].get(
+                        'wachtwoordBevestiging'
+                      ).touched
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul dit veld in!</span
+                  >
+                  <span
+                    *ngIf="
+                      !studentForm.controls['wachtwoordGroup']
+                        .get('wachtwoordBevestiging')
+                        .hasError('required') &&
+                      studentForm.controls.wachtwoordGroup.status ===
+                        'INVALID' &&
+                      studentForm.controls['wachtwoordGroup'].get(
+                        'wachtwoordBevestiging'
+                      ).touched
+                    "
+                    class="alert-danger errorMessage"
+                    >De wachtwoorden komen niet overeen!</span
+                  >
+                </div>
+              </div>
+              <div class="form-row justify-content-center">
+                <button
+                  id="registerStudent"
+                  class="btnRegister"
+                  [disabled]="!studentForm.valid"
+                  (click)="registerStudent(studentForm)"
+                >
+                  Registreren
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--#endregion -->
+
+        <div [formGroup]="bedrijfForm">
+          <!--#region BedrijfTabAlgemeen  -->
+          <div
+            [ngClass]="{ hidden: state !== states.bedrijfAlgemeen }"
+            (keyup.enter)="switchTabs(states.bedrijfContactpersoon)"
+          >
+            <h3 class="register-heading">Registreer als bedrijf</h3>
+            <div class="register-subheading">
+              <div class="form-row">
+                <div class="col-sm">
+                  <span
+                    id="algemeenBA"
+                    type="button"
+                    class="font-weight-bold line btn"
+                    (click)="switchTabs(states.bedrijfAlgemeen)"
+                  >
+                    <ins>Algemeen</ins></span
+                  >
+                </div>
+                <div class="col-sm">
+                  <span
+                    id="contactpersoonBA"
+                    type="button"
+                    class="btn"
+                    (click)="switchTabs(states.bedrijfContactpersoon)"
+                    >Contactpersoon</span
+                  >
+                </div>
+                <div class="col-sm">
+                  <span
+                    id="bedrijfspromotorBA"
+                    type="button"
+                    class="btn"
+                    (click)="switchTabs(states.bedrijfPromotor)"
+                    >Bedrijfspromotor</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row register-form">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <h6 class="font-weight-bold">Bedrijf</h6>
+                </div>
+                <div class="form-group">
+                  <label for="naamBedrijf">Naam bedrijf</label>
+                  <input
+                    id="naamBedrijf"
+                    type="text"
+                    class="form-control"
+                    placeholder="Naam bedrijf *"
+                    value=""
+                    formControlName="naamBedrijf"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('naamBedrijf').touched &&
+                      bedrijfForm.get('naamBedrijf').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een naam in!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="aantalMedewerkers">Aantal Medewerkers</label>
+                  <input
+                    id="aantalMedewerkers"
+                    type="text"
+                    class="form-control"
+                    placeholder="Aantal medewerkers *"
+                    value=""
+                    formControlName="aantalMedewerkers"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('aantalMedewerkers').touched &&
+                      bedrijfForm.get('aantalMedewerkers').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul het totaal aantal medewerkers van het bedrijf in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('aantalMedewerkers').touched &&
+                      !bedrijfForm
+                        .get('aantalMedewerkers')
+                        .hasError('required') &&
+                      bedrijfForm
+                        .get('aantalMedewerkers')
+                        .hasError('requireNumber')
+                    "
+                    class="alert-danger errorMessage"
+                    >Dit veld mag enkel nummers bevatten!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="aantalITMedewerkers">Aantal IT-Medewerkers</label>
+                  <input
+                    id="aantalITMedewerkers"
+                    type="text"
+                    class="form-control"
+                    placeholder="Aantal IT-medewerkers *"
+                    value=""
+                    formControlName="aantalITMedewerkers"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('aantalITMedewerkers').touched &&
+                      bedrijfForm
+                        .get('aantalITMedewerkers')
+                        .hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul het totaal aantal IT-medewerkers van het bedrijf
+                    in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('aantalITMedewerkers').touched &&
+                      !bedrijfForm
+                        .get('aantalITMedewerkers')
+                        .hasError('required') &&
+                      bedrijfForm
+                        .get('aantalITMedewerkers')
+                        .hasError('requireNumber')
+                    "
+                    class="alert-danger errorMessage"
+                    >Dit veld mag enkel nummers bevatten!</span
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="aantalBegeleiders">Aantal Begeleiders</label>
+                  <input
+                    id="aantalBegeleiders"
+                    type="text"
+                    class="form-control"
+                    placeholder="Aantal begeleiders *"
+                    value=""
+                    formControlName="aantalBegeleiders"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('aantalBegeleiders').touched &&
+                      bedrijfForm.get('aantalBegeleiders').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul het totaal aantal begeleiders van het bedrijf in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('aantalBegeleiders').touched &&
+                      !bedrijfForm
+                        .get('aantalBegeleiders')
+                        .hasError('required') &&
+                      bedrijfForm
+                        .get('aantalBegeleiders')
+                        .hasError('requireNumber')
+                    "
+                    class="alert-danger errorMessage"
+                    >Dit veld mag enkel nummers bevatten!</span
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <h6 class="font-weight-bold">Adres</h6>
+                </div>
+                <div class="form-group">
+                  <label for="adresBedrijf">Adres</label>
+                  <input
+                    id="adresBedrijf"
+                    type="text"
+                    class="form-control"
+                    placeholder="Straat + nr *"
+                    value=""
+                    formControlName="adresBedrijf"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('adresBedrijf').touched &&
+                      bedrijfForm.get('adresBedrijf').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul het adres in!</span
+                  >
+                </div>
+                <div class="form-group form-row">
+                  <div class="col-sm-7">
+                    <label for="gemeente">Gemeente</label>
+                    <input
+                      id="gemeente"
+                      type="text"
+                      class="form-control"
+                      placeholder="Gemeente *"
+                      value=""
+                      formControlName="gemeente"
+                    />
+                    <span
+                      *ngIf="
+                        bedrijfForm.get('gemeente').touched &&
+                        bedrijfForm.get('gemeente').hasError('required')
+                      "
+                      class="alert-danger errorMessage"
+                      >Vul een gemeente in!</span
+                    >
+                    <span
+                      *ngIf="
+                        bedrijfForm.get('gemeente').touched &&
+                        !bedrijfForm.get('gemeente').hasError('required') &&
+                        bedrijfForm.get('gemeente').hasError('pattern')
+                      "
+                      class="alert-danger errorMessage"
+                      >Dit veld mag geen cijfers bevatten!</span
+                    >
+                  </div>
+                  <div class="col-sm">
+                    <label for="postcode">Postcode</label>
+                    <input
+                      id="postcode"
+                      type="text"
+                      class="form-control"
+                      placeholder="Postcode *"
+                      value=""
+                      formControlName="postcode"
+                    />
+                    <span
+                      *ngIf="
+                        bedrijfForm.get('postcode').touched &&
+                        bedrijfForm.get('postcode').hasError('required')
+                      "
+                      class="alert-danger errorMessage"
+                      >Vul een postcode in!</span
+                    >
+                    <span
+                      *ngIf="
+                        !bedrijfForm.get('postcode').hasError('required') &&
+                        bedrijfForm
+                          .get('postcode')
+                          .hasError('requirePostalCode')
+                      "
+                      class="alert-danger errorMessage"
+                      >Dit is geen geldige postcode!</span
+                    >
+                  </div>
+                </div>
+
+                <div class="form-row justify-content-center mt-4">
+                  <div class="col-sm form-row justify-content-center">
+                    <input
+                      id="bedrijfANext-tab"
+                      type="button"
+                      class="btnRegister"
+                      value="Volgende >"
+                      (click)="switchTabs(states.bedrijfContactpersoon)"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--#endregion -->
+
+          <!--#region BedrijfTabContactpersoon  -->
+          <div
+            [ngClass]="{ hidden: state !== states.bedrijfContactpersoon }"
+            (keyup.enter)="switchTabs(states.bedrijfPromotor)"
+          >
+            <h3 class="register-heading">Registreer als bedrijf</h3>
+            <div class="register-subheading">
+              <div class="form-row">
+                <div class="col-sm">
+                  <span
+                    id="algemeenBC"
+                    type="button"
+                    class="btn"
+                    (click)="switchTabs(states.bedrijfAlgemeen)"
+                    >Algemeen</span
+                  >
+                </div>
+                <div class="col-sm">
+                  <span
+                    id="contactpersoonBC"
+                    type="button"
+                    class="btn font-weight-bold"
+                    (click)="switchTabs(states.bedrijfContactpersoon)"
+                    ><ins>Contactpersoon</ins></span
+                  >
+                </div>
+                <div class="col-sm">
+                  <span
+                    type="button"
+                    class="btn"
+                    id="bedrijfspromotorBC"
+                    (click)="switchTabs(states.bedrijfPromotor)"
+                    >Bedrijfspromotor</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row register-form justify-content-center">
+              <div class="col-md-6">
+                <h6 class="alert-info">
+                  Deze persoon kan met zijn/haar e-mail en wachtwoord inloggen.
+                </h6>
+                <div class="form-group">
+                  <label for="titelC">Titel</label>
+                  <input
+                    type="text"
+                    id="titelC"
+                    class="form-control"
+                    placeholder="Titel *"
+                    value=""
+                    formControlName="titelC"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('titelC').touched &&
+                      bedrijfForm.get('titelC').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul de titel in!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="voornaamC">Voornaam</label>
+                  <input
+                    type="text"
+                    id="voornaamC"
+                    class="form-control"
+                    placeholder="Voornaam *"
+                    value=""
+                    formControlName="voornaamC"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('voornaamC').touched &&
+                      bedrijfForm.get('voornaamC').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een voornaam in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('voornaamC').touched &&
+                      !bedrijfForm.get('voornaamC').hasError('required') &&
+                      bedrijfForm.get('voornaamC').hasError('pattern')
+                    "
+                    class="alert-danger errorMessage"
+                    >De voornaam mag enkel letters bevatten!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="achternaamC">Achternaam</label>
+                  <input
+                    type="text"
+                    id="achternaamC"
+                    class="form-control"
+                    placeholder="Achternaam *"
+                    value=""
+                    formControlName="achternaamC"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('achternaamC').touched &&
+                      bedrijfForm.get('achternaamC').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een achternaam in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('achternaamC').touched &&
+                      !bedrijfForm.get('achternaamC').hasError('required') &&
+                      bedrijfForm.get('achternaamC').hasError('pattern')
+                    "
+                    class="alert-danger errorMessage"
+                    >De achternaam mag enkel letters bevatten!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="telefoonnummerC">Telefoonnummer</label>
+                  <input
+                    id="telefoonnummerC"
+                    type="text"
+                    minlength="10"
+                    maxlength="10"
+                    class="form-control"
+                    placeholder="04 12 345 678 *"
+                    value=""
+                    formControlName="telefoonnummerC"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('telefoonnummerC').touched &&
+                      bedrijfForm.get('telefoonnummerC').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een telefoonnummer in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('telefoonnummerC').touched &&
+                      !bedrijfForm
+                        .get('telefoonnummerC')
+                        .hasError('required') &&
+                      bedrijfForm
+                        .get('telefoonnummerC')
+                        .hasError('requireTelephoneNumber')
+                    "
+                    class="alert-danger errorMessage"
+                    >Het verwachtte formaat is: 04 12 345 678!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="emailC">E-mail</label>
+                  <input
+                    type="email"
+                    id="emailC"
+                    class="form-control"
+                    placeholder="E-mail *"
+                    value=""
+                    formControlName="emailC"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('emailC').touched &&
+                      bedrijfForm.get('emailC').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een e-mail in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('emailC').touched &&
+                      !bedrijfForm.get('emailC').hasError('required') &&
+                      bedrijfForm.get('emailC').hasError('email')
+                    "
+                    class="alert-danger errorMessage"
+                    >Dit is geen geldig e-mailadres!</span
+                  >
+                </div>
+                <div formGroupName="wachtwoordGroup">
+                  <div class="form-group">
+                    <label for="wachtwoord">Wachtwoord</label>
+                    <input
+                      type="password"
+                      id="wachtwoord"
+                      class="form-control"
+                      placeholder="Wachtwoord *"
+                      value=""
+                      formControlName="wachtwoord"
+                    />
+                    <span
+                      *ngIf="
+                        bedrijfForm.controls['wachtwoordGroup']
+                          .get('wachtwoord')
+                          .hasError('required') &&
+                        bedrijfForm.controls['wachtwoordGroup'].get(
+                          'wachtwoord'
+                        ).touched
+                      "
+                      class="alert-danger errorMessage"
+                      >Vul een wachtwoord in!</span
+                    >
+                    <span
+                      *ngIf="
+                        bedrijfForm.controls['wachtwoordGroup'].get(
+                          'wachtwoord'
+                        ).touched &&
+                        bedrijfForm.controls['wachtwoordGroup']
+                          .get('wachtwoord')
+                          .hasError('minlength')
+                      "
+                      class="alert-danger errorMessage"
+                      >Het wachtwoord moet minstens 6 tekens bevatten!</span
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="wachtwoordBevestiging"
+                      >Bevestig wachtwoord</label
+                    >
+                    <input
+                      type="password"
+                      id="wachtwoordBevestiging"
+                      class="form-control"
+                      placeholder="Bevestig wachtwoord *"
+                      value=""
+                      formControlName="wachtwoordBevestiging"
+                    />
+                    <span
+                      *ngIf="
+                        bedrijfForm.controls['wachtwoordGroup']
+                          .get('wachtwoordBevestiging')
+                          .hasError('required') &&
+                        bedrijfForm.controls['wachtwoordGroup'].get(
+                          'wachtwoordBevestiging'
+                        ).touched
+                      "
+                      class="alert-danger errorMessage"
+                      >Vul dit veld in!</span
+                    >
+                    <span
+                      *ngIf="
+                        !bedrijfForm.controls['wachtwoordGroup']
+                          .get('wachtwoordBevestiging')
+                          .hasError('required') &&
+                        bedrijfForm.controls.wachtwoordGroup.status ===
+                          'INVALID' &&
+                        bedrijfForm.controls['wachtwoordGroup'].get(
+                          'wachtwoordBevestiging'
+                        ).touched
+                      "
+                      class="alert-danger errorMessage"
+                      >De wachtwoorden komen niet overeen!</span
+                    >
+                  </div>
+                </div>
+                <div class="form-row justify-content-center mt-4">
+                  <input
+                    id="bedrijfCPrevious-tab"
+                    type="button"
+                    class="btnRegister"
+                    value="< Terug"
+                    (click)="switchTabs(states.bedrijfAlgemeen)"
+                  />
+                  <input
+                    id="bedrijfCNext-tab"
+                    type="button"
+                    class="btnRegister"
+                    value="Volgende >"
+                    (click)="switchTabs(states.bedrijfPromotor)"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--#endregion -->
+
+          <!--#region BedrijfTabBedrijfspromotor  -->
+          <div
+            [ngClass]="{ hidden: state !== states.bedrijfPromotor }"
+            (keyup.enter)="registerBedrijf(bedrijfForm)"
+          >
+            <h3 class="register-heading">Registreer als bedrijf</h3>
+            <div class="register-subheading">
+              <div class="form-row">
+                <div class="col-sm">
+                  <span
+                    type="button"
+                    class="btn"
+                    id="algemeenBB"
+                    (click)="switchTabs(states.bedrijfAlgemeen)"
+                    >Algemeen</span
+                  >
+                </div>
+                <div class="col-sm">
+                  <span
+                    type="button"
+                    class="btn"
+                    id="contactpersoonBB"
+                    (click)="switchTabs(states.bedrijfContactpersoon)"
+                    >Contactpersoon</span
+                  >
+                </div>
+                <div class="col-sm">
+                  <span
+                    type="button"
+                    id="bedrijfspromotorBB"
+                    class="font-weight-bold btn"
+                    (click)="switchTabs(states.bedrijfPromotor)"
+                    ><ins>Bedrijfspromotor</ins></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row register-form justify-content-center">
+              <div class="col-md-6">
+                <h6 class="alert-info">
+                  Deze persoon zal de student technisch begeleiden tijdens de
+                  stageperiode en zal tevens aanwezig zijn tijdens het
+                  juryexamen van de student.
+                </h6>
+                <div class="form-group">
+                  <label for="titelB">Titel</label>
+                  <input
+                    type="text"
+                    id="titelB"
+                    class="form-control"
+                    placeholder="Titel *"
+                    value=""
+                    formControlName="titelB"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('titelB').touched &&
+                      bedrijfForm.get('titelB').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul de titel in!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="voornaamB">Voornaam</label>
+                  <input
+                    type="text"
+                    id="voornaamB"
+                    class="form-control"
+                    placeholder="Voornaam *"
+                    value=""
+                    formControlName="voornaamB"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('voornaamB').touched &&
+                      bedrijfForm.get('voornaamB').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een voornaam in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('voornaamB').touched &&
+                      bedrijfForm.get('voornaamB').hasError('pattern')
+                    "
+                    class="alert-danger errorMessage"
+                    >De voornaam mag enkel letters bevatten!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="achternaamB">Achternaam</label>
+                  <input
+                    type="text"
+                    id="achternaamB"
+                    class="form-control"
+                    placeholder="Achternaam *"
+                    value=""
+                    formControlName="achternaamB"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('achternaamB').touched &&
+                      bedrijfForm.get('achternaamB').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een achternaam in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('achternaamB').touched &&
+                      bedrijfForm.get('achternaamB').hasError('pattern')
+                    "
+                    class="alert-danger errorMessage"
+                    >De achternaam mag enkel letters bevatten!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="telefoonnummerB">Telefoonnummer</label>
+                  <input
+                    id="telefoonnummerB"
+                    type="text"
+                    minlength="10"
+                    maxlength="10"
+                    class="form-control"
+                    placeholder="04 12 345 678 *"
+                    value=""
+                    formControlName="telefoonnummerB"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('telefoonnummerB').touched &&
+                      bedrijfForm.get('telefoonnummerB').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een telefoonnummer in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('telefoonnummerB').touched &&
+                      bedrijfForm
+                        .get('telefoonnummerB')
+                        .hasError('requireTelephoneNumber')
+                    "
+                    class="alert-danger errorMessage"
+                    >Het verwachtte formaat is: 04 12 345 678!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="emailB">E-mail</label>
+                  <input
+                    type="email"
+                    id="emailB"
+                    class="form-control"
+                    placeholder="E-mail *"
+                    value=""
+                    formControlName="emailB"
+                  />
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('emailB').touched &&
+                      bedrijfForm.get('emailB').hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een e-mail in!</span
+                  >
+                  <span
+                    *ngIf="
+                      bedrijfForm.get('emailB').touched &&
+                      bedrijfForm.get('emailB').hasError('email')
+                    "
+                    class="alert-danger errorMessage"
+                    >Dit is geen geldig e-mailadres!</span
+                  >
+                </div>
+
+                <div class="form-row justify-content-center mt-4">
+                  <input
+                    id="bedrijfBPrevious-tab"
+                    type="button"
+                    class="btnRegister"
+                    value="< Terug"
+                    (click)="switchTabs(states.bedrijfContactpersoon)"
+                  />
+                  <button
+                    id="registerBedrijf"
+                    class="btnRegister"
+                    [disabled]="!bedrijfForm.valid"
+                    (click)="registerBedrijf(bedrijfForm)"
+                  >
+                    Registreren
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--#endregion -->
+        </div>
+
+        <!--#region ReviewerTab  -->
+        <div
+          [ngClass]="{ hidden: state !== states.reviewer }"
+          [formGroup]="reviewerForm"
+          (keyup.enter)="registerReviewer(reviewerForm)"
+        >
+          <h3 class="register-heading">Registreer als reviewer</h3>
+          <div class="row register-form justify-content-center">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="voornaamR">Voornaam</label>
+                <input
+                  type="text"
+                  id="voornaamR"
+                  class="form-control"
+                  placeholder="Voornaam *"
+                  value=""
+                  formControlName="voornaam"
+                />
+                <span
+                  *ngIf="
+                    reviewerForm.get('voornaam').touched &&
+                    reviewerForm.get('voornaam').hasError('required')
+                  "
+                  class="alert-danger errorMessage"
+                  >Vul een voornaam in!</span
+                >
+                <span
+                  *ngIf="
+                    reviewerForm.get('voornaam').touched &&
+                    reviewerForm.get('voornaam').hasError('pattern')
+                  "
+                  class="alert-danger errorMessage"
+                  >De voornaam mag enkel letters bevatten!</span
+                >
+              </div>
+              <div class="form-group">
+                <label for="achternaamR">Achternaam</label>
+                <input
+                  type="text"
+                  id="achternaamR"
+                  class="form-control"
+                  placeholder="Achternaam *"
+                  value=""
+                  formControlName="achternaam"
+                />
+                <span
+                  *ngIf="
+                    reviewerForm.get('achternaam').touched &&
+                    reviewerForm.get('achternaam').hasError('required')
+                  "
+                  class="alert-danger errorMessage"
+                  >Vul een achternaam in!</span
+                >
+                <span
+                  *ngIf="
+                    reviewerForm.get('achternaam').touched &&
+                    reviewerForm.get('achternaam').hasError('pattern')
+                  "
+                  class="alert-danger errorMessage"
+                  >De achternaam mag enkel letters bevatten!</span
+                >
+              </div>
+              <div class="form-group">
+                <label for="emailR">E-mail</label>
+                <input
+                  type="email"
+                  id="emailR"
+                  class="form-control"
+                  placeholder="E-mail *"
+                  value=""
+                  formControlName="email"
+                />
+                <span
+                  *ngIf="
+                    reviewerForm.get('email').touched &&
+                    reviewerForm.get('email').hasError('required')
+                  "
+                  class="alert-danger errorMessage"
+                  >Vul een e-mail in!</span
+                >
+                <span
+                  *ngIf="
+                    reviewerForm.get('email').touched &&
+                    reviewerForm.get('email').hasError('email')
+                  "
+                  class="alert-danger errorMessage"
+                  >Dit is geen geldig e-mailadres!</span
+                >
+                <span
+                  *ngIf="
+                    reviewerForm.get('email').touched &&
+                    !reviewerForm.get('email').hasError('email') &&
+                    reviewerForm.get('email').hasError('pattern')
+                  "
+                  class="alert-danger errorMessage"
+                  >Dit is geen geldig PXL e-mailadres!</span
+                >
+              </div>
+              <div formGroupName="wachtwoordGroup">
+                <div class="form-group">
+                  <label for="wachtwoordR">Wachtwoord</label>
+                  <input
+                    type="password"
+                    id="wachtwoordR"
+                    class="form-control"
+                    placeholder="Wachtwoord *"
+                    value=""
+                    formControlName="wachtwoord"
+                  />
+                  <span
+                    *ngIf="
+                      reviewerForm.controls['wachtwoordGroup'].get('wachtwoord')
+                        .touched &&
+                      reviewerForm.controls['wachtwoordGroup']
+                        .get('wachtwoord')
+                        .hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul een wachtwoord in!</span
+                  >
+                  <span
+                    *ngIf="
+                      reviewerForm.controls['wachtwoordGroup'].get('wachtwoord')
+                        .touched &&
+                      reviewerForm.controls['wachtwoordGroup']
+                        .get('wachtwoord')
+                        .hasError('minlength')
+                    "
+                    class="alert-danger errorMessage"
+                    >Het wachtwoord moet minstens 6 tekens bevatten!</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="wachtwoordBevestigingR"
+                    >Bevestig wachtwoord</label
+                  >
+                  <input
+                    type="password"
+                    id="wachtwoordBevestigingR"
+                    class="form-control"
+                    placeholder="Bevestig wachtwoord *"
+                    value=""
+                    formControlName="wachtwoordBevestiging"
+                  />
+                  <span
+                    *ngIf="
+                      reviewerForm.controls['wachtwoordGroup'].get(
+                        'wachtwoordBevestiging'
+                      ).touched &&
+                      reviewerForm.controls['wachtwoordGroup']
+                        .get('wachtwoordBevestiging')
+                        .hasError('required')
+                    "
+                    class="alert-danger errorMessage"
+                    >Vul dit veld in!</span
+                  >
+                  <span
+                    *ngIf="
+                      !reviewerForm.controls['wachtwoordGroup']
+                        .get('wachtwoordBevestiging')
+                        .hasError('required') &&
+                      reviewerForm.controls['wachtwoordGroup'].get(
+                        'wachtwoordBevestiging'
+                      ).touched &&
+                      reviewerForm.controls.wachtwoordGroup.status === 'INVALID'
+                    "
+                    class="alert-danger errorMessage"
+                    >De wachtwoorden komen niet overeen!</span
+                  >
+                </div>
+              </div>
+              <div class="form-row justify-content-center">
+                <button
+                  id="registerReviewer"
+                  type="submit"
+                  class="btnRegister"
+                  [disabled]="!reviewerForm.valid"
+                  (click)="registerReviewer(reviewerForm)"
+                >
+                  Registreren
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--#endregion -->
+      </div>
+    </div>
+  </div>
+</div>

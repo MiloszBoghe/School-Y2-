@@ -1,0 +1,57 @@
+<div id="review{{ feedback.id }}" class="form-row">
+  <div class="col-md-4 order-md-12 mb-3">
+    <img
+      src="../../assets/images/profile-image.jpg"
+      width="140"
+      height="147"
+      id="profile_icon"
+      alt="profile image"
+    />
+    <br />
+    <span class="font-weight-bold" id="reviewerNaam"
+      >{{ feedback.reviewer.voornaam }} {{ feedback.reviewer.naam }}</span
+    >
+    <br /><br />
+    <div *ngIf="isFeedback" [formGroup]="reviewForm">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          id="radio1"
+          value="0"
+          formControlName="status"
+          checked
+        />
+        <label class="form-check-label" for="radio1">Geen mening</label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          id="radio2"
+          value="1"
+          formControlName="status"
+        />
+        <label class="form-check-label" for="radio2">Afgekeurd</label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          id="radio3"
+          value="2"
+          formControlName="status"
+        />
+        <label class="form-check-label" for="radio3">Goedgekeurd</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8 order-md-1 mb-3">
+    <h3>Review</h3>
+    <span class="font-weight-bold" id="status">{{
+      leesbareBeoordelingStatus[beoordelingStatus[feedback.status]]
+    }}</span>
+    <p id="Text">{{ feedback.text }}</p>
+  </div>
+</div>

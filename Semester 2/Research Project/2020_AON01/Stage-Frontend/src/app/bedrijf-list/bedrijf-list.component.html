@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Bedrijven</h1>
+  <div id="mainDivBedrijven" class="list-group mt-3">
+    <app-bedrijf-list-item
+      *ngFor="let bedrijf of bedrijven"
+      [bedrijf]="bedrijf"
+    ></app-bedrijf-list-item>
+  </div>
+</div>

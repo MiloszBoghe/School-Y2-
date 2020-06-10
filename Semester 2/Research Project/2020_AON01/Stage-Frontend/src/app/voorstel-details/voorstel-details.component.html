@@ -1,0 +1,146 @@
+<div class="container">
+  <div *ngIf="voorstel">
+    <h1>Stagevoorstel</h1>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <span class="font-weight-bold">Titel</span>
+        <br/>
+        <span id="titel">{{ voorstel.titel }}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 mb-3">
+        <span class="font-weight-bold">Voorkeur afstudeerrichting</span><br/>
+        <ul id="VoorkeurAfstudeerrichting">
+          <li *ngFor="let voorkeur of voorstel.afstudeerrichtingVoorkeur">
+            {{ afstudeerrichtingVoorkeuren[voorkeur] }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <span class="font-weight-bold">Omschrijving van de opdracht</span>
+        <br/>
+        <span id="omschrijving">{{ voorstel.opdrachtOmschrijving }}</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 mb-3">
+      <span class="font-weight-bold"
+      >Omgeving: in welke IT-omgeving dient de stageopdracht uitgewerkt te
+        worden</span
+      >
+        <br/>
+        <ul id="omgevingen">
+          <li *ngFor="let omgeving of voorstel.omgeving">
+            {{ itOmgevingen[omgeving] }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+      <span class="font-weight-bold"
+      >Verdere beschrijving van de technische omgeving</span
+      >
+        <br/>
+        <span id="beschrijvingTechnischeOmgeving">{{
+          voorstel.omgevingOmschrijving
+          }}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <span class="font-weight-bold">Randvoorwaarden</span>
+        <br/>
+        <span
+        >Zijn er specifieke eisen waaraan moet worden voldaan voor het uitvoeren
+        van stageopdracht? Bijvoorbeeld de bereidheid tot communicatie in het
+        Engels, beschikken over een auto etc.</span
+        >
+        <br/>
+        <span id="randvoorwaarden">{{ voorstel.randvoorwaarden }}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <span class="font-weight-bold">Onderzoeksthema</span>
+        <br/>
+        <span id="onderzoeksthema">{{ voorstel.onderzoeksthema }}</span>
+      </div>
+    </div>
+
+    <h4>Overige</h4>
+    <div class="row">
+      <div class="col-md-8 mb-3">
+      <span class="font-weight-bold"
+      >Inleidende activiteiten / verwachtingen</span
+      >
+        <br/>
+        <ul id="verwachtingen">
+          <li *ngFor="let verwachting of voorstel.verwachtingen">
+            {{ verwachtingen[verwachting] }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-8 mb-3">
+      <span class="font-weight-bold"
+      >Aantal gewenste stagiairs (max. 2 per stageproject)</span
+      >
+        <br/>
+        <span id="aantalStudenten">{{ voorstel.aantalGewensteStagiairs }}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+      <span class="font-weight-bold"
+      >Bedrijf is gecontacteerd door student(en) en wenst deze opdracht enkel
+        aan deze student(en) aan te bieden</span
+      >
+        <br/>
+        <span id="aanbodStudenten">{{ voorstel.gereserveerdeStudenten }}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <span class="font-weight-bold">Andere bemerkingen</span>
+        <br/>
+        <span id="andereBemerkingen">{{ voorstel.bemerkingen }}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 mb-3">
+        <span class="font-weight-bold">Stageperiode</span><br/>
+        <ul id="semester" [ngSwitch]="voorstel.periode">
+          <li *ngSwitchCase="1">Semester 1 (oktober - januari)</li>
+          <li *ngSwitchCase="2">Semester 2 (februari - juni)</li>
+          <li *ngSwitchCase="3">Semester 1 (oktober - januari)</li>
+          <li *ngSwitchCase="3">Semester 2 (februari - juni)</li>
+          <li *ngSwitchDefault>Semester 0 (contacteer AUB een admin)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div *ngIf="claim&&claim.role&&claim.role==='bedrijf'">
+    <app-comment-list
+      [comments]="voorstel.comments"
+      [userId]="claim.id"
+      [stageVoorstelId]="voorstel.id"
+    >
+    </app-comment-list>
+  </div>
+</div>

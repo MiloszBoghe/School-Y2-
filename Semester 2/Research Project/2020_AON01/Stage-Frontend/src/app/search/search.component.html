@@ -1,0 +1,43 @@
+<div class="container col-12">
+  <div class="row content">
+    <label *ngIf="!isBedrijf" class="col-3 font-weight-bold p-0">Bedrijfsnaam</label>
+    <div *ngIf="!isBedrijf" class="col-spacing"></div>
+    <label class="col-3 font-weight-bold p-0">Titel Stagevoorstel</label>
+    <div class="col-spacing" [ngClass]="{'col-6': isBedrijf, 'col-spacing': !isBedrijf}"></div>
+    <label class="col-3 font-weight-bold p-0">Datum</label>
+  </div>
+
+  <div class="form-inline row">
+    <input *ngIf="!isBedrijf" class="form-control mb-2 col-3" placeholder="Bedrijfsnaam" type=text
+           (keyup)="onChangeFilter()"
+           [(ngModel)]="bedrijfFilter">
+    <div *ngIf="!isBedrijf" class="col-spacing"></div>
+
+    <input class="form-control mb-2 col-3" placeholder="Titel Stagevoorstel" type=text (keyup)="onChangeFilter()"
+           [(ngModel)]="titelFilter">
+    <div [ngClass]="{'col-6': isBedrijf, 'col-spacing': !isBedrijf}"></div>
+    <input class="form-control mb-2 col-3" placeholder="dd/mm/yyyy" type=text (keyup)="onChangeFilter()"
+           [(ngModel)]="dateFilter">
+  </div>
+
+  <div class="form row">
+    <div class="col-6 pl-0">
+      <label class="font-weight-bold p-0 ">Afstudeerrichting</label>
+      <select [(ngModel)]="afstudeerrichtingFilter" class="browser-default custom-select d-block"
+              (change)="onChangeFilter()">
+        <option class="font-weight-bold" value="">Selecteer een optie</option>
+        <option *ngFor="let option of keys(Afstudeerrichting)" [value]="option">{{ Afstudeerrichting[option] }}</option>
+      </select>
+    </div>
+
+    <div class="col-6 pr-0">
+      <label class="font-weight-bold p-0 d-block">Omgeving</label>
+      <select [(ngModel)]="omgevingFilter" class="browser-default custom-select d-block" (change)="onChangeFilter()">
+        <option class="font-weight-bold" value="">Selecteer een optie</option>
+        <option *ngFor="let option of keys(ITOmgevingen)" [value]="option">{{ ITOmgevingen[option] }}</option>
+      </select>
+    </div>
+  </div>
+</div>
+<br>
+

@@ -1,0 +1,335 @@
+<div class="mb-3 container">
+  <h1>Stagevoorstel indienen</h1>
+  <form [formGroup]="voorstelForm">
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <span class="font-weight-bold"
+          ><label for="titel" class="no-select">Titel</label></span
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="titel"
+          formControlName="titel"
+          placeholder="Titel"
+        />
+        <div
+          *ngIf="voorstelForm.get('titel').hasError('required')"
+          class="invalid-feedback invalidated"
+        >
+          Vul een titel in
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row" formGroupName="afstudeerrichtingVoorkeur">
+      <div class="col-md-8 mb-3">
+        <span class="font-weight-bold">Voorkeur afstudeerrichting</span><br />
+        <div
+          class="custom-control custom-checkbox form-check"
+          *ngFor="let voorkeurEnum of voorkeurEnums"
+        >
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            formControlName="{{ voorkeurEnum }}"
+            id="{{ voorkeurEnum }}"
+            name="afstudeerrichtingVoorkeur"
+            value="{{ voorkeurEnum }}"
+          />
+          <label
+            class="custom-control-label no-select"
+            for="{{ voorkeurEnum }}"
+            >{{ afstudeerrichtingVoorkeuren[voorkeurEnum] }}</label
+          >
+        </div>
+
+        <div
+          *ngIf="
+            voorstelForm.controls['afstudeerrichtingVoorkeur'].errors &&
+            voorstelForm.controls['afstudeerrichtingVoorkeur'].errors
+              .requireCheckboxesToBeChecked
+          "
+          class="invalid-feedback invalidated"
+        >
+          Kies minstens 1 afstudeerrichting
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-12 mb-3">
+        <span class="font-weight-bold">
+          <label for="opdrachtOmschrijving" class="no-select"
+            >Omschrijving van de opdracht</label
+          >
+        </span>
+        <textarea
+          class="form-control"
+          id="opdrachtOmschrijving"
+          formControlName="opdrachtOmschrijving"
+          placeholder="Omschrijving"
+        ></textarea>
+        <div
+          *ngIf="voorstelForm.get('opdrachtOmschrijving').hasError('required')"
+          class="invalid-feedback invalidated"
+        >
+          Vul een omschrijving in
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row" formGroupName="omgeving">
+      <div class="col-md-8 mb-3">
+        <span class="font-weight-bold">
+          Omgeving: in welke IT-omgeving dient de stageopdracht uitgewerkt te
+          worden </span
+        ><br />
+        <div
+          class="custom-control custom-checkbox form-check"
+          *ngFor="let omgevingEnum of omgevingEnums"
+        >
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            formControlName="{{ omgevingEnum }}"
+            id="{{ omgevingEnum }}"
+            name="omgeving"
+            value="{{ omgevingEnum }}"
+          />
+          <label
+            class="custom-control-label no-select"
+            for="{{ omgevingEnum }}"
+          >
+            {{ itOmgevingen[omgevingEnum] }}
+          </label>
+        </div>
+
+        <div
+          *ngIf="
+            voorstelForm.controls['omgeving'].errors &&
+            voorstelForm.controls['omgeving'].errors
+              .requireCheckboxesToBeChecked
+          "
+          class="invalid-feedback invalidated"
+        >
+          Kiest minstens 1 omgeving.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-12 mb-3">
+        <span class="font-weight-bold">
+          <label for="omgevingOmschrijving" class="no-select">
+            Verdere beschrijving van de technische omgeving
+          </label>
+        </span>
+        <textarea
+          class="form-control"
+          id="omgevingOmschrijving"
+          formControlName="omgevingOmschrijving"
+          placeholder="Beschrijving"
+        >
+        </textarea>
+        <div
+          *ngIf="voorstelForm.get('omgevingOmschrijving').hasError('required')"
+          class="invalid-feedback invalidated"
+        >
+          Vul een beschrijving in
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-12 mb-3">
+        <span class="font-weight-bold">
+          <label for="randvoorwaarden" class="no-select">Randvoorwaarden</label>
+        </span>
+        <br />
+        Zijn er specifieke eisen waaraan moet worden voldaan voor het uitvoeren
+        van stageopdracht? Bijvoorbeeld de bereidheid tot communicatie in het
+        Engels, beschikken over een auto etc.
+        <textarea
+          class="form-control"
+          id="randvoorwaarden"
+          formControlName="randvoorwaarden"
+          placeholder="Randvoorwaarden"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-12 mb-3">
+        <span class="font-weight-bold">
+          <label for="onderzoeksthema" class="no-select">Onderzoeksthema</label>
+        </span>
+        <textarea
+          class="form-control"
+          id="onderzoeksthema"
+          formControlName="onderzoeksthema"
+          placeholder="Onderzoeksthema"
+        ></textarea>
+        <div
+          *ngIf="voorstelForm.get('onderzoeksthema').hasError('required')"
+          class="invalid-feedback invalidated"
+        >
+          Vul een onderzoeksthema in
+        </div>
+      </div>
+    </div>
+
+    <h4>Overige</h4>
+    <div class="form-row" formGroupName="verwachtingen">
+      <div class="col-md-8 mb-3">
+        <span class="font-weight-bold">
+          Inleidende activiteiten / verwachtingen </span
+        ><br />
+        <div
+          class="custom-control custom-checkbox form-check"
+          *ngFor="let verwachtingEnum of verwachtingEnums"
+        >
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            formControlName="{{ verwachtingEnum }}"
+            id="{{ verwachtingEnum }}"
+            name="verwachtingen"
+            value="{{ verwachtingEnum }}"
+          />
+          <label
+            class="custom-control-label no-select"
+            for="{{ verwachtingEnum }}"
+          >
+            {{ verwachtingen[verwachtingEnum] }}
+          </label>
+        </div>
+        <div
+          *ngIf="
+            voorstelForm.controls['verwachtingen'].errors &&
+            voorstelForm.controls['verwachtingen'].errors
+              .requireCheckboxesToBeChecked
+          "
+          class="invalid-feedback invalidated"
+        >
+          Kies minstens 1 optie.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-8 mb-3">
+        <span class="font-weight-bold"
+          >Aantal gewenste stagiairs (max. 2 per stageproject)</span
+        ><br />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="aantalGewensteStagiairs"
+            id="radio1student"
+            value="1"
+            formControlName="aantalGewensteStagiairs"
+            checked
+          />
+          <label class="form-check-label no-select" for="radio1student">
+            1 student
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="aantalGewensteStagiairs"
+            id="radio2studenten"
+            value="2"
+            formControlName="aantalGewensteStagiairs"
+          />
+          <label class="form-check-label no-select" for="radio2studenten">
+            2 studenten
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <span class="font-weight-bold">
+          <label for="gereserveerdeStudenten" class="no-select"
+            >Bedrijf is gecontacteerd door student(en) en wenst deze opdracht
+            enkel aan deze student(en) aan te bieden</label
+          >
+        </span>
+        <input
+          type="text"
+          class="form-control"
+          id="gereserveerdeStudenten"
+          formControlName="gereserveerdeStudenten"
+          placeholder="Jan Smit"
+        />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-12 mb-3">
+        <span class="font-weight-bold">
+          <label for="bemerkingen" class="no-select">Andere bemerkingen</label>
+        </span>
+        <textarea
+          class="form-control"
+          id="bemerkingen"
+          formControlName="bemerkingen"
+          placeholder="Bemerkingen"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="form-row" formGroupName="periodes">
+      <div class="col-md-8 mb-3">
+        <span class="font-weight-bold">Stageperiode</span><br />
+        <div class="custom-control custom-checkbox form-check">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            formControlName="semester1"
+            id="semester1"
+            name="periodes"
+            value="semester1"
+          />
+          <label class="custom-control-label no-select" for="semester1">
+            Semester 1 (oktober - januari)
+          </label>
+        </div>
+        <div class="custom-control custom-checkbox form-check">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            formControlName="semester2"
+            id="semester2"
+            name="periodes"
+            value="semester2"
+          />
+          <label class="custom-control-label no-select" for="semester2">
+            Semester 2 (februari - juni)
+          </label>
+        </div>
+        <div
+          *ngIf="
+            voorstelForm.controls['periodes'].errors &&
+            voorstelForm.controls['periodes'].errors
+              .requireCheckboxesToBeChecked
+          "
+          class="invalid-feedback invalidated"
+        >
+          kies minstens 1 periode
+        </div>
+      </div>
+    </div>
+    <input class="btn-primary btn"
+      type="button"
+      value="Submit"
+      (click)="onSubmit()"
+      [disabled]="!voorstelForm.valid"
+    />
+  </form>
+</div>

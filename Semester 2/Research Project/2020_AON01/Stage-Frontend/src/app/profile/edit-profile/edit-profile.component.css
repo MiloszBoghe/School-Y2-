@@ -1,0 +1,22 @@
+
+#company_profile_icon {
+  break-after: right;
+}
+
+#body, #companyData{
+  width: 100%;
+}
+
+
+#bedrijf, #contactPersoon, #bedrijfsPromotor {
+  width: 33%;
+  display: inline-block;
+  float: left;
+}
+
+@media screen and (max-width: 750px) {
+  #bedrijf, #contactPersoon, #bedrijfsPromotor {
+    width: 100%;
+  }
+}
+

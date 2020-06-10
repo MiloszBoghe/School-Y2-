@@ -1,0 +1,48 @@
+<div class="vertical-center">
+  <div class="container align-self-center">
+    <div class="row">
+      <div class="col-md-12 register-left" *ngIf="!isSent">
+        <h2 class="card-title mr-2">ResetLink aanvragen</h2>
+        <div [formGroup]="eMailForm">
+          <div class="form-group">
+            <label for="emailU">E-mail</label>
+            <input
+              type="text"
+              id="emailU"
+              class="form-control"
+              placeholder="E-mail *"
+              formControlName="email"
+              value=""
+            />
+            <span
+              *ngIf="
+                    eMailForm.get('email').touched &&
+                    eMailForm.get('email').hasError('required')
+                  "
+              class="alert-danger errorMessage"
+            >Vul een e-mail in!</span
+            >
+            <span
+              *ngIf="
+                    eMailForm.get('email').touched &&
+                    !eMailForm.get('email').hasError('required') &&
+                    eMailForm.get('email').hasError('email')
+                  "
+              class="alert-danger errorMessage"
+            >
+                  Dit is geen geldig e-mailadres!
+                </span>
+          </div>
+          <button (click)="requestReset()" class="btn btn-primary mr-2" type="button">Wachtwoord herstel link
+            aanvragen
+          </button>
+        </div>
+      </div>
+      <div *ngIf="isSent">
+        <h1 class="alert-warning">
+          er is een mail verstuurd
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>

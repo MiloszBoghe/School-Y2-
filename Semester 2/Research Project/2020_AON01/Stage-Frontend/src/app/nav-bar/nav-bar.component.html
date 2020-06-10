@@ -1,0 +1,70 @@
+<nav
+  class="navbar navbar-expand-sm navbar-dark bg-dark"
+  *ngIf="claim"
+>
+  <a class="navbar-brand" [routerLink]="['/']">
+    <img
+      src="../../assets/images/logo_pxl.png"
+      id="logo_pxl"
+      width="30"
+      height="30"
+      class="d-inline-block align-top"
+      alt="Logo PXL"
+    />
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarMenu"
+    aria-controls="navbarMenu"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarMenu">
+    <ul *ngIf="claim.role !== 'coordinator'" class="navbar-nav">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['home']">Home</a>
+      </li>
+    </ul>
+    <ul *ngIf="claim.role === 'coordinator'" class="navbar-nav">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['home']">Stagevoorstellen</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['reviewers']">Reviewers</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['studenten']">Studenten</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['bedrijven']">Bedrijven</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['deactivateAccount']">Account management</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['profile', claim.id]">{{ claim.voornaam }} {{ claim.naam }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand mr-auto" [routerLink]="['/logout']">
+          <img
+            src="../../assets/images/power.svg"
+            id="logout_icon"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt="Logout"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

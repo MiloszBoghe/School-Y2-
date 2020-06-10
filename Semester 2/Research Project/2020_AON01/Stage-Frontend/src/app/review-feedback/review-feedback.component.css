@@ -1,0 +1,22 @@
+.sidebar-section {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.make-me-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  padding: 0 15px;
+}
+
+.dottedborder {
+  border-top: 4px dotted black;
+  margin-top: 2%;
+}
+
+.hidden {
+  display: none;
+}

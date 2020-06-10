@@ -1,0 +1,21 @@
+<div class="container mb-3">
+  <h1 class="mt-5 mb-3">Toegewezen stagevoorstellen</h1>
+  <button (click)="wijzigVoorkeur()" class="btn-primary btn mb-3">Wijzig voorkeur voorstellen</button>
+  <div *ngIf="isLoaded" class="list-group mt-3">
+    <app-voorstel-list (newSelection)="updateToAdd($event)"
+      [claim]="claim"
+      [voorstellen]="toegewezenToShow"
+      [pathing]="'/reviewVoorstel'"
+    ></app-voorstel-list>
+  </div>
+</div>
+
+<div class="container mb-3">
+  <h1>Voorkeur stagevoorstellen</h1>
+  <div *ngIf="isLoaded" class="list-group mt-3">
+    <app-voorstel-list (newSelection)="updateToRemove($event)"
+      [claim]="claim"
+      [voorstellen]="reviewer.voorkeurVoorstellen"
+    ></app-voorstel-list>
+  </div>
+</div>

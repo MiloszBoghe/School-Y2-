@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="mb-3">Stagevoorstellen</h1>
+  <button (click)="removeStagevoorstellen()" class="btn-primary btn mb-3">Verwijder geselecteerde voorstellen</button>
+  <div *ngIf="showDeletionSucces" class="alert alert-success font-weight-bold mt-3 mb-3 p-3" role="alert">
+    De stagevoorstellen werden succesvol verwijdert!
+  </div>
+
+  <div *ngIf="showDeletionError" class="alert alert-danger font-weight-bold mt-3 mb-3 p-3" role="alert">
+    Er ging iets mis met het verwijderen van de stagevoorstellen!
+  </div>
+  <div *ngIf="claim">
+    <app-voorstel-list (newSelection)="updateSelectedVoorstellen($event)" [claim]="claim"
+                       [pathing]="'/reviewFeedback'"></app-voorstel-list>
+  </div>
+</div>

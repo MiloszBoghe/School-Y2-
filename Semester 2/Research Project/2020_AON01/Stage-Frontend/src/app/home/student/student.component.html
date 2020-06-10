@@ -1,0 +1,39 @@
+<div *ngIf="isStudentLoaded&&stageOpdrachtenLoaded" class="container mb-3">
+  <section class="mx-auto">
+    <h1>Mijn favorieten</h1>
+    <ul class="list-group borderless mx-auto" id="Favorieten">
+      <app-voorstel-list
+        [claim]="claim"
+        [voorstellen]="student.favorieteOpdrachten"
+        #favorieteVoorstellen
+      ></app-voorstel-list>
+    </ul>
+    <button
+      id="deleteFavStagevoorstel"
+      type="button"
+      class="btn btn-secondary btn-lg col-lg-2 mt-2"
+      (click)="deleteVoorstel(favorieteVoorstellen)"
+    >
+      Verwijder uit favorieten
+    </button>
+  </section>
+  <br />
+  <section class="mx-auto">
+    <h1>Stageopdrachten</h1>
+    <ul class="list-group borderless mx-auto" id="Stagevoorstellen">
+      <app-voorstel-list
+        [claim]="claim"
+        [voorstellen]="alleVoorstellen"
+        #voorstellenLijst
+      ></app-voorstel-list>
+    </ul>
+    <button
+      id="addToFavStagevoorstel"
+      type="button"
+      class="btn btn-secondary btn-lg col-lg-2 mt-2"
+      (click)="addVoorstel(voorstellenLijst)"
+    >
+      Voeg toe aan favorieten
+    </button>
+  </section>
+</div>

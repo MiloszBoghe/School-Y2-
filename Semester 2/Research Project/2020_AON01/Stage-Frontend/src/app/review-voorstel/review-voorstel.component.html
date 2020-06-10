@@ -1,0 +1,135 @@
+<div *ngIf="isLoaded">
+  <app-voorstel-details [voorstel]="voorstel"></app-voorstel-details>
+
+  <!--Tabs-->
+  <div class="col-md-4 mt-3">
+    <ul class="nav nav-tabs nav-justified">
+      <li class="nav-item">
+        <a class="nav-link" (click)="switchTabs(states.review)" type="button"
+        >Review</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="switchTabs(states.commentaar)"
+          type="button"
+        >Commentaar</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tab-content mb-3" id="myTabContent">
+    <!--#region Review-->
+    <div
+      [ngClass]="{ hidden: state !== states.review }"
+    >
+      <div id="Reviewers" class="container mt-3">
+        <h2>Reviews</h2>
+        <h3>{{ leesbareBeoordelingStatus[beoordelingStatus[voorstel.status]] }}</h3>
+        <div
+          *ngIf="isFeedbacksLoaded"
+          id="mainDivReviewers"
+          class="list-group mt-3"
+        >
+          <div class="container" style="padding-bottom: 20px;">
+            <app-feedback-list [feedbacks]="feedbacks"></app-feedback-list>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <footer class="main-footer" (keyup.enter)="onSubmit()">
+          <div
+            style="border-top: 4px dotted black; margin-top: 2%;"
+            [formGroup]="feedbackForm"
+          >
+            <h1>Review</h1>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+          <span class="font-weight-bold"
+          ><label for="text">Extra vragen / Feedback</label></span
+          >
+                <textarea
+                  class="form-control"
+                  id="text"
+                  formControlName="text"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-8 mb-3">
+                <fieldset id="stagevoorstelStatus" class="checkbox-group" required>
+                  <span class="font-weight-bold">Status stagevoorstel</span><br/>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="status"
+                      id="rbNogNietBepaald"
+                      value="0"
+                      formControlName="status"
+                      checked
+                    />
+                    <label class="form-check-label" for="rbNogNietBepaald"
+                    >Nog niet bepaald</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="status"
+                      id="rbAfkeuren"
+                      value="1"
+                      formControlName="status"
+                    />
+                    <label class="form-check-label" for="rbAfkeuren">Afgekeurd</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="status"
+                      id="rbGoedkeuren"
+                      value="2"
+                      formControlName="status"
+                    />
+                    <label class="form-check-label" for="rbGoedkeuren"
+                    >Goedgekeurd</label
+                    >
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <button
+            id="SubmitAanvraag"
+            class="btn btn-primary"
+            (click)="onSubmit()"
+            [disabled]="!feedbackForm.valid"
+          >
+            Verzenden
+          </button>
+        </footer>
+      </div>
+    </div>
+    <!--#endregion -->
+
+    <!--#region Commentaar-->
+    <div
+      *ngIf="voorstel"
+      [ngClass]="{ hidden: state !== states.commentaar }"
+      class="mt-3"
+    >
+      <app-comment-list
+        [comments]="voorstel.comments"
+        [userId]="claim.id"
+        [stageVoorstelId]="voorstel.id"
+      >
+      </app-comment-list>
+    </div>
+    <!--#endregion -->
+  </div>
+
+</div>

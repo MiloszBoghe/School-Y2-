@@ -1,0 +1,30 @@
+<div id="Users">
+  <div id="mainDivUsers" class="list-group mt-3">
+
+    <div class="row" *ngFor="let user of users">
+      <div class="col-10">
+        <div
+        [ngClass]="{
+    'alert-success': user.emailConfirmed === true,
+    'alert-danger': user.emailConfirmed === false
+  }"
+          class="rounded d-inline-block align-items-center mb-2 mainDiv">
+          <a class="alert item m-0 d-inline-block" role="alert" routerLink="/profile/{{user.id}}">
+            <div *ngIf="user.isBedrijf">
+              <span class="font-weight-bold">{{ user.naam}}</span>
+              {{" - " + user.userName }}
+            </div>
+            <div *ngIf="!user.isBedrijf">
+              <span class="font-weight-bold">{{ user.naam + " " + user.voornaam}}</span>
+              {{" - " + user.userName }}
+            </div>
+          </a>
+          <label class="form-check d-inline-block checkBox m-0">
+            <input (click)="onClick(user)" class="form-check-input d-inline-block m-0" type="checkbox"/>
+          </label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

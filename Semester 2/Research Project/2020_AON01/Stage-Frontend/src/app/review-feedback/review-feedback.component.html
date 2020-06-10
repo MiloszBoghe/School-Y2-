@@ -1,0 +1,221 @@
+<div class="row">
+  <div class="col-8">
+    <div class="container">
+      <app-voorstel-details
+        *ngIf="isLoaded"
+        [voorstel]="voorstel"
+      ></app-voorstel-details>
+    </div>
+  </div>
+
+  <div class="col-4" *ngIf="reviewersLoaded">
+    <div id="ReviewersAssign" class="container col-md-8 make-me-sticky">
+      <h1>Reviewers</h1>
+      <div id="mainDivReviewersAssign" class="list-group">
+        <h4>Reeds toegewezen</h4>
+        <div
+          *ngIf="voorstel"
+          id="toegewezenReviewers"
+          class="container"
+          style="padding-bottom: 20px;"
+        >
+          <li
+            *ngFor="let reviewerItem of voorstel.reviewersToegewezen"
+            class="list-group-item"
+          >
+            <!--suppress XmlDuplicatedId -->
+            <input type="checkbox" id="{{ reviewerItem.id }}"/>
+            <label class="checkbox-inline ml-1" for="{{ reviewerItem.id }}"
+            ><h5>
+              {{ reviewerItem.naam }} {{ reviewerItem.voornaam }}
+            </h5></label
+            >
+          </li>
+        </div>
+
+        <!--was een form-->
+        <div id="searchReviewersAssign">
+          <input
+            class="form-control col-md-12"
+            id="searchBar"
+            type="text"
+            placeholder="Zoek Reviewer"
+            style="margin-bottom: 5px;"
+          />
+          <div
+            id="reviewerContainer"
+            class="container"
+            style="padding-bottom: 20px;"
+          >
+            <li
+              *ngFor="let reviewerItem of reviewersNotAssigned"
+              class="list-group-item flex-column align-items-start"
+            >
+              <!--suppress XmlDuplicatedId -->
+              <input type="checkbox" id="{{ reviewerItem.id }}"/>
+              <label class="checkbox-inline ml-1" for="{{ reviewerItem.id }}"
+              ><h5>
+                {{ reviewerItem.naam }} {{ reviewerItem.voornaam }}
+              </h5></label
+              >
+            </li>
+          </div>
+          <hr/>
+        </div>
+        <button
+          id="addReviewer"
+          class="btn btn-secondary col-md-9 align-self-center mb-2"
+          (click)="changeReviewers()"
+        >
+          Selecteer reviewer(s)
+        </button>
+        <button
+          id="saveChanges"
+          class="btn btn-primary col-md-9 align-self-center"
+          (click)="saveToewijzingen()"
+        >
+          Opslaan
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Tabs-->
+<div class="col-md-4 mt-3">
+  <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+      <a class="nav-link" (click)="switchTabs(states.review)" type="button"
+      >Review</a>
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        (click)="switchTabs(states.commentaar)"
+        type="button"
+      >Commentaar</a>
+    </li>
+  </ul>
+</div>
+
+<div class="tab-content" id="myTabContent">
+  <!--#region Review-->
+  <div
+    [ngClass]="{ hidden: state !== states.review }"
+  >
+    <div id="Reviewers" class="container mt-3 float-left" *ngIf="isLoaded">
+      <h2>Status: {{ leesbareBeoordelingStatus[beoordelingStatus[voorstel.status]] }}</h2>
+      <h3 class="dottedborder">Reviews</h3>
+      <div id="mainDivReviewers" class="list-group mt-3">
+        <div
+          *ngIf="isFeedbacksLoaded"
+          class="container"
+          style="padding-bottom: 20px;"
+        >
+          <app-feedback-list
+            [feedbacks]="feedbacks"
+            #feedbackList
+          ></app-feedback-list>
+          <footer class="main-footer">
+            <div class="dottedborder"
+                 [formGroup]="coordinatorFeedbackForm"
+            >
+              <h1>Review</h1>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+              <span class="font-weight-bold"
+              ><label for="text">Extra vragen / Feedback</label></span
+              >
+                  <textarea
+                    class="form-control"
+                    id="text"
+                    formControlName="text"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-8 mb-3">
+                  <fieldset
+                    id="stagevoorstelStatus"
+                    class="checkbox-group"
+                    required
+                  >
+                    <span class="font-weight-bold">Status stagevoorstel</span><br/>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="status"
+                        id="rbNogNietBepaald"
+                        value="0"
+                        formControlName="status"
+                        checked
+                      />
+                      <label class="form-check-label" for="rbNogNietBepaald"
+                      >Nog niet bepaald</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="status"
+                        id="rbAfkeuren"
+                        value="1"
+                        formControlName="status"
+                      />
+                      <label class="form-check-label" for="rbAfkeuren"
+                      >Afgekeurd</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="status"
+                        id="rbGoedkeuren"
+                        value="2"
+                        formControlName="status"
+                      />
+                      <label class="form-check-label" for="rbGoedkeuren"
+                      >Goedgekeurd</label
+                      >
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <hr/>
+          <button
+            id="SubmitOordeel"
+            class="btn btn-primary col-md-3"
+            (click)="feedbackList.runAllPatches()"
+            (click)="onSubmit()"
+            [disabled]="!coordinatorFeedbackForm.valid"
+          >
+            Bevestig beoordelingen
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--#endregion -->
+
+  <!--#region Commentaar-->
+  <div
+    *ngIf="voorstel"
+    [ngClass]="{ hidden: state !== states.commentaar }"
+  >
+    <app-comment-list
+      [comments]="voorstel.comments"
+      [userId]="claim.id"
+      [stageVoorstelId]="voorstel.id"
+    >
+    </app-comment-list>
+  </div>
+  <!--#endregion -->
+</div>
+
