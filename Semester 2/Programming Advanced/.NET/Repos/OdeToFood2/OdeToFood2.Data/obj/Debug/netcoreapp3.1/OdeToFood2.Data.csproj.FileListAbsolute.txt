@@ -1,9 +1,0 @@
-C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood2\OdeToFood2.Data\bin\Debug\netcoreapp3.1\OdeToFood2.Data.deps.json
-C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood2\OdeToFood2.Data\bin\Debug\netcoreapp3.1\OdeToFood2.Data.dll
-C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood2\OdeToFood2.Data\obj\Debug\netcoreapp3.1\OdeToFood2.Data.csprojAssemblyReference.cache
-C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood2\OdeToFood2.Data\obj\Debug\netcoreapp3.1\OdeToFood2.Data.AssemblyInfoInputs.cache
-C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood2\OdeToFood2.Data\obj\Debug\netcoreapp3.1\OdeToFood2.Data.AssemblyInfo.cs
-C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood2\OdeToFood2.Data\bin\Debug\netcoreapp3.1\OdeToFood2.Data.pdb
-C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood2\OdeToFood2.Data\obj\Debug\netcoreapp3.1\OdeToFood2.Data.csproj.CoreCompileInputs.cache
-C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood2\OdeToFood2.Data\obj\Debug\netcoreapp3.1\OdeToFood2.Data.dll
-C:\Users\11800460\Desktop\School-Y2-\Semester 2\Programming Advanced\.NET\Repos\OdeToFood2\OdeToFood2.Data\obj\Debug\netcoreapp3.1\OdeToFood2.Data.pdb
