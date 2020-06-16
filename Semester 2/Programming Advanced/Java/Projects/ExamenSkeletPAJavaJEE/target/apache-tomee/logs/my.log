@@ -1,0 +1,428 @@
+2020-06-15 18:28:05.805 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2020-06-15 18:28:05.917 [main] DEBUG org.hibernate.jpa.HibernatePersistenceProvider - Located and parsed 1 persistence units; checking each
+2020-06-15 18:28:05.918 [main] DEBUG org.hibernate.jpa.HibernatePersistenceProvider - Checking persistence-unit [name=examendb_pu, explicit-provider=org.hibernate.jpa.HibernatePersistenceProvider] against incoming persistence unit name [examendb_pu]
+2020-06-15 18:28:05.918 [main] DEBUG org.hibernate.jpa.boot.spi.ProviderChecker - Persistence-unit [examendb_pu] requested PersistenceProvider [org.hibernate.jpa.HibernatePersistenceProvider]
+2020-06-15 18:28:05.930 [main] DEBUG org.hibernate.jpa.internal.util.LogHelper - PersistenceUnitInfo [
+	name: examendb_pu
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: null
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Users/11800460/Desktop/DependenciesExamenPAJavaJEE/target/apache-tomee/webapps/dependencies/WEB-INF/classes/
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names []
+	Mapping files names []
+	Properties [
+		javax.persistence.jdbc.driver: org.h2.Driver
+		tomee.jpa.factory.lazy: true
+		hibernate.dialect: org.hibernate.dialect.H2Dialect
+		javax.persistence.jdbc.url: jdbc:h2:mem:test;INIT=RUNSCRIPT FROM 'classpath:data.sql'
+		hibernate.show_sql: true
+		hibernate.format_sql: false]
+2020-06-15 18:28:05.940 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2020-06-15 18:28:05.944 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2020-06-15 18:28:05.953 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2020-06-15 18:28:06.082 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-06-15 18:28:06.084 [main] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-06-15 18:28:06.318 [main] DEBUG org.hibernate.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2020-06-15 18:28:06.342 [main] DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2020-06-15 18:28:06.344 [main] DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2020-06-15 18:28:06.382 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-15 18:28:06.448 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@3d718248
+2020-06-15 18:28:06.449 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@3d718248
+2020-06-15 18:28:06.449 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3d718248
+2020-06-15 18:28:06.450 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@62360a68
+2020-06-15 18:28:06.450 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@6adcf059
+2020-06-15 18:28:06.452 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@772cf46b
+2020-06-15 18:28:06.453 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@6bdedbbd
+2020-06-15 18:28:06.454 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@6bdedbbd
+2020-06-15 18:28:06.454 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6bdedbbd
+2020-06-15 18:28:06.455 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@6124dda2
+2020-06-15 18:28:06.456 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@6124dda2
+2020-06-15 18:28:06.456 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6124dda2
+2020-06-15 18:28:06.457 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@2d593b56
+2020-06-15 18:28:06.458 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@2d593b56
+2020-06-15 18:28:06.458 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@2d593b56
+2020-06-15 18:28:06.459 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@4bff28e7
+2020-06-15 18:28:06.460 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@4bff28e7
+2020-06-15 18:28:06.460 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4bff28e7
+2020-06-15 18:28:06.461 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@67f8f5a6
+2020-06-15 18:28:06.461 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@67f8f5a6
+2020-06-15 18:28:06.462 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@67f8f5a6
+2020-06-15 18:28:06.463 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7037a680
+2020-06-15 18:28:06.463 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7037a680
+2020-06-15 18:28:06.463 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7037a680
+2020-06-15 18:28:06.465 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@6339e604
+2020-06-15 18:28:06.465 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@6339e604
+2020-06-15 18:28:06.465 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6339e604
+2020-06-15 18:28:06.467 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@10f8e2d2
+2020-06-15 18:28:06.467 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@10f8e2d2
+2020-06-15 18:28:06.469 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4a58e0e9
+2020-06-15 18:28:06.469 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4a58e0e9
+2020-06-15 18:28:06.470 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@13cf5f8a
+2020-06-15 18:28:06.470 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@13cf5f8a
+2020-06-15 18:28:06.471 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@584136c1
+2020-06-15 18:28:06.472 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@615ef20
+2020-06-15 18:28:06.474 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@295f2d1b
+2020-06-15 18:28:06.474 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@295f2d1b
+2020-06-15 18:28:06.475 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@17ae13d5
+2020-06-15 18:28:06.475 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@17ae13d5
+2020-06-15 18:28:06.477 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@49a06087
+2020-06-15 18:28:06.477 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@49a06087
+2020-06-15 18:28:06.478 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@71668a67
+2020-06-15 18:28:06.479 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@71668a67
+2020-06-15 18:28:06.480 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@46591e98
+2020-06-15 18:28:06.480 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@46591e98
+2020-06-15 18:28:06.482 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@62794582
+2020-06-15 18:28:06.482 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@62794582
+2020-06-15 18:28:06.486 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2a661215
+2020-06-15 18:28:06.486 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2a661215
+2020-06-15 18:28:06.489 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@131d977f
+2020-06-15 18:28:06.489 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@131d977f
+2020-06-15 18:28:06.491 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7b4619a3
+2020-06-15 18:28:06.491 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7b4619a3
+2020-06-15 18:28:06.494 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@41bd6a0f
+2020-06-15 18:28:06.494 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@41bd6a0f
+2020-06-15 18:28:06.495 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@72e75786
+2020-06-15 18:28:06.496 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@72e75786
+2020-06-15 18:28:06.497 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@35a9e665
+2020-06-15 18:28:06.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@35a9e665
+2020-06-15 18:28:06.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@35a9e665
+2020-06-15 18:28:06.500 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1b632442
+2020-06-15 18:28:06.501 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@24de63b
+2020-06-15 18:28:06.501 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@24de63b
+2020-06-15 18:28:06.502 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@24de63b
+2020-06-15 18:28:06.502 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@8ee03f5
+2020-06-15 18:28:06.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@26cdd4af
+2020-06-15 18:28:06.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@42cfd794
+2020-06-15 18:28:06.506 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@42cfd794
+2020-06-15 18:28:06.507 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@6785df10
+2020-06-15 18:28:06.507 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6785df10
+2020-06-15 18:28:06.509 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@2a2798a2
+2020-06-15 18:28:06.509 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2a2798a2
+2020-06-15 18:28:06.510 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4ae958b0
+2020-06-15 18:28:06.510 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4ae958b0
+2020-06-15 18:28:06.512 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@fd69983
+2020-06-15 18:28:06.512 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@fd69983
+2020-06-15 18:28:06.513 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@1c788d08
+2020-06-15 18:28:06.515 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@2cc34cd5
+2020-06-15 18:28:06.515 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@2cc34cd5
+2020-06-15 18:28:06.515 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@2cc34cd5
+2020-06-15 18:28:06.516 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@10cb050
+2020-06-15 18:28:06.517 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@10cb050
+2020-06-15 18:28:06.517 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@10cb050
+2020-06-15 18:28:06.519 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@6c75e3bc
+2020-06-15 18:28:06.520 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@2c5708e7
+2020-06-15 18:28:06.521 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@6be8ce1b
+2020-06-15 18:28:06.521 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@6be8ce1b
+2020-06-15 18:28:06.521 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@6be8ce1b
+2020-06-15 18:28:06.523 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@19924f15
+2020-06-15 18:28:06.523 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@19924f15
+2020-06-15 18:28:06.523 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@19924f15
+2020-06-15 18:28:06.524 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@280d6a20
+2020-06-15 18:28:06.525 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@7286827b
+2020-06-15 18:28:06.527 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@71e7c13f
+2020-06-15 18:28:06.527 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@71e7c13f
+2020-06-15 18:28:06.528 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1c815814
+2020-06-15 18:28:06.530 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@3a751535
+2020-06-15 18:28:06.530 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3a751535
+2020-06-15 18:28:06.532 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@1dfe5dd1
+2020-06-15 18:28:06.532 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@1dfe5dd1
+2020-06-15 18:28:06.533 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@727956bb
+2020-06-15 18:28:06.534 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1b8ee69d
+2020-06-15 18:28:06.536 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@117fb9ba
+2020-06-15 18:28:06.541 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@7b2d58e6
+2020-06-15 18:28:06.541 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7b2d58e6
+2020-06-15 18:28:06.542 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@36cf16a6
+2020-06-15 18:28:06.542 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3dd750ba
+2020-06-15 18:28:06.542 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7eefaca0
+2020-06-15 18:28:06.542 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7d5ef1c3
+2020-06-15 18:28:06.542 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@33eab2e8
+2020-06-15 18:28:06.542 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@34bf66af
+2020-06-15 18:28:06.542 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@37364634
+2020-06-15 18:28:06.542 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@3dec79f8
+2020-06-15 18:28:06.564 [main] DEBUG org.hibernate.boot.internal.BootstrapContextImpl - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@2474df51] into BootstrapContext; was [null]
+2020-06-15 18:28:06.565 [main] DEBUG org.hibernate.boot.internal.BootstrapContextImpl - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@2864d34d] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@5fb514c2]
+2020-06-15 18:28:06.654 [main] DEBUG org.hibernate.boot.internal.BootstrapContextImpl - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [null]
+2020-06-15 18:28:06.654 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - ClassLoaderAccessImpl#injectTempClassLoader(null) [was null]
+2020-06-15 18:28:06.672 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2020-06-15 18:28:06.673 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2020-06-15 18:28:06.674 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2020-06-15 18:28:06.674 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2020-06-15 18:28:06.675 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2020-06-15 18:28:06.677 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2020-06-15 18:28:06.678 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2020-06-15 18:28:06.681 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-06-15 18:28:06.682 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2020-06-15 18:28:06.683 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2020-06-15 18:28:06.684 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2020-06-15 18:28:06.685 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2020-06-15 18:28:06.685 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-06-15 18:28:06.686 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2020-06-15 18:28:06.693 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-06-15 18:28:06.698 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;INIT=RUNSCRIPT FROM 'classpath:data.sql']
+2020-06-15 18:28:06.698 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2020-06-15 18:28:06.698 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-06-15 18:28:06.703 [main] DEBUG org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+2020-06-15 18:28:06.703 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-06-15 18:28:07.063 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Database ->
+       name : H2
+    version : 1.4.200 (2019-10-14)
+      major : 1
+      minor : 4
+2020-06-15 18:28:07.063 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Driver ->
+       name : H2 JDBC Driver
+    version : 1.4.200 (2019-10-14)
+      major : 1
+      minor : 4
+2020-06-15 18:28:07.063 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - JDBC version : 4.1
+2020-06-15 18:28:07.088 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-06-15 18:28:07.152 [main] DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2020-06-15 18:28:07.199 [main] DEBUG org.hibernate.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2020-06-15 18:28:07.205 [main] DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3a4cb483] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4d770bcd]
+2020-06-15 18:28:07.288 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: be.pxl.examen.model.Message
+2020-06-15 18:28:07.324 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-06-15 18:28:07.337 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name Message
+2020-06-15 18:28:07.347 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity be.pxl.examen.model.Message on table Message
+2020-06-15 18:28:07.381 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Message), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-06-15 18:28:07.385 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+2020-06-15 18:28:07.388 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.examen.model.Message:id]
+2020-06-15 18:28:07.392 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for id
+2020-06-15 18:28:07.395 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property id
+2020-06-15 18:28:07.400 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2020-06-15 18:28:07.401 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Message), mappingColumn=text, insertable=true, updatable=true, unique=false}
+2020-06-15 18:28:07.402 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property text with lazy=false
+2020-06-15 18:28:07.402 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.examen.model.Message:text]
+2020-06-15 18:28:07.402 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for text
+2020-06-15 18:28:07.402 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property text
+2020-06-15 18:28:07.405 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+2020-06-15 18:28:07.405 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for text
+2020-06-15 18:28:07.418 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [message]
+2020-06-15 18:28:07.477 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Building session factory
+2020-06-15 18:28:07.478 [main] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+2020-06-15 18:28:07.478 [main] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+2020-06-15 18:28:07.478 [main] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+2020-06-15 18:28:07.478 [main] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+2020-06-15 18:28:07.478 [main] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+2020-06-15 18:28:07.478 [main] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+2020-06-15 18:28:07.478 [main] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2020-06-15 18:28:07.478 [main] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+2020-06-15 18:28:07.478 [main] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: null
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache: disabled
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: null
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+2020-06-15 18:28:07.479 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - Connection release mode: AFTER_TRANSACTION
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - query : disabled
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - closed-handling : disabled
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - lists : disabled
+2020-06-15 18:28:07.480 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - transactions : disabled
+2020-06-15 18:28:07.584 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-06-15 18:28:07.610 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2020-06-15 18:28:07.610 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Instantiating session factory with properties: {hibernate.format_sql=false, awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, sun.arch.data.model=64, java.vendor.url=http://java.oracle.com/, catalina.useNaming=true, javax.persistence.jdbc.url=jdbc:h2:mem:test;INIT=RUNSCRIPT FROM 'classpath:data.sql', openejb.provider.default=org.apache.tomee, org.apache.logging.log4j.assignedSequences=2267, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.4\bin, sun.java.command=org.apache.catalina.startup.Bootstrap start, jdk.debug=release, sun.stderr.encoding=cp850, java.specification.vendor=Oracle Corporation, java.naming.factory.url.pkgs=org.apache.naming:org.apache.openejb.core.ivm.naming, openejb.embedder.source=ServerListener, java.version.date=2019-07-16, java.home=C:\Program Files\Java\jdk-11.0.4, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, sun.stdout.encoding=cp850, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., openejb.deployments.classpath.filter.systemapps=false, user.script=, java.util.logging.config.file=C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee\conf\logging.properties, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.4+10-LTS, tomee.jsp-development=true, tomee.jpa.factory.lazy=true, user.name=11800460, org.apache.johnzon.max-string-length=8192, file.encoding=Cp1252, catalina.ext.dirs=C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee\lib, java.vendor.version=18.9, derby.system.home=C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee, hibernate.connection.driver_class=org.h2.Driver, org.apache.catalina.STRICT_SERVLET_COMPLIANCE=false, java.io.tmpdir=C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee\temp, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-taglib*.jar,log4j-web*.jar,log4javascript*.jar,slf4j-taglib*.jar, java.version=11.0.4, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=annotations-api.jar,ant-junit*.jar,ant-launcher.jar,ant.jar,asm-*.jar,aspectj*.jar,bootstrap.jar,catalina-ant.jar,catalina-ha.jar,catalina-ssi.jar,catalina-storeconfig.jar,catalina-tribes.jar,catalina.jar,cglib-*.jar,cobertura-*.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-daemon.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,dom4j-*.jar,easymock-*.jar,ecj-*.jar,el-api.jar,geronimo-spec-jaxrpc*.jar,h2*.jar,hamcrest-*.jar,hibernate*.jar,httpclient*.jar,icu4j-*.jar,jasper-el.jar,jasper.jar,jaspic-api.jar,jaxb-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,jmx-tools.jar,jmx.jar,jsp-api.jar,jstl.jar,jta*.jar,junit-*.jar,junit.jar,log4j*.jar,mail*.jar,objenesis-*.jar,oraclepki.jar,oro-*.jar,servlet-api-*.jar,servlet-api.jar,slf4j*.jar,taglibs-standard-spec-*.jar,tagsoup-*.jar,tomcat-api.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-i18n-*.jar,tomcat-jdbc.jar,tomcat-jni.jar,tomcat-juli-adapters.jar,tomcat-juli.jar,tomcat-util-scan.jar,tomcat-util.jar,tomcat-websocket.jar,tools.jar,websocket-api.jar,wsdl4j*.jar,xercesImpl.jar,xml-apis.jar,xmlParserAPIs-*.jar,xmlParserAPIs.jar,xom-*.jar, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, tomcat.built=Dec 7 2019 16:42:04 UTC, java.library.path=C:\Program Files\Java\jdk-11.0.4\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\PuTTY\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Java\jdk-11.0.4\bin;C:\Users\11800460\Documents\Maven\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\php;C:\ProgramData\ComposerSetup\bin;C:\HashiCorp\Vagrant\bin;C:\Users\11800460\AppData\Local\Microsoft\WindowsApps;C:\Program Files\ffmpeg\bin\;C:\Users\11800460\AppData\Roaming\npm;C:\Users\11800460\.dotnet\tools;C:\Users\11800460\AppData\Roaming\Composer\vendor\bin;., java.vendor=Oracle Corporation, org.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true, tomee.version=8.0.1, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.buf.StringCache.byte.enabled=true, sun.desktop=windows, hibernate.dialect=org.hibernate.dialect.H2Dialect, java.class.path=C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee\bin\bootstrap.jar;C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee\bin\tomcat-juli.jar, tomcat.version=9.0.30.0, java.vm.vendor=Oracle Corporation, openejb.home=C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee, user.variant=, openejb.system.apps=false, user.timezone=Europe/Paris, os.name=Windows 10, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=BE, openejb.base=C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee, local.setting.IS_JTA_TXN_COORD=false, sun.cpu.endian=little, user.home=C:\Users\11800460, user.language=nl, openejb.deployments.classpath=false, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, javax.persistence.jdbc.driver=org.h2.Driver, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., openejb.loader=tomcat-system, server.loader=, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, path.separator=;, org.apache.openejb.core.security.JaccProvider=org.apache.openejb.core.security.jacc.BasicJaccProvider, common.loader="C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee/lib","C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee/lib/*.jar","C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee/lib","C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee/lib/*.jar", os.version=10.0, openejb.version=8.0.1, org.apache.security.jacc.EJBMethodPermission.methodInterfaces=BusinessLocalHome,BusinessRemoteHome,BusinessRemote,BusinessLocal, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:h2:mem:test;INIT=RUNSCRIPT FROM 'classpath:data.sql', hibernate.ejb.persistenceUnitName=examendb_pu, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, java.vendor.url.bug=http://bugreport.java.com/bugreport/, tomee.remote.support=true, catalina.home=C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee, user.dir=C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee, bval.in-container=true, os.arch=amd64, openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory, tomee.serialization.class.blacklist=*, shared.loader=, catalina.base=C:\Users\11800460\Desktop\DependenciesExamenPAJavaJEE\target\apache-tomee, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@2c7c898a, noBanner=true, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, openejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager, org.apache.webbeans.logger.WebBeansLoggerFacade=org.apache.openejb.cdi.logging.ContainerJULLoggerFactory, java.vm.info=mixed mode, java.vm.version=11.0.4+10-LTS, hibernate.bytecode.use_reflection_optimizer=false, javax.security.jacc.PolicyConfigurationFactory.provider=org.apache.openejb.core.security.JaccProvider$Factory, java.class.version=55.0, authconfigprovider.factory=false}
+2020-06-15 18:28:07.638 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [be.pxl.examen.model.Message] is safe
+2020-06-15 18:28:07.638 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.examen.model.Message
+2020-06-15 18:28:07.690 [main] DEBUG org.hibernate.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+2020-06-15 18:28:07.690 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Instantiated session factory
+2020-06-15 18:28:07.690 [main] DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3a4cb483] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@5e72c82a]
+2020-06-15 18:28:07.770 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [be.pxl.examen.model.Message] is safe
+2020-06-15 18:28:07.770 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.examen.model.Message
+2020-06-15 18:28:07.801 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [be.pxl.examen.model.Message] is safe
+2020-06-15 18:28:07.801 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.examen.model.Message
+2020-06-15 18:28:08.136 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: be.pxl.examen.model.Message
+2020-06-15 18:28:08.137 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from Message where id =?
+2020-06-15 18:28:08.137 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select message_.id, message_.text as text2_0_ from Message message_ where message_.id=?
+2020-06-15 18:28:08.137 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Message (text, id) values (?, ?)
+2020-06-15 18:28:08.137 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Message set text=? where id=?
+2020-06-15 18:28:08.137 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Message where id=?
+2020-06-15 18:28:08.137 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into Message (id, text) values (null, ?)
+2020-06-15 18:28:08.184 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7a2ffb0b]
+2020-06-15 18:28:08.187 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : text
+2020-06-15 18:28:08.187 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-06-15 18:28:08.209 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-06-15 18:28:08.216 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=be.pxl.examen.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.examen.model.Message, querySpaceUid=<gen:0>, path=be.pxl.examen.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.examen.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-06-15 18:28:08.219 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity be.pxl.examen.model.Message [NONE]: select message0_.id as id1_0_0_, message0_.text as text2_0_0_ from Message message0_ where message0_.id=?
+2020-06-15 18:28:08.219 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3962b216]
+2020-06-15 18:28:08.219 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : text
+2020-06-15 18:28:08.219 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-06-15 18:28:08.219 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-06-15 18:28:08.220 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=be.pxl.examen.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.examen.model.Message, querySpaceUid=<gen:0>, path=be.pxl.examen.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.examen.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-06-15 18:28:08.220 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity be.pxl.examen.model.Message [READ]: select message0_.id as id1_0_0_, message0_.text as text2_0_0_ from Message message0_ where message0_.id=?
+2020-06-15 18:28:08.242 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity be.pxl.examen.model.Message: select message0_.id as id1_0_0_, message0_.text as text2_0_0_ from Message message0_ where message0_.id=?
+2020-06-15 18:28:08.242 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity be.pxl.examen.model.Message: select message0_.id as id1_0_0_, message0_.text as text2_0_0_ from Message message0_ where message0_.id=?
+2020-06-15 18:28:08.290 [main] DEBUG org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator - No actions specified; doing nothing
+2020-06-15 18:28:08.290 [main] DEBUG org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2020-06-15 18:28:08.291 [main] DEBUG org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2020-06-15 18:28:08.303 [main] DEBUG org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-15 18:28:08.304 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-15 18:28:08.304 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+2020-06-15 18:28:08.304 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+2020-06-15 18:28:08.321 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@48a38a12
+2020-06-15 18:28:08.323 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: 24a68c8b-6e46-4151-bc81-89e680ce7a0a (<unnamed>)
+2020-06-15 18:28:08.324 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2020-06-15 18:28:08.325 [main] DEBUG be.pxl.examen.dao.impl.EntityManagerUtil - *** Persistence started at 2020-06-15T18:28:08.324527200
+2020-06-15 18:28:15.674 [http-nio-8080-exec-2] INFO  be.pxl.examen.dao.impl.EntityManagerUtil - Creating entitymanager.
+2020-06-15 18:28:15.903 [http-nio-8080-exec-2] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2020-06-15 18:28:15.975 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@75f49612
+2020-06-15 18:28:16.044 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: SELECT m FROM be.pxl.examen.model.Message m
+2020-06-15 18:28:16.058 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-15 18:28:16.074 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'FROM'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'be'
+       |     |  |  |  |  \-[IDENT] Node: 'pxl'
+       |     |  |  |  \-[IDENT] Node: 'examen'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'Message'
+       |     \-[ALIAS] Node: 'm'
+       \-[SELECT] Node: 'SELECT'
+          \-[IDENT] Node: 'm'
+
+2020-06-15 18:28:16.145 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2020-06-15 18:28:16.189 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : be.pxl.examen.model.Message (m) -> message0_
+2020-06-15 18:28:16.190 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : m -> message0_.id
+2020-06-15 18:28:16.194 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2020-06-15 18:28:16.194 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} message0_.id ) ( FromClause{level=1} Message message0_ ) )
+2020-06-15 18:28:16.213 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Message): [Message]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(be.pxl.examen.model.Message)
+    |  | originalText: m
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+2020-06-15 18:28:16.221 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [Message message0_]
+2020-06-15 18:28:16.221 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2020-06-15 18:28:16.222 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Message)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'message0_.id as id1_0_' {alias=m, className=be.pxl.examen.model.Message, tableAlias=message0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'message0_.text as text2_0_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[m], fromElementByTableAlias=[message0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Message message0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=m,role=null,tableName=Message,tableAlias=message0_,origin=null,columns={,className=be.pxl.examen.model.Message}}
+
+2020-06-15 18:28:16.222 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-15 18:28:16.238 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: SELECT m FROM be.pxl.examen.model.Message m
+2020-06-15 18:28:16.238 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select message0_.id as id1_0_, message0_.text as text2_0_ from Message message0_
+2020-06-15 18:28:16.238 [http-nio-8080-exec-2] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-15 18:28:16.274 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select message0_.id as id1_0_, message0_.text as text2_0_ from Message message0_
+2020-06-15 18:28:16.282 [http-nio-8080-exec-2] DEBUG org.hibernate.loader.Loader - Result set row: 0
+2020-06-15 18:28:16.291 [http-nio-8080-exec-2] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[be.pxl.examen.model.Message#1]
+2020-06-15 18:28:16.309 [http-nio-8080-exec-2] DEBUG org.hibernate.loader.Loader - Result set row: 1
+2020-06-15 18:28:16.309 [http-nio-8080-exec-2] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[be.pxl.examen.model.Message#2]
+2020-06-15 18:28:16.314 [http-nio-8080-exec-2] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [be.pxl.examen.model.Message#1]
+2020-06-15 18:28:16.317 [http-nio-8080-exec-2] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `text` : value = Het is juni.
+2020-06-15 18:28:16.317 [http-nio-8080-exec-2] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`text`)  - enhanced for lazy-loading? - false
+2020-06-15 18:28:16.319 [http-nio-8080-exec-2] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [be.pxl.examen.model.Message#1]
+2020-06-15 18:28:16.319 [http-nio-8080-exec-2] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving attributes for [be.pxl.examen.model.Message#2]
+2020-06-15 18:28:16.320 [http-nio-8080-exec-2] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Processing attribute `text` : value = Veel succes met de examens!
+2020-06-15 18:28:16.320 [http-nio-8080-exec-2] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Attribute (`text`)  - enhanced for lazy-loading? - false
+2020-06-15 18:28:16.320 [http-nio-8080-exec-2] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [be.pxl.examen.model.Message#2]
+2020-06-15 18:28:16.325 [http-nio-8080-exec-2] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+2020-06-15 18:28:37.060 [Hibernate Connection Pool Validation Thread] DEBUG org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - Connection pool now considered primed; min-size will be maintained
+2020-06-15 18:29:18.724 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: SELECT COUNT(m) FROM be.pxl.examen.model.Message m
+2020-06-15 18:29:18.725 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-15 18:29:18.725 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'FROM'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'be'
+       |     |  |  |  |  \-[IDENT] Node: 'pxl'
+       |     |  |  |  \-[IDENT] Node: 'examen'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'Message'
+       |     \-[ALIAS] Node: 'm'
+       \-[SELECT] Node: 'SELECT'
+          \-[COUNT] Node: 'COUNT'
+             \-[IDENT] Node: 'm'
+
+2020-06-15 18:29:18.725 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2020-06-15 18:29:18.725 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : be.pxl.examen.model.Message (m) -> message0_
+2020-06-15 18:29:18.728 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : m -> message0_.id
+2020-06-15 18:29:18.728 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2020-06-15 18:29:18.728 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} ( COUNT message0_.id ) ) ( FromClause{level=1} Message message0_ ) )
+2020-06-15 18:29:18.729 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    |  +-CountNode
+    |  |  \-IdentNode
+    |  |    persister: SingleTableEntityPersister(be.pxl.examen.model.Message)
+    |  |    originalText: m
+    |  \-SqlNode
+    \-FromClause
+       \-FromElement
+
+2020-06-15 18:29:18.729 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [Message message0_]
+2020-06-15 18:29:18.729 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2020-06-15 18:29:18.729 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Message)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[COUNT] CountNode: 'COUNT'
+    |  |  \-[ALIAS_REF] IdentNode: 'message0_.id' {alias=m, className=be.pxl.examen.model.Message, tableAlias=message0_}
+    |  \-[SELECT_COLUMNS] SqlNode: ' as col_0_0_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[m], fromElementByTableAlias=[message0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Message message0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=m,role=null,tableName=Message,tableAlias=message0_,origin=null,columns={,className=be.pxl.examen.model.Message}}
+
+2020-06-15 18:29:18.729 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-15 18:29:18.730 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: SELECT COUNT(m) FROM be.pxl.examen.model.Message m
+2020-06-15 18:29:18.730 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select count(message0_.id) as col_0_0_ from Message message0_
+2020-06-15 18:29:18.730 [http-nio-8080-exec-4] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-15 18:29:18.730 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select count(message0_.id) as col_0_0_ from Message message0_
+2020-06-15 18:29:18.732 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader - Result set row: 0
+2020-06-15 18:29:18.732 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader - Result row: 
+2020-06-15 18:29:18.732 [http-nio-8080-exec-4] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
