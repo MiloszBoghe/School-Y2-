@@ -1,7 +1,6 @@
-﻿using System;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace PasswordApp.Data
 {
@@ -20,7 +19,7 @@ namespace PasswordApp.Data
             //relation - 1 User --> n Entries
             modelBuilder.Entity<Entry>()
                 .HasOne(e => e.User)
-                .WithMany(u=>u.Entries)
+                .WithMany(u => u.Entries)
                 .HasForeignKey(e => e.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
         }

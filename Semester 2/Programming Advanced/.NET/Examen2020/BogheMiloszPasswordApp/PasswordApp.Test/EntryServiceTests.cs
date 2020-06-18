@@ -32,7 +32,7 @@ namespace PasswordApp.Test
             //Arrange
             var entry = _entryBuilder.Build();
             _encryptionServiceMock.Setup(service => service.Encrypt(entry.Password, entry.Id.ToString())).Returns("encrypted");
-            _entryRepositoryMock.Setup(repo => repo.Update(entry.Id,"encrypted", entry.Url));
+            _entryRepositoryMock.Setup(repo => repo.Update(entry.Id, "encrypted", entry.Url));
 
             //Act
             _entryService.Update(entry.Id, entry.Password, entry.Url);

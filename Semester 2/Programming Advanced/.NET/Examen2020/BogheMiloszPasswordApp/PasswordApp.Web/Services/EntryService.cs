@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using PasswordApp.Data;
+﻿using PasswordApp.Data;
 using PasswordApp.Data.Repositories;
 using PasswordApp.Web.Services.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace PasswordApp.Web.Services
 {
@@ -30,7 +30,7 @@ namespace PasswordApp.Web.Services
         {
             //DONE: implement the test for this method and make it green
             //You should use the 'Id' of the entry as the salt for encrypting the password.
-            var encryptedPassword = _encryptionService.Encrypt(password,id.ToString());
+            var encryptedPassword = _encryptionService.Encrypt(password, id.ToString());
             _entryRepository.Update(id, encryptedPassword, url);
         }
 

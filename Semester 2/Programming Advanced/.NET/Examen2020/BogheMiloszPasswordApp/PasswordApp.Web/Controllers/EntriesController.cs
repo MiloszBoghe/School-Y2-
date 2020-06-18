@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc;
+using PasswordApp.Web.Models;
+using PasswordApp.Web.Services.Contracts;
+using System;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using PasswordApp.Web.Models;
-using PasswordApp.Web.Services.Contracts;
 
 namespace PasswordApp.Web.Controllers
 {
+    
     public class EntriesController : Controller
     {
         private readonly IEntryService _entryService;
@@ -32,8 +32,8 @@ namespace PasswordApp.Web.Controllers
         public IActionResult Edit(Guid id)
         {
             //DONE: implement the test for this method and make it green
-            var entry =_entryService.GetById(id);
-            return View(new EntryEditViewModel{Password = entry.Password,Url = entry.Url});
+            var entry = _entryService.GetById(id);
+            return View(new EntryEditViewModel { Password = entry.Password, Url = entry.Url });
         }
 
         [HttpPost("Entries/Edit/{Id}")]
@@ -46,7 +46,7 @@ namespace PasswordApp.Web.Controllers
 
             //DONE: use model binding techniques to validate the input model
             //DONE: update using the repository and send the user to the overview (of entries) page.
-            _entryService.Update(id,model.Password,model.Url);
+            _entryService.Update(id, model.Password, model.Url);
             return RedirectToAction(nameof(Index));
         }
     }

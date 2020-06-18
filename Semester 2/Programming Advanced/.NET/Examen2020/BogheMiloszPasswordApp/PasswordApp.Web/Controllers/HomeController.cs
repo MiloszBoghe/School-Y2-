@@ -1,8 +1,8 @@
-﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PasswordApp.Web.Models;
+using System.Diagnostics;
 
 namespace PasswordApp.Web.Controllers
 {

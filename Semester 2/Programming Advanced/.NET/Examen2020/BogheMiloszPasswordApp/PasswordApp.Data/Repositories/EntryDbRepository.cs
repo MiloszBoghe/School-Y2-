@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 namespace PasswordApp.Data.Repositories
 {
-    public class EntryDbRepository: IEntryRepository
+    public class EntryDbRepository : IEntryRepository
     {
         private readonly PasswordDbContext _context;
 

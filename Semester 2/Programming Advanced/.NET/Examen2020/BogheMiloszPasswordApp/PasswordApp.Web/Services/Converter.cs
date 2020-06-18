@@ -1,7 +1,7 @@
-﻿using System;
-using PasswordApp.Data;
+﻿using PasswordApp.Data;
 using PasswordApp.Web.Models;
 using PasswordApp.Web.Services.Contracts;
+using System;
 
 namespace PasswordApp.Web.Services
 {
@@ -13,7 +13,7 @@ namespace PasswordApp.Web.Services
         /// <typeparam name="TTarget">The target type the source object is converted to.</typeparam>
         /// <param name="source">The object that must be converted.</param>
         /// <returns>The converted object.</returns>
-        public TTarget ConvertTo<TTarget>(object source) where TTarget: class
+        public TTarget ConvertTo<TTarget>(object source) where TTarget : class
         {
             if (source is Entry entry)
             {

@@ -1,18 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Security.Claims;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using NUnit.Framework;
 using PasswordApp.Data;
-using PasswordApp.Data.Repositories;
 using PasswordApp.Test.Builders;
 using PasswordApp.Web.Controllers;
 using PasswordApp.Web.Models;
-using PasswordApp.Web.Services;
 using PasswordApp.Web.Services.Contracts;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
 
 namespace PasswordApp.Test
 {
@@ -67,7 +66,7 @@ namespace PasswordApp.Test
             }
 
             _entryServiceMock.Setup(service => service.GetEntriesOfUserAsync(_userId)).ReturnsAsync(entryList);
-            _converterMock.Setup(converter => converter.ConvertTo<EntryListItemViewModel>(It.IsIn<Entry>(entryList))).CallBase();
+            _converterMock.Setup(converter => converter.ConvertTo<EntryListItemViewModel>(It.IsIn<Entry>(entryList))).Returns(new EntryListItemViewModel());
 
             var result = _entriesController.Index().Result as ViewResult;
 
@@ -75,9 +74,7 @@ namespace PasswordApp.Test
             _converterMock.Verify(converter => converter.ConvertTo<EntryListItemViewModel>(It.IsIn<Entry>(entryList)), Times.Exactly(amountOfEntries));
             Assert.NotNull(result);
             Assert.IsInstanceOf<IReadOnlyList<EntryListItemViewModel>>(result.Model);
-            Assert.AreEqual(result.ViewData.Values.Count,entryList.Count);
-
-
+            Assert.AreEqual(((IEnumerable<EntryListItemViewModel>) result.Model).Count(), entryList.Count);
         }
 
         [Test]
