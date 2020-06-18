@@ -1,9 +1,0 @@
-be\pxl\examen\dao\impl\EntityManagerUtil.class
-be\pxl\examen\rest\MessageRest.class
-be\pxl\examen\servlet\MessageCountServlet.class
-be\pxl\examen\dao\impl\MessageDaoImpl.class
-be\pxl\examen\service\MessageService.class
-be\pxl\examen\dao\MessageDao.class
-be\pxl\examen\rest\resources\MessageResource.class
-be\pxl\examen\rest\RestApplication.class
-be\pxl\examen\model\Message.class

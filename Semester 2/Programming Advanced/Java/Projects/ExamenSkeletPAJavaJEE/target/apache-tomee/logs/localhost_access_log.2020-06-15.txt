@@ -1,4 +1,0 @@
-0:0:0:0:0:0:0:1 - - [15/Jun/2020:18:28:16 +0200] "GET /dependencies/messages HTTP/1.1" 200 89
-0:0:0:0:0:0:0:1 - - [15/Jun/2020:18:29:18 +0200] "GET /dependencies/messagecount HTTP/1.1" 200 79
-0:0:0:0:0:0:0:1 - - [15/Jun/2020:18:29:18 +0200] "GET /favicon.ico HTTP/1.1" 404 729
-0:0:0:0:0:0:0:1 - - [15/Jun/2020:19:08:58 +0200] "OPTIONS /Demo/api/brewers HTTP/1.1" 404 729
