@@ -1,5 +1,5 @@
-using System;
 using PasswordApp.Data;
+using System;
 
 namespace PasswordApp.Test.Builders
 {

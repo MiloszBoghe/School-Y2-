@@ -1,5 +1,3 @@
-using System;
-
 namespace PasswordApp.Web.Models
 {
     public class ErrorViewModel

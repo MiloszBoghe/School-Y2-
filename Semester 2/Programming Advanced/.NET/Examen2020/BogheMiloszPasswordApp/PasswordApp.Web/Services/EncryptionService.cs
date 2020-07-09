@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Microsoft.Extensions.Options;
+using PasswordApp.Web.Services.Contracts;
+using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using Microsoft.Extensions.Options;
-using PasswordApp.Web.Services.Contracts;
 
 namespace PasswordApp.Web.Services
 {
