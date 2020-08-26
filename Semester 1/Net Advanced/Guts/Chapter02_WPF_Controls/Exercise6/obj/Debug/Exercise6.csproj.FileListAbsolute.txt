@@ -27,3 +27,17 @@ C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter02_WPF_Controls\Ex
 C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6.csproj.GenerateResource.cache
 C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6.exe
 C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6.pdb
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\bin\Debug\Exercise6.exe.config
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\bin\Debug\Exercise6.exe
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\bin\Debug\Exercise6.pdb
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\MainWindow.g.cs
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\App.g.cs
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6_MarkupCompile.cache
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6_MarkupCompile.lref
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\MainWindow.baml
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6.g.resources
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6.Properties.Resources.resources
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6.csproj.GenerateResource.cache
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6.csproj.CoreCompileInputs.cache
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6.exe
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise6\obj\Debug\Exercise6.pdb

@@ -8,7 +8,6 @@ using PasswordApp.Web.Controllers;
 using PasswordApp.Web.Models;
 using PasswordApp.Web.Services.Contracts;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;

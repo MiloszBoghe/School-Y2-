@@ -47,3 +47,28 @@ C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter02_WPF_Controls\Ex
 C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\obj\Debug\Exercise9.Tests.csproj.CopyComplete
 C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\obj\Debug\Exercise9.Tests.dll
 C:\Users\11800460\Desktop\School-Y2-\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\obj\Debug\Exercise9.Tests.pdb
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\nunit.engine.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\nunit.engine.api.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Exercise9.Tests.dll.config
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Exercise9.Tests.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Exercise9.Tests.pdb
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Exercise9.exe
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Guts.Client.Classic.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Guts.Client.Classic.UI.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Guts.Client.Shared.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Exercise9.pdb
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Exercise9.exe.config
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\nunit.framework.pdb
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\obj\Debug\Exercise9.Tests.csprojAssemblyReference.cache
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\obj\Debug\Exercise9.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\obj\Debug\Exercise9.Tests.csproj.CopyComplete
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\obj\Debug\Exercise9.Tests.dll
+C:\Users\Satan\Desktop\School\Semester 1\Net Advanced\Guts\Chapter02_WPF_Controls\Exercise9.Tests\obj\Debug\Exercise9.Tests.pdb
